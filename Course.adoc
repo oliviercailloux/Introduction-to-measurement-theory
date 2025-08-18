@@ -1,4 +1,5 @@
 = Introduction to measurement theory
+:stem:
 
 == Organization
 S1, S2 : Chapter 1 (1h Th, 1h pract, 1h Th, 1h pract)
@@ -8,10 +9,10 @@ S6 : Section 3.1
 S7 : Section 6.1
 S8 : exam
 
-Exams _e_: average of both exams (equal weight)
-Participation _p_: each lecture, 0, + (significant intervention) or ++ (clever or committed intervention)
-Notes in Asciidoc format through GitHub _n_ (talk to me first)
-Final grade: weighted average of _e_ (9 points), _max(e, p)_ (3 points), _max(e, n)_ (8 points)
+Exams stem:[e]: average of both exams (equal weight)
+Participation stem:[p]: each lecture, 0, + (significant intervention) or ++ (clever or committed intervention)
+Notes in Asciidoc format through GitHub stem:[n] (talk to me first)
+Final grade: weighted average of stem:[e] (9 points), stem:[max(e, p)] (3 points), stem:[max(e, n)] (8 points)
 
 https://github.com/oliviercailloux/Teaching/blob/main/README.adoc#take-notes[Take notes]
 
@@ -37,11 +38,11 @@ Reduce inequality
 Satisfy citizen’s preferences
 
 == Primitive notions
-Set, ∅
-∈
-=
-Logic operators: ¬, ∨, ∧, ⇒, ⇔, ∃, ∀
-∉
+Set, stem:[∅]
+stem:[∈]
+stem:[=]
+Logic operators: stem:[¬], stem:[∨], stem:[∧], stem:[⇒], stem:[⇔], stem:[∃], stem:[∀]
+stem:[∉]
 Produce other sets: {x ∈ A | …}, ⋃, ⋂, powerset, ×
 Also: primitive elements
 Ordered pair, sets thereof, domain, image, field
@@ -59,7 +60,7 @@ Notation: a R b means (a, b) ∈ R
 Directed graph
 
 === Properties of relations
-In this document, properties of a relation _R_ are expressed with implicit qualifiers: a non bound letter _x_ is implicitly prefixed with ∀ _x_ ∈ field(_R_)
+In this document, properties of a relation stem:[R] are expressed with implicit qualifiers: a non bound letter stem:[x] is implicitly prefixed with ∀ stem:[x] ∈ field(stem:[R])
 
 === Transitivity
 Transitive relation: a R b R c ⇒ a R c
@@ -204,13 +205,13 @@ Example using air pollution might be interesting but is not hugely convincing co
 
 == Representation of complete preorders
 === Arithmetic and infinite sets
-Successor of _s_: _s_ ⋃ {_s_}
+Successor of stem:[s]: stem:[s] ⋃ {stem:[s]}
 Axiom of infinity: ∃ successor set A
 ℕ: intersection of all successor sets in A
 Permits induction, which we use to define addition of zero, then addition of one, …
 Finite set: bijection with an element of ℕ
 
-=== ≥
+=== The ≥ relation
 If R is a complete preorder and field(R) is finite, it is homomorphic to ≥.
 Necessary and sufficient conditions.
 Can we relax finiteness?
