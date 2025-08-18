@@ -27,7 +27,7 @@ public class Builder {
   public void proceed() throws IOException, ClassNotFoundException {
     LOGGER.info("Compiling.");
     final Path adoc = Path.of("../Course.adoc");
-    final Path outputDir = Path.of("../Pages/");
+    final Path outputDir = Path.of("../../Online Pages/");
 
     final String docBook;
     try (Asciidoctor adocConverter = Asciidoctor.Factory.create()) {
