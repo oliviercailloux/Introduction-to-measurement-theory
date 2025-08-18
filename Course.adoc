@@ -1,0 +1,249 @@
+= Introduction to measurement theory
+
+== Organization
+S1, S2 : Chapter 1 (1h Th, 1h pract, 1h Th, 1h pract)
+S3, S4 : Chapter 2 (1h Th, 1h pract, 1h Th, 1h pract)
+S5 : exam
+S6 : Section 3.1
+S7 : Section 6.1
+S8 : exam
+
+Exams _e_: average of both exams (equal weight)
+Participation _p_: each lecture, 0, + (significant intervention) or ++ (clever or committed intervention)
+Notes in Asciidoc format through GitHub _n_ (talk to me first)
+Final grade: weighted average of _e_ (9 points), _max(e, p)_ (3 points), _max(e, n)_ (8 points)
+
+https://github.com/oliviercailloux/Teaching/blob/main/README.adoc#take-notes[Take notes]
+
+== Motivation
+Measurement: represent aspects of a concrete system abstractly, using numbers, vectors…
+Measurement theory: represent relations among objects using relations among numbers
+Representability theorems
+Measurement also includes metrology
+Measurement theory ≠ Measure theory (which does not start from supposedly observable relations)
+
+Why?
+
+Introduce rigorous reasonings in decision making
+Use mathematical language for precision
+Mathematics only takes care of a small part! (Also: political science, sociology, psychology, economics…)
+A rigorous introduction to some fundamental constructs of mathematics
+
+Examples
+Measure pollution
+Organize society so as to maximize global utility
+Distribute resources fairly
+Reduce inequality
+Satisfy citizen’s preferences
+
+== Primitive notions
+Set, ∅
+∈
+=
+Logic operators: ¬, ∨, ∧, ⇒, ⇔, ∃, ∀
+∉
+Produce other sets: {x ∈ A | …}, ⋃, ⋂, powerset, ×
+Also: primitive elements
+Ordered pair, sets thereof, domain, image, field
+
+Refer to the delightful book of Halmos: Naive set theory.
+For more context, read Logicomics.
+
+== Relations and properties of relations
+=== Relation
+Binary relation on A: subset of A × A
+Also: relation from A to A (homogeneous relation, our focus)
+Relations between objects and persons
+Notation: a R b means (a, b) ∈ R
+
+Directed graph
+
+=== Properties of relations
+In this document, properties of a relation _R_ are expressed with implicit qualifiers: a non bound letter _x_ is implicitly prefixed with ∀ _x_ ∈ field(_R_)
+
+=== Transitivity
+Transitive relation: a R b R c ⇒ a R c
+
+Transire, to pass to the other side, convey an action
+I push my car VS I sleep in my car: push used transitively
+Relates a to c through b
+
+Hasse diagram (TODO)
+
+=== Reflexivity
+a R a
+
+=== Irreflexivity
+¬(a R a)
+
+A relation that is not reflexive is not necessarily irreflexive (similarly for other properties).
+
+=== Preorder
+Transitive and reflexive
+(Also called: partial preorder, quasi order)
+
+Here: mostly transitive and reflexive relations
+
+=== Symmetry
+a R b ⇒ b R a
+
+=== Asymmetry
+a R b ⇒ ¬(b R a)
+
+=== Antisymmetry
+a ≠ b ∧ a R b ⇒ ¬(b R a)
+
+=== Exercices
+TODO
+
+=== Equivalence
+An equivalence relation is a transitive, (reflexive and) symmetric relation.
+
+Each element in an equivalence relation has an associated equivalence class. The set of equivalence classes, called the quotient by R, is denoted by field(R)/R. It partitions (disjointly covers) field(R).
+
+Symmetric part of a relation R: sym(R) = {(a, a) ∈ R}
+The symmetric part of a preorder R is an equivalence relation
+Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by sym(R)) and orders them (possibly partially)
+That ordering is a relation on its quotient by sym(R) and is called the reduction of a preorder R
+Formally, the reduction of R is defined as {(a*, b*) ∈ field(R)/sym(R) × field(R)/sym(R) | ∃ a ∈ a*, b ∈ b* | a R b}.
+
+// === Converse
+// Optional
+
+// === Negative transitivity
+// Optional
+
+=== Side-uniqueness, ontoness
+Right-unique: a R b ∧ a R c ⇒ b = c
+A right-unique relation is a function from domain(R) to image(R); we can write R(a) to denote the single b ∈ image(R) such that a R b.
+Onto Y (right-total over Y): Y = image(R)
+Left-unique (injective): b R a ∧ c R a ⇒ b = c
+
+=== Weak completeness
+a ≠ b ⇒ a R b ∨ b R a
+
+=== Order
+Transitive, reflexive, antisymmetric
+(Also called: partial order)
+
+Intuitively: a (possibly partial) ranking without ties
+
+=== Complete preorder
+Transitive, reflexive, weakly complete
+(Often called: weak order)
+
+Intuitively: a ranking with ties
+The symmetric part of a complete preorder is an equivalence relation
+A complete preorder defines equivalence classes and orders them completely
+
+=== Complete order
+Transitive, reflexive, weakly complete, antisymmetric
+(Also called: simple order, linear order, total order)
+
+Intuitively: a ranking without ties
+
+The reduction of a complete preorder R is a complete order on field(R)/sym(R).
+
+// === Strict order
+// Transitive and irreflexive
+// (Often called: strict partial order)
+
+=== Generalisation to binary operations
+A relation from X to Y is a subset of X × Y. It is non homogeneous when X ≠ Y.
+A binary operation α on A is a right-unique relation from (A × A) to A whose domain is (A × A).
+It can be viewed as a function from A × A to A; we can write a α b to denote the single c ∈ image(α) such that (a, b) α c.
+Examples: +, × on ℕ.
+
+=== Note about terminology
+For many authors (excluding Halmos but including Roberts), the set on which R is defined is exogenous, thus a relation is a pair (A, R) with R ⊆ A² (hence field(R) ⊆ A). This allows for the possibility that field(R) ≠ A. Weak completeness is then defined as ∀ a ≠ b ∈ A: a R b ν b R a. Similarly, other definitions (such as reflexivity) then differ from those given here. In this document, we assume A is chosen equal to field(R), in which case the definitions coincide.
+
+== Fundamental measurement
+We want to assign numbers to reflect some properties of some systems.
+Given relation R “looks shorter than” on A = {a, b, …}, can we assign numbers f(a) so that f(a) < f(b) iff a R b?
+Similarly for relations “preferred to”, “day with better air quality”.
+
+We might also want to reflect operations such as “combining”: consider “is lighter”, with A including combined objects; can we then assign numbers f(.) so that when a and b combined are lighter than c, f(a) + f(b) < f(c); or so that when c denotes the combination of a and b, f(a) + f(b) = f(c)?
+Similarly for relation “preferred to” on sets of objects.
+
+Relation R on A corresponds to relation T on ℝ through function f from A to ℝ: a R b iff f(a) T f(b).
+(If T is restricted to the image of f, it is determined uniquely by f and R, in other words, R never corresponds to two relations T1 ≠ T2 through a single function f when field(T1) = field(T2) = image(f). Proof: if R corresponds to T1 and T2 through f with field(T1) = field(T2) = image(f), then x T1 y iff a R b, for any a ∈ f-1(x), b ∈ f-1(y), iff x T2 y thus T1 = T2.)
+Operation ⊙ on A corresponds to operation α on ℝ through function f from A to ℝ: f(a ⊙ b) = f(a) α f(b).
+R is homomorphic to T iff it corresponds to T through some function f.
+(R, ⊙) is homomorphic to (T, α) iff R corresponds to T and ⊙ to α through the same function f.
+More generally, (R, {⊙_i}) is homomorphic to (T, {α_i}) iff R corresponds to T through some function f and each ⊙_i corresponds to α_i through f.
+The tuple (f, (T, {α_i})) is called a measurement scale for (R, {⊙_i}).
+// (If f is a scale, 
+// ∀x, y ∈ image(f): f-1(x) × f-1(y) ⊆ R ν f-1(x) × f-1(y) ⋂ R = ∅ 
+// and
+// f(f-1(x) o f-1(y)) is a singleton.)
+
+=== Representation theorem
+A theorem of the form: under such conditions on (R, {⊙_i}), the system is homomorphic to (T, {α_i}).
+Constructive proof: gives a procedure to build a scale f.
+Intuitively: transitivity of R is required for homomorphism to >.
+
+Uniqueness: to determine properties of the numbers that transfer to our observations.
+
+=== Homomorphisms and scale types
+Number of persons VS height of a person
+Ratio of weight VS ratio of t°
+
+Given (R, {⊙_i}) corresponding to (T, {α_i}) through f, admissible transformation φ from f(A) to ℝ (thus φ ∘ f from A to ℝ): (R, {⊙_i}) corresponds to (T, {α_i}) through φ ∘ f.
+
+// R has a regular homomorphism to T: it has a homomorphism to T and for every scales (f, (T, {α_i})), (g, (T, {α_i})), for some φ, g = φ ∘ f.
+R has a regular homomorphism to T: it has a homomorphism to T and for every scales (f, (T, {α_i})), (g, (T, {α_i})), f(a) = f(b) ⇔ g(a) = g(b).
+
+Scale type depends on the class of admissible transformations φ.
+Absolute: φ(x) = x; Counting
+Ratio: φ(x) = rx with r > 0; Mass
+Interval: φ(x) = rx + s with r > 0; T° without absolute zero
+Ordinal: strictly monotone increasing transformation; Ordinal preference, Mohs scale of hardness
+Nominal: any bijection; Labels
+
+Example using air pollution might be interesting but is not hugely convincing concerning meaningfulness.
+
+== Representation of complete preorders
+=== Arithmetic and infinite sets
+Successor of _s_: _s_ ⋃ {_s_}
+Axiom of infinity: ∃ successor set A
+ℕ: intersection of all successor sets in A
+Permits induction, which we use to define addition of zero, then addition of one, …
+Finite set: bijection with an element of ℕ
+
+=== ≥
+If R is a complete preorder and field(R) is finite, it is homomorphic to ≥.
+Necessary and sufficient conditions.
+Can we relax finiteness?
+
+Scale type: ordinal
+
+=== Density
+
+=== Infinite cases
+
+== When indifference is not transitive
+=== Requirement of transitivity
+R homomorphic to ≥ requires transitivity.
+Define I as the symmetric part of R.
+R homomorphic to ≥ requires I to be transitive.
+
+=== Examples
+Detection threshold
+- Coffee with sugar
+- Noise level
+
+Incomparability
+- Pony VS bicycle (https://doi.org/10.2307/2224802[Armstrong, 1939])
+- Good job VS apartment
+- Reform social security: better for end-of-life VS better life expectancy
+
+=== Representation
+x ≥δ y: x ≥ y - δ
+Constant threshold δ
+
+Won’t do for incomparability: Pony* ≻ Pony, Bicycle ≽ Pony*, Bicycle* ≻ Bicycle but Pony ≽ Bicycle*.
+
+=== Related applications
+Liberal to conservative politics
+Psychological stages of development
+Chronology of archeological artifacts
