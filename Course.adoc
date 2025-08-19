@@ -76,8 +76,6 @@ Transitive relation: a R b R c ⇒ a R c
 * I push my car VS I sleep in my car: push used transitively
 * Relates a to c through b
 
-Hasse diagram (TODO)
-
 ==== Reflexivity
 a R a
 
@@ -91,6 +89,8 @@ A relation that is not reflexive is not necessarily irreflexive (similarly for o
 * (Also called: partial preorder, quasi order)
 
 Here: mostly transitive and reflexive relations
+
+Hasse diagram: a R b, a ≠ b, corresponds to a line descending from a to b.
 
 ==== Symmetry
 a R b ⇒ b R a
