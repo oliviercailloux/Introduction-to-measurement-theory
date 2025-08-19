@@ -1,7 +1,9 @@
 = Introduction to measurement theory
 
-A https://github.com/oliviercailloux/Introduction-to-measurement-theory/blob/main/Course.adoc[course] in measurement theory.
+A course in measurement theory.
+
+https://github.com/oliviercailloux/Introduction-to-measurement-theory/blob/main/Course.adoc[Main source file]; https://oliviercailloux.github.io/Introduction-to-measurement-theory/[Visible version].
 
 == Workflow
-Build locally into another local folder, Pages.
-That local folder is synched to this same repository but in branch gh-pages.
+Build locally into another local folder.
+That local folder is synced to this same repository but in (initially https://stackoverflow.com/a/34100189/[orphan]) branch gh-pages.

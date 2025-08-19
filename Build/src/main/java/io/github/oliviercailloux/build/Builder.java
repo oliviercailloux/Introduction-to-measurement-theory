@@ -35,7 +35,7 @@ public class Builder {
           Options.builder().standalone(true).backend("docbook").build());
     }
     DocBookConformityChecker.usingEmbeddedSchema().verifyValid(CharSource.wrap(docBook));
-    // Files.writeString(outputDir.resolve("out.dbk"), docBook);
+    Files.writeString(outputDir.resolve("out.dbk"), docBook);
 
     final CharSource stylesheet = charSource("MyStyle.xsl");
 
@@ -44,6 +44,6 @@ public class Builder {
     final XmlTransformerFactory transformerFactory = XmlTransformerFactory.usingFactory(underlying);
 
     final String html = transformerFactory.usingStylesheet(stylesheet).charsToChars(docBook);
-    Files.writeString(outputDir.resolve("out.html"), html);
+    Files.writeString(outputDir.resolve("Course.html"), html);
   }
 }

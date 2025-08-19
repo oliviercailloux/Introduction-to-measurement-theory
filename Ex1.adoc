@@ -1,0 +1,47 @@
+= Exercices S1
+
+== Sœur
+Imaginez que dans cette classe se trouve trois familles de deux ou trois enfants chacune (imaginez comme vous voulez qui en est membre). Les autres sont issus de familles distinctes.
+
+Définissez la relation représentant « sœur de » dans cette classe, selon deux façons raisonnables de comprendre cette expression, l’une réflexive, l’autre irréflexive.
+Cette relation est-elle transitive ?
+Définissez la relation sur un sous-ensemble de personnes pour lui faire satisfaire une propriété supplémentaire au choix vue en cours.
+
+== Gauchiste
+Définissez la relation représentant « assis à la gauche de » dans cette classe, en précisant comment vous comprenez cette relation.
+Quelles propriétés satisfait-elle ?
+
+== Opérations sur les relations
+Avec S et G les relations ci-dessus (dans une certaine acception de votre choix), calculez S ∪ G et S ∩ G. Pour quelles façons de comprendre ces relations a-t-on S ∪ G = ∅ ? Même question pour S ∩ G.
+
+// Définissons la composition comme : A ∘ B = {(b_1, a_2) | (a_1, a_2) ∈ A ∧ (b_1, b_2) ∈ B ∧ a_1 = b_2}.
+
+== Antisymétrie
+Montrer qu’une relation est asymétrique ssi elle est irréflexive et antisymétrique (sauf si… ?).
+
+Une relation peut-elle être symétrique et asymétrique ? Symétrique et antisymétrique ?
+
+== Inverse
+Définissons l’inverse de R comme : R^{-1} = {(b, a) | (a, b) ∈ R}.
+Montrer que R^{-1} est réflexive ssi R l’est.
+Qu’en est-il de ces autres propriétés ?
+
+* Irréflexivité
+* Symétrie
+* Antisymétrie
+* Transitivité
+
+== Opérations & propriétés
+Si R et S sont réflexives, R ∩ S est-elle réflexive ?
+Qu’en est-il de ces autres propriétés ?
+
+* Irréflexivité
+* Symétrie
+* Antisymétrie
+* Transitivité
+
+== À un près
+Définissons R = {(x, y) | x, y ∈ ℝ ∧ x > y + 1}. Quelles propriétés satisfait R ?
+
+== Expériences
+Effectuez les exercices 13 et 16 du livre de Roberts, pages 23 et 24, considérant nos cinq propriétés favorites.

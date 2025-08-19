@@ -1,0 +1,59 @@
+= Exercices S2
+
+== Séquences
+Considérons l’ensemble des séquences binaires de taille 10.
+Définissons R contenant les paires de séquences contenant le même nombre de 1.
+Montrez que R est une relation d’équivalence. 
+Identifiez les classes.
+
+== Définition d’équivalence
+Montrez que les trois propriétés indiquées sont requises dans la définition d’équivalence.
+
+== Opérations entre équivalences
+Si R et S sont des équivalences, R ∪ S en est-elle une ? Et R ∩ S ?
+
+== Classes
+Si R est une relation d’équivalence, alors a* = b* iff a ∈ b*.
+
+== Composition itérée
+Effectuez l’exercice 8 page 27 du livre de Roberts. (Plus difficile)
+
+== La relation ≥
+Let A = {(a, b): a, b ∈ {1, 2, 3, 4}}, and suppose
+(a, b)R(c, d) iff a ≥ c.
+Show that (A, R) is a weak order and calculate the reduction
+(R*).
+
+== Réduction
+Considérons R contenant ces paires.
+
+(a, a),(b, b), (x, x),(y,y),(a, a),{β, β),(γ, γ),
+(y, x),(x,y), (x, a), (x, b),(y, a),(y, b), (a, β),
+(a, γ),(β, α), (β, γ),(γ, α), (γ, β), (α, x), (α, y),
+(α, a), (α, b), (β, x) (β,y), (β, a), (β, b), (γ, x),
+(γ, y), (γ, α), (γ, b)
+
+Montrez que R est un préordre complet et calculez sa réduction.
+
+== Presque
+Définissons P sur les paires de réels comme 
+(a, b)P(s, t)
+iff
+a ≥ s & b ≥ t
+& (a >s or b>t).
+
+Montrez que P n’est pas un préordre complet.
+
+== Ordre lexicographique
+Définissons P sur les paires de réels comme 
+(a, b)P(s, t)
+iff
+a ≥ s or (a = s and b≥t).
+
+Est-elle une sorte de relation vue en cours ?
+
+== Nécessité
+Montrez que les définitions (ordre, préordre complet, ordre complet) requièrent toutes les propriétés indiquées
+
+== Réduction complète
+Si R est un ordre complet, montrer que R* est fortement complet et antisymétrique.
