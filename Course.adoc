@@ -168,6 +168,9 @@ The reduction of a complete preorder stem:[R] is a complete order on stem:[ℱ(R
 ==== Note about terminology
 For many authors (excluding Halmos but including Roberts), the set on which stem:[R] is defined is exogenous, thus a relation is a pair stem:[(A, R)] with stem:[R ⊆ A²] (hence stem:[ℱ(R) ⊆ A]). This allows for the possibility that stem:[ℱ(R) ≠ A]. Weak completeness is then defined as stem:[∀ a ≠ b ∈ A: a R b ν b R a]. Similarly, other definitions (such as reflexivity) then differ from those given here. In this document, we assume stem:[A] is chosen equal to stem:[ℱ(R)], in which case the definitions coincide.
 
+==== Exercices
+See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex2.html[Exercices S2].
+
 == Fundamental measurement
 * We want to assign numbers to reflect some properties of some systems.
 * Given relation stem:[R] “looks shorter than” on stem:[A = {a, b, …}], can we assign numbers stem:[f(a)] so that stem:[f(a) < f(b) ⇔ a R b]?
