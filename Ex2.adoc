@@ -20,10 +20,8 @@ Si R est une relation d’équivalence, alors a* = b* iff a ∈ b*.
 Effectuez l’exercice 8 page 27 du livre de Roberts. (Plus difficile)
 
 == La relation ≥
-Let A = {(a, b): a, b ∈ {1, 2, 3, 4}}, and suppose
-(a, b)R(c, d) iff a ≥ c.
-Show that (A, R) is a weak order and calculate the reduction
-(R*).
+Définissons A = {(a, b): a, b ∈ {1, 2, 3, 4}} et (a, b)R(c, d) iff a ≥ c.
+Montrez que R est un préordre complet et calculez la réduction R*.
 
 == Réduction
 Considérons R contenant ces paires.
