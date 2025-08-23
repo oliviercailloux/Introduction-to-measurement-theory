@@ -17,7 +17,7 @@ Each lecture: about 1h theory, 1h practice
 * Exams stem:[e]: average of both exams (equal weight)
 * Participation stem:[p]: each lecture, 0, + (significant intervention) or ++ (clever or committed intervention)
 * Notes in Asciidoc format through GitHub stem:[n] (talk to me first)
-* Final grade: weighted average of stem:[e] (9 points), stem:[max(e, p)] (3 points), stem:[max(e, n)] (8 points)
+* Final grade: weighted average of stem:[e] (9 points), stem:[max(e, p)] (3 points), stem:[max(e, n)] (up to 8 points)
 
 https://github.com/oliviercailloux/Teaching/blob/main/README.adoc#take-notes[Take notes]
 
@@ -48,9 +48,9 @@ Examples
 * stem:[=]
 * Logic operators: stem:[¬], stem:[∨], stem:[∧], stem:[⇒], stem:[⇔], stem:[∃], stem:[∀]
 * stem:[∉]
-* Produce other sets: {x ∈ A | …}, ⋃, ⋂, powerset, ×
+* Produce other sets: stem:[{x ∈ A | …}], stem:[∪], stem:[∩], stem:[℘], stem:[×]
 * Also: primitive elements
-* Ordered pair, sets thereof, domain, image, field
+* Ordered pair, sets thereof, domain stem:[𝒟], image stem:[𝓘], field stem:[ℱ]
 
 References
 
@@ -59,28 +59,28 @@ References
 
 == Relations and properties of relations
 === Definition and some properties
-* Binary relation on A: subset of A × A
-* Also: relation from A to A (homogeneous relation, our focus)
+* Binary relation on stem:[A]: subset of stem:[A × A]
+* Also: relation from stem:[A] to stem:[A] (homogeneous relation, our focus)
 * Relations between objects and persons
-* Notation: a R b means (a, b) ∈ R
+* Notation: stem:[a R b] means stem:[(a, b) ∈ R]
 
 Directed graph
 
 ==== Properties of relations
-In this document, properties of a relation stem:[R] are expressed with implicit qualifiers: a non bound letter stem:[x] is implicitly prefixed with ∀ stem:[x] ∈ field(stem:[R])
+In this document, properties of a relation stem:[R] are expressed with implicit qualifiers: a non bound letter stem:[x] is implicitly prefixed with stem:[∀x ∈ ℱ(R)]
 
 ==== Transitivity
-Transitive relation: a R b R c ⇒ a R c
+Transitive relation: stem:[a R b R c ⇒ a R c]
 
 * Transire, to pass to the other side, convey an action
 * I push my car VS I sleep in my car: push used transitively
 * Relates a to c through b
 
 ==== Reflexivity
-a R a
+stem:[a R a]
 
 ==== Irreflexivity
-¬(a R a)
+stem:[¬(a R a)]
 
 A relation that is not reflexive is not necessarily irreflexive (similarly for other properties).
 
@@ -90,16 +90,16 @@ A relation that is not reflexive is not necessarily irreflexive (similarly for o
 
 Here: mostly transitive and reflexive relations
 
-Hasse diagram: a R b, a ≠ b, corresponds to a line descending from a to b.
+Hasse diagram: stem:[a R b, a ≠ b], corresponds to a line descending from a to b.
 
 ==== Symmetry
-a R b ⇒ b R a
+stem:[a R b ⇒ b R a]
 
 ==== Asymmetry
-a R b ⇒ ¬(b R a)
+stem:[a R b ⇒ ¬(b R a)]
 
 ==== Antisymmetry
-a ≠ b ∧ a R b ⇒ ¬(b R a)
+stem:[a ≠ b ∧ a R b ⇒ ¬(b R a)]
 
 ==== Exercices
 See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.html[Exercices S1].
@@ -108,13 +108,15 @@ See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.htm
 ==== Equivalence
 An equivalence relation is a transitive, (reflexive and) symmetric relation.
 
-Each element in an equivalence relation has an associated equivalence class. The set of equivalence classes, called the quotient by R, is denoted by field(R)/R. It partitions (disjointly covers) field(R).
+Each element in an equivalence relation has an associated equivalence class. The set of equivalence classes, called the quotient by stem:[R], is denoted by stem:[ℱ(R) // R]. It partitions (disjointly covers) stem:[ℱ(R)].
 
-* Symmetric part of a relation R: sym(R) = {(a, a) ∈ R}
-* The symmetric part of a preorder R is an equivalence relation
-* Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by sym(R)) and orders them (possibly partially)
-* That ordering is a relation on its quotient by sym(R) and is called the reduction of a preorder R
-* Formally, the reduction of R is defined as {(a*, b*) ∈ field(R)/sym(R) × field(R)/sym(R) | ∃ a ∈ a*, b ∈ b* | a R b}.
+* Symmetric part of a relation stem:[R]: stem:[sym(R) = {(a, a) ∈ R}]
+* The symmetric part of a preorder stem:[R] is an equivalence relation
+* Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by stem:[sym(R)]) and orders them (possibly partially)
+* That ordering is a relation on its quotient by stem:[sym(R)] and is called the reduction of a preorder stem:[R]
+* Formally, the reduction of stem:[R] is defined as stem:[{(a^***, b^***) ∈ (ℱ(R) // sym(R))² | ∃ a ∈ a^***, b ∈ b^*** | a R b}].
+
+// stem:[{a ∈ A | ∃x ∈ X | x < a}]
 
 // === Converse
 // Optional
@@ -123,13 +125,13 @@ Each element in an equivalence relation has an associated equivalence class. The
 // Optional
 
 ==== Side-uniqueness, ontoness
-* Right-unique: a R b ∧ a R c ⇒ b = c
-* A right-unique relation is a function from domain(R) to image(R); we can write R(a) to denote the single b ∈ image(R) such that a R b.
-* Onto Y (right-total over Y): Y = image(R)
-* Left-unique (injective): b R a ∧ c R a ⇒ b = c
+* Right-unique: stem:[a R b ∧ a R c ⇒ b = c]
+* A right-unique relation is a function from stem:[𝒟(R)] to stem:[𝓘(R)]; we can write stem:[R(a)] to denote the single stem:[b ∈ 𝓘(R)] such that stem:[a R b].
+* Onto stem:[Y] (right-total over stem:[Y]): stem:[Y = 𝓘(R)]
+* Left-unique (injective): stem:[b R a ∧ c R a ⇒ b = c]
 
 ==== Weak completeness
-a ≠ b ⇒ a R b ∨ b R a
+stem:[a ≠ b ⇒ a R b ∨ b R a]
 
 ==== Order
 * Transitive, reflexive, antisymmetric
@@ -151,45 +153,45 @@ Intuitively: a (possibly partial) ranking without ties
 
 Intuitively: a ranking without ties
 
-The reduction of a complete preorder R is a complete order on field(R)/sym(R).
+The reduction of a complete preorder stem:[R] is a complete order on stem:[ℱ(R) // sym(R)].
 
 // === Strict order
 // Transitive and irreflexive
 // (Often called: strict partial order)
 
 ==== Generalisation to binary operations
-* A relation from X to Y is a subset of X × Y. It is non homogeneous when X ≠ Y.
-* A binary operation α on A is a right-unique relation from (A × A) to A whose domain is (A × A).
-* It can be viewed as a function from A × A to A; we can write a α b to denote the single c ∈ image(α) such that (a, b) α c.
-* Examples: +, × on ℕ.
+* A relation from stem:[X] to stem:[Y] is a subset of stem:[X × Y]. It is non homogeneous when stem:[X ≠ Y].
+* A binary operation stem:[α] on stem:[A] is a right-unique relation from stem:[A × A] to stem:[A] whose domain is stem:[(A × A)].
+* It can be viewed as a function from stem:[A × A] to stem:[A]; we can write stem:[a α b] to denote the single stem:[c ∈ 𝓘(α)] such that stem:[(a, b) α c].
+* Examples: stem:[+], stem:[×] on stem:[ℕ].
 
 ==== Note about terminology
-For many authors (excluding Halmos but including Roberts), the set on which R is defined is exogenous, thus a relation is a pair (A, R) with R ⊆ A² (hence field(R) ⊆ A). This allows for the possibility that field(R) ≠ A. Weak completeness is then defined as ∀ a ≠ b ∈ A: a R b ν b R a. Similarly, other definitions (such as reflexivity) then differ from those given here. In this document, we assume A is chosen equal to field(R), in which case the definitions coincide.
+For many authors (excluding Halmos but including Roberts), the set on which stem:[R] is defined is exogenous, thus a relation is a pair stem:[(A, R)] with stem:[R ⊆ A²] (hence stem:[ℱ(R) ⊆ A]). This allows for the possibility that stem:[ℱ(R) ≠ A]. Weak completeness is then defined as stem:[∀ a ≠ b ∈ A: a R b ν b R a]. Similarly, other definitions (such as reflexivity) then differ from those given here. In this document, we assume stem:[A] is chosen equal to stem:[ℱ(R)], in which case the definitions coincide.
 
 == Fundamental measurement
 * We want to assign numbers to reflect some properties of some systems.
-* Given relation R “looks shorter than” on A = {a, b, …}, can we assign numbers f(a) so that f(a) < f(b) iff a R b?
+* Given relation stem:[R] “looks shorter than” on stem:[A = {a, b, …}], can we assign numbers stem:[f(a)] so that stem:[f(a) < f(b) ⇔ a R b]?
 * Similarly for relations “preferred to”, “day with better air quality”.
 
-* We might also want to reflect operations such as “combining”: consider “is lighter”, with A including combined objects; can we then assign numbers f(.) so that when a and b combined are lighter than c, f(a) + f(b) < f(c); or so that when c denotes the combination of a and b, f(a) + f(b) = f(c)?
+* We might also want to reflect operations such as “combining”: consider “is lighter”, with A including combined objects; can we then assign numbers stem:[f(.)] so that when stem:[a] and stem:[b] combined are lighter than stem:[c], stem:[f(a) + f(b) < f(c)]; or so that when stem:[c] denotes the combination of stem:[a] and stem:[b], stem:[f(a) + f(b) = f(c)]?
 * Similarly for relation “preferred to” on sets of objects.
 
-* Relation R on A corresponds to relation T on ℝ through function f from A to ℝ: a R b iff f(a) T f(b).
-* (If T is restricted to the image of f, it is determined uniquely by f and R, in other words, R never corresponds to two relations T1 ≠ T2 through a single function f when field* (T1) = field(T2) = image(f). Proof: if R corresponds to T1 and T2 through f with field(T1) = field(T2) = image(f), then x T1 y iff a R b, for any a ∈ f-1(x), b ∈ f-1(y), iff x * T2 y thus T1 = T2.)
-* Operation ⊙ on A corresponds to operation α on ℝ through function f from A to ℝ: f(a ⊙ b) = f(a) α f(b).
-* R is homomorphic to T iff it corresponds to T through some function f.
-* (R, ⊙) is homomorphic to (T, α) iff R corresponds to T and ⊙ to α through the same function f.
-* More generally, (R, {⊙_i}) is homomorphic to (T, {α_i}) iff R corresponds to T through some function f and each ⊙_i corresponds to α_i through f.
-* The tuple (f, (T, {α_i})) is called a measurement scale for (R, {⊙_i}).
+* Relation stem:[R] on stem:[A] corresponds to relation stem:[T] on stem:[ℝ] through function stem:[f] from stem:[A] to stem:[ℝ]: stem:[a R b ⇔ f(a) T f(b)].
+* (If stem:[T] is restricted to the image of stem:[f], it is determined uniquely by stem:[f] and stem:[R], in other words, stem:[R] never corresponds to two relations stem:[T1 ≠ T2] through a single function stem:[f] when stem:[ℱ(T1) = ℱ(T2) = 𝓘(f)]. Proof: if R corresponds to T1 and T2 through f with ℱ(T1) = ℱ(T2) = 𝓘(f), then x T1 y iff a R b, for any a ∈ f-1(x), b ∈ f-1(y), iff x * T2 y thus T1 = T2.)
+* Operation stem:[⊙] on stem:[A] corresponds to operation stem:[α] on stem:[ℝ] through function stem:[f] from stem:[A] to stem:[ℝ]: stem:[f(a ⊙ b) = f(a) α f(b)].
+* stem:[R] is homomorphic to stem:[T] iff it corresponds to stem:[T] through some function stem:[f].
+* stem:[(R, ⊙)] is homomorphic to stem:[(T, α)] iff stem:[R] corresponds to stem:[T] and stem:[⊙] to stem:[α] through the same function stem:[f].
+* More generally, stem:[(R, {⊙_i})] is homomorphic to stem:[(T, {α_i})] iff stem:[R] corresponds to stem:[T] through some function stem:[f] and each stem:[⊙_i] corresponds to stem:[α_i] through stem:[f].
+* The tuple stem:[(f, (T, {α_i}))] is called a measurement scale for stem:[(R, {⊙_i})].
 // (If f is a scale, 
-// ∀x, y ∈ image(f): f-1(x) × f-1(y) ⊆ R ν f-1(x) × f-1(y) ⋂ R = ∅ 
+// ∀x, y ∈ 𝓘(f): f-1(x) × f-1(y) ⊆ R ν f-1(x) × f-1(y) ∩ R = ∅ 
 // and
 // f(f-1(x) o f-1(y)) is a singleton.)
 
 === Representation theorem
-* A theorem of the form: under such conditions on (R, {⊙_i}), the system is homomorphic to (T, {α_i}).
-* Constructive proof: gives a procedure to build a scale f.
-* Intuitively: transitivity of R is required for homomorphism to >.
+* A theorem of the form: under such conditions on stem:[(R, {⊙_i})], the system is homomorphic to stem:[(T, {α_i})].
+* Constructive proof: gives a procedure to build a scale stem:[f].
+* Intuitively: transitivity of stem:[R] is required for homomorphism to stem:[≥].
 
 Uniqueness: to determine properties of the numbers that transfer to our observations.
 
@@ -197,10 +199,10 @@ Uniqueness: to determine properties of the numbers that transfer to our observat
 * Number of persons VS height of a person
 * Ratio of weight VS ratio of t°
 
-Given (R, {⊙_i}) corresponding to (T, {α_i}) through f, admissible transformation φ from f(A) to ℝ (thus φ ∘ f from A to ℝ): (R, {⊙_i}) corresponds to (T, {α_i}) through φ ∘ f.
+Given stem:[(R, {⊙_i})] corresponding to stem:[(T, {α_i})] through stem:[f], admissible transformation stem:[φ] from stem:[f(A)] to stem:[ℝ] (thus stem:[φ ∘ f] from stem:[A] to stem:[ℝ]): stem:[(R, {⊙_i})] corresponds to stem:[(T, {α_i})] through stem:[φ ∘ f].
 
 // R has a regular homomorphism to T: it has a homomorphism to T and for every scales (f, (T, {α_i})), (g, (T, {α_i})), for some φ, g = φ ∘ f.
-R has a regular homomorphism to T: it has a homomorphism to T and for every scales (f, (T, {α_i})), (g, (T, {α_i})), f(a) = f(b) ⇔ g(a) = g(b).
+stem:[R] has a regular homomorphism to stem:[T]: it has a homomorphism to stem:[T] and for every scales stem:[(f, (T, {α_i}))], stem:[(g, (T, {α_i}))], stem:[f(a) = f(b) ⇔ g(a) = g(b)].
 
 Scale type depends on the class of admissible transformations φ.
 
@@ -214,22 +216,18 @@ Scale type depends on the class of admissible transformations φ.
 
 == Representation of complete preorders
 === Arithmetic and infinite sets
-* Successor of stem:[s]: stem:[s] ⋃ {stem:[s]}
+* Successor of stem:[s]: stem:[s ⋃ {s}]
 * Axiom of infinity: ∃ successor set A
 * ℕ: intersection of all successor sets in A
 * Permits induction, which we use to define addition of zero, then addition of one, …
 * Finite set: bijection with an element of ℕ
 
 === The ≥ relation
-* If R is a complete preorder and field(R) is finite, it is homomorphic to ≥.
+* If R is a complete preorder and ℱ(R) is finite, it is homomorphic to ≥.
 * Necessary and sufficient conditions.
 * Can we relax finiteness?
 
 Scale type: ordinal
-
-=== Density
-
-=== Infinite cases
 
 == When indifference is not transitive
 === Requirement of transitivity
@@ -254,6 +252,39 @@ Incomparability
 * Constant threshold δ
 
 Won’t do for incomparability: Pony* ≻ Pony, Bicycle ≽ Pony*, Bicycle* ≻ Bicycle but Pony ≽ Bicycle*.
+
+=== Completed semiorder
+≽ is a completed semiorder: weakly complete and reflexive and satisfies
+
+* S2: a ≽ b ∧ c ≽ d ⇒ c ≽ b ∨ a ≽ d
+* S3: a ≽ b ≽ c ⇒ a ≽ d ∨ d ≽ c
+
+Covers: a W c iff (d ≽ a ⇒ d ≽ c) ∧ (c ≽ d ⇒ a ≽ d).
+
+* S2 and S3 are together equivalent to ∀a ≻ b ≽ c: a W c.
+* S2 and S3 are together equivalent to ∀a ≽ b ≻ c: a W c.
+
+Equivalently:
+
+* S2 can be written ¬(a ≽ b ≻ c ≽ d ≻ a) and S3 can be written ¬(c ≻ d ≻ a ≽ b ≽ c), writing x ≻ y iff ¬(y ≽ x).
+* S2 can be written ¬(d ≽ a ≻ b ≽ c ≻ d) and S3 can be written ¬(d ≻ a ≻ b ≽ c ≽ d).
+* S2 can be written ∀a ≻ b ≽ c: (d ≽ a ⇒ d ≽ c) and S3 can be written ∀a ≻ b ≽ c: (c ≽ d ⇒ a ≽ d).
+* S2 can be written ¬(c ≻ d ≽ a ≻ b ≽ c) and S3 can be written ¬(b ≽ c ≽ d ≻ a ≻ b).
+* Renaming, S2 can be written ¬(d ≻ a ≽ b ≻ c ≽ d) and S3 can be written ¬(d ≽ a ≽ b ≻ c ≻ d).
+* Thus, S2 can be written ∀a ≽ b ≻ c: (c ≽ d ⇒ a ≽ d) and S3 can be written ∀a ≽ b ≻ c: (d ≽ a ⇒ d ≽ c).
+* By contrapositive, using these two equivalences, ¬(a W c) ⇒ ∀b: (b ≽ c ⇒ b ≽ a) ∧ (a ≽ b ⇒ c ≽ b), in other words, ¬(a W c) ⇒ c W a.
+
+If ≽ is a completed semiorder, then W is a complete preorder.
+Proof. Transitive: If c ≽ d then by b W c ≽ d we get b ≽ d and by a W b ≽ d we get a ≽ d. It is strongly complete, as seen just above.
+
+If ≽ is a completed semiorder, then c W b ⇒ c ≽ b (and b ≻ c ⇒ b W c).
+Proof. c W b ⇒ (c ≽ c ⇒ c ≽ b) ⇒ c ≽ b (and use contrapositive and completeness of W).
+
+Thm. If ≽ is a completed semiorder, then a W b W c ~ a ⇒ a ~ b ~ c, writing x ~ y iff x ≽ y ≽ x.
+Pr. Rewrite the hypothesis as c ≽ a W b W c ≽ a and obtain c ≽ b ≽ a by definition of W and a ≽ b ≽ c using W ⊆ ≽.
+
+=== Representation theorem
+If ≽ is a completed semiorder, then there exists a function f from ℱ(≽) to ℝ such that stem:[f(a) ≥_1 f(b) ⇔ a ≽ b].
 
 === Related applications
 * Liberal to conservative politics

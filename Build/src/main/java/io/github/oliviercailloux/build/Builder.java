@@ -2,9 +2,12 @@ package io.github.oliviercailloux.build;
 
 import static io.github.oliviercailloux.build.Resourcer.charSource;
 
+import com.google.common.base.VerifyException;
 import com.google.common.io.CharSource;
 import io.github.oliviercailloux.docbook.DocBookResources;
+import io.github.oliviercailloux.jaris.xml.ConformityChecker;
 import io.github.oliviercailloux.jaris.xml.KnownFactory;
+import io.github.oliviercailloux.jaris.xml.XmlTransformer;
 import io.github.oliviercailloux.jaris.xml.XmlTransformerFactory;
 import io.github.oliviercailloux.publish.DocBookConformityChecker;
 import java.io.IOException;
@@ -16,34 +19,62 @@ import org.asciidoctor.Options;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Builder {
+public class Builder implements AutoCloseable{
   @SuppressWarnings("unused")
   private static final Logger LOGGER = LoggerFactory.getLogger(Builder.class);
+  
+  private static final Path INPUT_DIR = Path.of("..");
+  private static final Path OUTPUT_DIR = Path.of("../../Online Pages/");
+  private static final CharSource STYLE = charSource("MyStyle.xsl");
 
-  public static void main(String[] args) throws Exception {
-    new Builder().proceed();
+  public static void main(String[] args) throws IOException {
+    try (Builder builder = new Builder()) {
+      builder.convert("Course");
+      builder.convert("Ex1");
+      builder.convert("Ex2");
+    }
   }
 
-  public void proceed() throws IOException, ClassNotFoundException {
-    LOGGER.info("Compiling.");
-    final Path adoc = Path.of("../Course.adoc");
-    final Path outputDir = Path.of("../../Online Pages/");
+  private final Asciidoctor asciidoctor;
+  private final Options options;
+  private final ConformityChecker docBookChecker;
+  private final XmlTransformer transformer;
 
-    final String docBook;
-    try (Asciidoctor adocConverter = Asciidoctor.Factory.create()) {
-      docBook = adocConverter.convert(Files.readString(adoc),
-          Options.builder().standalone(true).backend("docbook").build());
+  private Builder() {
+    asciidoctor = Asciidoctor.Factory.create();
+    options = Options.builder().standalone(true).backend("docbook").build();
+    docBookChecker = DocBookConformityChecker.usingEmbeddedSchema();
+
+    TransformerFactory underlying;
+    try {
+      underlying = KnownFactory.SAXON.factory();
+    } catch (ClassNotFoundException e) {
+      throw new VerifyException(e);
     }
-    DocBookConformityChecker.usingEmbeddedSchema().verifyValid(CharSource.wrap(docBook));
-    Files.writeString(outputDir.resolve("out.dbk"), docBook);
-
-    final CharSource stylesheet = charSource("MyStyle.xsl");
-
-    TransformerFactory underlying = KnownFactory.SAXON.factory();
     underlying.setURIResolver(DocBookResources.RESOLVER);
-    final XmlTransformerFactory transformerFactory = XmlTransformerFactory.usingFactory(underlying);
+    try {
+      transformer = XmlTransformerFactory.usingFactory(underlying).usingStylesheet(STYLE);
+    } catch (IOException e) {
+      throw new VerifyException(e);
+    }
+  }
 
-    final String html = transformerFactory.usingStylesheet(stylesheet).charsToChars(docBook);
-    Files.writeString(outputDir.resolve("Course.html"), html);
+  public void convert(String name) throws IOException {
+    final Path adoc = INPUT_DIR.resolve("%s.adoc".formatted(name));
+    LOGGER.info("Converting {} to DocBook.", adoc);
+    final String docBook = asciidoctor.convert(Files.readString(adoc),
+        options);
+    LOGGER.info("Validating DocBook.");
+    docBookChecker.verifyValid(CharSource.wrap(docBook));
+    // Files.writeString(OUTPUT_DIR.resolve("out.dbk"), docBook);
+
+    LOGGER.info("Transforming DocBook to HTML.");
+    final String html = transformer.charsToChars(docBook);
+    Files.writeString(OUTPUT_DIR.resolve("%s.html".formatted(name)), html);
+  }
+
+  @Override
+  public void close() {
+    asciidoctor.close();
   }
 }

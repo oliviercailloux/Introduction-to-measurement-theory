@@ -1,4 +1,5 @@
 = Exercices S2
+:lang: fr
 
 == Séquences
 Considérons l’ensemble des séquences binaires de taille 10.

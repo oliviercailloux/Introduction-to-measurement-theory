@@ -1,13 +1,14 @@
 = Exercices S1
+:lang: fr
 
-== Sœur
+== Sororité
 Imaginez que dans cette classe se trouve trois familles de deux ou trois enfants chacune (imaginez comme vous voulez qui en est membre). Les autres sont issus de familles distinctes.
 
 Définissez la relation représentant « sœur de » dans cette classe, selon deux façons raisonnables de comprendre cette expression, l’une réflexive, l’autre irréflexive.
 Cette relation est-elle transitive ?
 Définissez la relation sur un sous-ensemble de personnes pour lui faire satisfaire une propriété supplémentaire au choix vue en cours.
 
-== Gauchiste
+== Gauchisme
 Définissez la relation représentant « assis à la gauche de » dans cette classe, en précisant comment vous comprenez cette relation.
 Quelles propriétés satisfait-elle ?
 
