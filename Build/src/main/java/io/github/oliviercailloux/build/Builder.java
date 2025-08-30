@@ -20,10 +20,10 @@ import org.asciidoctor.Options;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Builder implements AutoCloseable{
+public class Builder implements AutoCloseable {
   @SuppressWarnings("unused")
   private static final Logger LOGGER = LoggerFactory.getLogger(Builder.class);
-  
+
   private static final Path INPUT_DIR = Path.of("");
   private static final Path OUTPUT_DIR = Path.of("../Online Pages/");
   private static final CharSource STYLE = charSource("MyStyle.xsl");
@@ -62,10 +62,10 @@ public class Builder implements AutoCloseable{
 
   public void convert(String name) throws IOException {
     final Path adoc = INPUT_DIR.resolve("%s.adoc".formatted(name));
-    if(!Files.exists(adoc)) LOGGER.info(Files.list(INPUT_DIR).collect(ImmutableSet.toImmutableSet()).toString());
+    if (!Files.exists(adoc))
+      LOGGER.info(Files.list(INPUT_DIR).collect(ImmutableSet.toImmutableSet()).toString());
     LOGGER.info("Converting {} to DocBook.", adoc);
-    final String docBook = asciidoctor.convert(Files.readString(adoc),
-        options);
+    final String docBook = asciidoctor.convert(Files.readString(adoc), options);
     LOGGER.info("Validating DocBook.");
     docBookChecker.verifyValid(CharSource.wrap(docBook));
     // Files.writeString(OUTPUT_DIR.resolve("out.dbk"), docBook);
