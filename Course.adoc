@@ -2,7 +2,7 @@
 :stem:
 
 == Introduction to the course
-This course is based on Fred Roberts’ book, https://doi.org/10.1017/CBO9780511759871[Measurement Theory]. Almost all exercices come from his book.
+This course is based on Fred Roberts’ book, https://doi.org/10.1017/CBO9780511759871[Measurement Theory]. Most exercices come from his book.
 
 === Organization
 * S1, S2 : Relations
@@ -29,7 +29,7 @@ https://github.com/oliviercailloux/Teaching/blob/main/README.adoc#take-notes[Tak
 * Measurement theory ≠ Measure theory (which does not start from supposedly observable relations)
 
 === Motivation
-* Introduce rigorous reasonings in decision making
+* Introduce rigorous reasoning in decision making
 * Use mathematical language for precision
 * Mathematics only takes care of a small part! (Also: political science, sociology, psychology, economics…)
 * A rigorous introduction to some fundamental constructs of mathematics
@@ -37,8 +37,8 @@ https://github.com/oliviercailloux/Teaching/blob/main/README.adoc#take-notes[Tak
 Examples
 
 * Measure pollution
-* Organize society so as to maximize global utility
-* Distribute resources fairly
+* Organize society so as to maximize global utility (https://en.wikipedia.org/wiki/The_Methods_of_Ethics[The Methods of Ethics] by Henry Sidgwick)
+* Distribute resources fairly (https://en.wikipedia.org/wiki/A_Theory_of_Justice[A Theory of Justice] by John Rawls)
 * Reduce inequality
 * Satisfy citizen’s preferences
 
@@ -54,14 +54,14 @@ Examples
 
 References
 
-* Refer to the delightful book of Halmos: Naive set theory.
-* For more context, read Logicomics.
+* Refer to the delightful book of Halmos: https://doi.org/10.1007%2F978-1-4757-1645-0[Naive set theory].
+* For more context, read https://www.logicomix.com/[Logicomix].
 
 == Relations and properties of relations
 === Definition and some properties
-* Binary relation on stem:[A]: subset of stem:[A × A]
-* Also: relation from stem:[A] to stem:[A] (homogeneous relation, our focus)
-* Relations between objects and persons
+* Relation from stem:[A] to stem:[A]: subset of stem:[A × A] (homogeneous relation, our focus)
+* Also called Binary relation on stem:[A]
+* Relations between objects, persons, …
 * Notation: stem:[a R b] means stem:[(a, b) ∈ R]
 
 Directed graph
@@ -106,11 +106,11 @@ See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.htm
 
 === A zoo of relations
 ==== Equivalence
-An equivalence relation is a transitive, (reflexive and) symmetric relation.
+An equivalence relation is a transitive (, reflexive) and symmetric relation.
 
 Each element in an equivalence relation has an associated equivalence class. The set of equivalence classes, called the quotient by stem:[R], is denoted by stem:[ℱ(R) // R]. It partitions (disjointly covers) stem:[ℱ(R)].
 
-* Symmetric part of a relation stem:[R]: stem:[sym(R) = {(a, a) ∈ R}]
+* Symmetric part of a relation stem:[R]: stem:[sym(R) = {(a, b) ∈ R | (b, a) ∈ R}]
 * The symmetric part of a preorder stem:[R] is an equivalence relation
 * Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by stem:[sym(R)]) and orders them (possibly partially)
 * That ordering is a relation on its quotient by stem:[sym(R)] and is called the reduction of a preorder stem:[R]
