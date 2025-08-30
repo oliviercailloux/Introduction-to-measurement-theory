@@ -6,4 +6,4 @@ https://github.com/oliviercailloux/Introduction-to-measurement-theory/blob/main/
 
 == Workflow
 Build locally into another local folder.
-That local folder is synced to this same repository but in (initially https://stackoverflow.com/a/34100189/[orphan]) branch gh-pages.
+That local folder is synchronized to this same repository but in (initially https://stackoverflow.com/a/34100189/[orphan]) branch gh-pages.
