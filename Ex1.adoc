@@ -22,7 +22,6 @@ Montrer qu’une relation est asymétrique ssi elle est irréflexive et antisym�
 
 Une relation peut-elle être symétrique et asymétrique ? Symétrique et antisymétrique ?
 
-
 == Inverse
 Définissons l’inverse de stem:[R] comme : stem:[R^{-1} = {(b, a) | (a, b) ∈ R}].
 Montrer que stem:[R^{-1}] est réflexive ssi stem:[R] l’est.
