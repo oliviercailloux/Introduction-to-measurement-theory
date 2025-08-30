@@ -18,7 +18,7 @@ Avec stem:[S] et stem:[G] les relations ci-dessus (dans une certaine acception d
 // Définissons la composition comme : stem:[A ∘ B = {(b_1, a_2) | (a_1, a_2) ∈ A ∧ (b_1, b_2) ∈ B ∧ a_1 = b_2}].
 
 == Antisymétrie
-Montrer qu’une relation est asymétrique ssi elle est irréflexive et antisymétrique (sauf si… ?).
+Préciser et démontrer : une relation est asymétrique ssi elle est irréflexive et antisymétrique, sauf si…
 
 Une relation peut-elle être symétrique et asymétrique ? Symétrique et antisymétrique ?
 
