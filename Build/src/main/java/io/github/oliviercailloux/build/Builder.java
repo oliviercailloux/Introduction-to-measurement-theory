@@ -3,6 +3,7 @@ package io.github.oliviercailloux.build;
 import static io.github.oliviercailloux.build.Resourcer.charSource;
 
 import com.google.common.base.VerifyException;
+import com.google.common.collect.ImmutableSet;
 import com.google.common.io.CharSource;
 import io.github.oliviercailloux.docbook.DocBookResources;
 import io.github.oliviercailloux.jaris.xml.ConformityChecker;
@@ -23,8 +24,8 @@ public class Builder implements AutoCloseable{
   @SuppressWarnings("unused")
   private static final Logger LOGGER = LoggerFactory.getLogger(Builder.class);
   
-  private static final Path INPUT_DIR = Path.of("..");
-  private static final Path OUTPUT_DIR = Path.of("../../Online Pages/");
+  private static final Path INPUT_DIR = Path.of("");
+  private static final Path OUTPUT_DIR = Path.of("../Online Pages/");
   private static final CharSource STYLE = charSource("MyStyle.xsl");
 
   public static void main(String[] args) throws IOException {
@@ -61,6 +62,7 @@ public class Builder implements AutoCloseable{
 
   public void convert(String name) throws IOException {
     final Path adoc = INPUT_DIR.resolve("%s.adoc".formatted(name));
+    if(!Files.exists(adoc)) LOGGER.info(Files.list(INPUT_DIR).collect(ImmutableSet.toImmutableSet()).toString());
     LOGGER.info("Converting {} to DocBook.", adoc);
     final String docBook = asciidoctor.convert(Files.readString(adoc),
         options);
