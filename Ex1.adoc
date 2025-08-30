@@ -34,7 +34,7 @@ Qu’en est-il de ces autres propriétés ?
 * Transitivité
 
 == Opérations & propriétés
-Si R et S sont réflexives, R ∩ S est-elle réflexive ?
+Si stem:[R] et stem:[S] sont réflexives, stem:[R ∩ S] est-elle réflexive ?
 Qu’en est-il de ces autres propriétés ?
 
 * Irréflexivité
