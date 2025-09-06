@@ -2,7 +2,7 @@
 :stem:
 
 == Introduction to the course
-This course is based on Fred Roberts’ book, https://doi.org/10.1017/CBO9780511759871[Measurement Theory]. Most exercices come from his book.
+This course is based on Fred Roberts’ book, https://doi.org/10.1017/CBO9780511759871[Measurement Theory]. Most of the exercices come from his book.
 
 === Organization
 * S1, S2 : Relations
