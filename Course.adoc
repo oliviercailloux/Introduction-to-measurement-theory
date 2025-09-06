@@ -38,7 +38,7 @@ Examples
 
 * Measure pollution
 * Organize society so as to maximize global utility (https://en.wikipedia.org/wiki/The_Methods_of_Ethics[The Methods of Ethics] by Henry Sidgwick)
-* Distribute resources fairly (https://en.wikipedia.org/wiki/A_Theory_of_Justice[A Theory of Justice] by John Rawls)
+* Distribute resources fairly (https://en.wikipedia.org/wiki/A_Theory_of_Justice[A Theory of Justice] by John Rawls, https://global.oup.com/academic/product/natural-justice-9780199791484[Natural Justice] by Ken Binmore)
 * Reduce inequality
 * Satisfy citizen’s preferences
 
