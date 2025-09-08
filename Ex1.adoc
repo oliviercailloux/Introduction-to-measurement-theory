@@ -22,6 +22,8 @@ Démontrer : une relation est asymétrique ssi elle est irréflexive et antisym�
 
 Préciser et démontrer : une relation symétrique n’est pas asymétrique, sauf si…
 
+Préciser et démontrer : une relation asymétrique n’est pas symétrique, sauf si…
+
 Caractériser les relations symétriques et antisymétriques.
 
 == Inverse
