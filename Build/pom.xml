@@ -13,6 +13,7 @@
   <name>Builder</name>
   <properties>
     <github-repository>${project.name}</github-repository>
+    <exec.mainClass>io.github.oliviercailloux.build.Builder</exec.mainClass>
   </properties>
 
   <dependencies>

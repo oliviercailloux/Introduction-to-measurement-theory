@@ -29,6 +29,7 @@ public class Builder implements AutoCloseable {
   private static final CharSource STYLE = charSource("MyStyle.xsl");
 
   public static void main(String[] args) throws IOException {
+    LOGGER.debug("CWD: {}.", Path.of(".").toAbsolutePath().normalize());
     try (Builder builder = new Builder()) {
       builder.convert("Course");
       builder.convert("Ex1");
