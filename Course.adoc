@@ -4,8 +4,29 @@
 == Introduction to the course
 This course is based on Fred Roberts’ book, https://doi.org/10.1017/CBO9780511759871[Measurement Theory]. Most of the exercices come from his book.
 
+=== What
+* Measurement: represent aspects of a concrete system abstractly, using numbers, vectors…
+* Measurement theory: represent relations among objects using relations among numbers
+* Representability theorems
+* Measurement also includes metrology
+* Measurement theory ≠ Measure theory (which does not start from supposedly observable relations)
+
+=== Examples
+
+* Measure pollution
+* Organize society so as to maximize global utility (https://en.wikipedia.org/wiki/The_Methods_of_Ethics[The Methods of Ethics] by Henry Sidgwick)
+* Distribute resources fairly (https://en.wikipedia.org/wiki/A_Theory_of_Justice[A Theory of Justice] by John Rawls, https://global.oup.com/academic/product/natural-justice-9780199791484[Natural Justice] by Ken Binmore)
+* Reduce inequality
+* Satisfy citizen’s preferences
+
+=== Motivation
+* Introduce rigorous reasoning in decision making
+* Use mathematical language for precision
+* Mathematics only takes care of a small part! (Also: political science, sociology, psychology, economics…)
+* A rigorous introduction to some fundamental constructs of mathematics
+
 === Organization
-* S1, S2 : Relations
+* S1, S2 (, S3) : Relations
 * S3, S4 : Fundamental measurement
 * S5 : exam
 * S6 : A simple representation theorem
@@ -20,27 +41,6 @@ Each lecture: about 1h theory, 1h practice
 * Final grade: weighted average of stem:[e] (9 points), stem:[max(e, p)] (3 points), stem:[max(e, n)] (up to 8 points)
 
 https://github.com/oliviercailloux/Teaching/blob/main/README.adoc#take-notes[Take notes]
-
-=== What
-* Measurement: represent aspects of a concrete system abstractly, using numbers, vectors…
-* Measurement theory: represent relations among objects using relations among numbers
-* Representability theorems
-* Measurement also includes metrology
-* Measurement theory ≠ Measure theory (which does not start from supposedly observable relations)
-
-=== Motivation
-* Introduce rigorous reasoning in decision making
-* Use mathematical language for precision
-* Mathematics only takes care of a small part! (Also: political science, sociology, psychology, economics…)
-* A rigorous introduction to some fundamental constructs of mathematics
-
-Examples
-
-* Measure pollution
-* Organize society so as to maximize global utility (https://en.wikipedia.org/wiki/The_Methods_of_Ethics[The Methods of Ethics] by Henry Sidgwick)
-* Distribute resources fairly (https://en.wikipedia.org/wiki/A_Theory_of_Justice[A Theory of Justice] by John Rawls, https://global.oup.com/academic/product/natural-justice-9780199791484[Natural Justice] by Ken Binmore)
-* Reduce inequality
-* Satisfy citizen’s preferences
 
 === Primitive notions
 * Set, stem:[∅]
