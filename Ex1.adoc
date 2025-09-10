@@ -2,7 +2,9 @@
 :lang: fr
 
 == Sororité
-Imaginez que dans cette classe se trouve trois familles de deux ou trois enfants chacune (imaginez comme vous voulez qui en est membre). Les autres sont issus de familles distinctes.
+Imaginez que dans cette classe se trouve trois familles de deux ou trois enfants chacune (imaginez comme vous voulez qui en est membre). 
+Nos familles fictives volontaires : {Laure, Laureline}, {Agnès, Blanche}, {Roxane, Anna, Charline}.
+Les autres sont issus de familles distinctes.
 
 Définissez la relation représentant « sœur de » dans cette classe, selon deux façons raisonnables de comprendre cette expression, l’une réflexive, l’autre irréflexive.
 Cette relation est-elle transitive ?
