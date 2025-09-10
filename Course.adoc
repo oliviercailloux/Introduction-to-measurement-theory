@@ -79,6 +79,10 @@ Transitive relation: stem:[a R b R c ⇒ a R c]
 ==== Reflexivity
 stem:[a R a]
 
+==== Start exercices
+See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.html[Exercices S1].
+TODO: up to and including exercice 3.
+
 ==== Irreflexivity
 stem:[¬(a R a)]
 
