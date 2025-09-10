@@ -51,4 +51,4 @@ Qu’en est-il de ces autres propriétés ?
 Définissons stem:[R = {(x, y) | x, y ∈ ℝ ∧ x > y + 1}]. Quelles propriétés satisfait stem:[R] ?
 
 == Expériences
-Effectuez les exercices 13, 16 et 18 du livre de Roberts, pages 23 et 24, considérant nos cinq propriétés favorites.
+Effectuez les exercices 13 et 16 du livre de Roberts, pages 23 et 24, considérant nos cinq propriétés favorites.

@@ -82,6 +82,7 @@ stem:[a R a]
 ==== Start exercices
 See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.html[Exercices S1].
 TODO: up to and including exercice 3.
+// introduction
 
 ==== Irreflexivity
 stem:[¬(a R a)]
@@ -119,14 +120,6 @@ Each element in an equivalence relation has an associated equivalence class. The
 * Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by stem:[sym(R)]) and orders them (possibly partially)
 * That ordering is a relation on its quotient by stem:[sym(R)] and is called the reduction of a preorder stem:[R]
 * Formally, the reduction of stem:[R] is defined as stem:[{(a^***, b^***) ∈ (ℱ(R) // sym(R))² | ∃ a ∈ a^***, b ∈ b^*** | a R b}].
-
-// stem:[{a ∈ A | ∃x ∈ X | x < a}]
-
-// === Converse
-// Optional
-
-// === Negative transitivity
-// Optional
 
 ==== Side-uniqueness, ontoness
 * Right-unique: stem:[a R b ∧ a R c ⇒ b = c]
