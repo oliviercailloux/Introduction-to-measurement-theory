@@ -1,8 +1,13 @@
 = Exercices S2
 :lang: fr
 
-== 
-La relation “est ami avec” sur un ensemble de gens est-elle une relation d’équivalence ? Considérez vous-même et deux autres personnes de la classe et imaginez trois scénarios différents.
+== Rouages
+La relation “ont le même nombre de roues” sur un ensemble de véhicules est-elle une relation d’équivalence ? 
+Donnez un exemple de telle relation sur un ensemble de six éléments qui forment une seule classe d’équivalence. 
+Donnez un exemple de telle relation sur un ensemble de six éléments qui forment trois classes d’équivalence.
+
+== Amitié
+La relation “est ami avec” sur un ensemble de gens est-elle une relation d’équivalence ? Considérez vous-même et deux autres personnes hypothétiques et imaginez trois scénarios différents.
 
 == Grandeur
 Montrez que la relation “au moins aussi grand que” sur un ensemble de gens de mêmes tailles est une relation d’équivalence.
@@ -11,43 +16,42 @@ Montrez que la relation “au moins aussi grand que” sur un ensemble de gens d
 Montrez que les trois propriétés indiquées ne sont pas requises dans la définition d’équivalence.
 
 == Opérations entre équivalences
-Si R et S sont des équivalences, R ∪ S en est-elle une ? Et R ∩ S ?
+Si stem:[R] et stem:[S] sont des équivalences, stem:[R ∪ S] en est-elle une ? Et stem:[R ∩ S] ?
 
 == Classes
-Si R est une relation d’équivalence, alors a* = b* ⇔ a ∈ b*.
+Si stem:[R] est une relation d’équivalence, alors stem:[a^*** = b^*** ⇔ a ∈ b^***].
 
 == Composition itérée
 Effectuez l’exercice 8 page 27 du livre de Roberts. (Plus difficile)
 
 == La relation ≥
-Définissons A = {(a, b): a, b ∈ {1, 2, 3, 4}} et (a, b)R(c, d) ⇔ a ≥ c.
-Montrez que R est un préordre complet et calculez la réduction R*.
+Définissons stem:[A = {(a, b): a, b ∈ {1, 2, 3, 4}}] et stem:[(a, b)R(c, d) ⇔ a ≥ c].
+Montrez que stem:[R] est un préordre complet et calculez la réduction stem:[R^***].
 
 == Réduction
-Considérons R contenant ces paires.
-
-(a, a),(b, b), (x, x),(y,y),(a, a), (β, β),(γ, γ),
+Considérons stem:[R] contenant ces paires :
+stem:[(a, a),(b, b), (x, x),(y,y),(a, a), (β, β),(γ, γ),
 (y, x),(x,y), (x, a), (x, b),(y, a),(y, b), (a, β),
 (a, γ),(β, α), (β, γ),(γ, α), (γ, β), (α, x), (α, y),
 (α, a), (α, b), (β, x) (β,y), (β, a), (β, b), (γ, x),
-(γ, y), (γ, α), (γ, b)
+(γ, y), (γ, α), (γ, b)].
 
-Montrez que R est un préordre complet et calculez sa réduction.
+Montrez que stem:[R] est un préordre complet et calculez sa réduction.
 
 == Presque
-Définissons P sur les paires de réels comme 
-(a, b)P(s, t)
+Définissons stem:[P] sur les paires de réels comme 
+stem:[(a, b)P(s, t)
 ⇔
 a ≥ s & b ≥ t
-& (a >s or b>t).
+& (a >s or b>t)].
 
-Montrez que P n’est pas un préordre complet.
+Montrez que stem:[P] n’est pas un préordre complet.
 
 == Ordre lexicographique
-Définissons P sur les paires de réels comme 
-(a, b)P(s, t)
+Définissons stem:[P] sur les paires de réels comme 
+stem:[(a, b)P(s, t)
 ⇔
-a ≥ s or (a = s and b≥t).
+a ≥ s or (a = s and b≥t)].
 
 Est-elle une sorte de relation vue en cours ?
 
@@ -55,18 +59,18 @@ Est-elle une sorte de relation vue en cours ?
 Montrez que les définitions (ordre, préordre complet, ordre complet) requièrent toutes les propriétés indiquées
 
 == Réduction complète
-Si R est un ordre complet, montrer que R* est fortement complet et antisymétrique.
+Si stem:[R] est un ordre complet, montrer que stem:[R^***] est fortement complet et antisymétrique.
 
 == Diagrammes
 Choisissez le diagramme approprié pour représenter la relation
-R = {(1, 1), (2, 2), (3, 3), (4, 4), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)}.
+stem:[R = {(1, 1), (2, 2), (3, 3), (4, 4), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)}].
 
 == Inclusion
-Quel est le type de la relation ⊆ sur les sous-ensembles de {1, 2, 3, 4} ?
+Quel est le type de la relation stem:[⊆] sur les sous-ensembles de stem:[{1, 2, 3, 4}] ?
 Choisissez le diagramme approprié pour représenter cette relation.
 
 == Dimension
 Effectuez les exercices 12 à 18 du livre de Roberts, pages 39 à 40 (plus difficile).
 
 == Opérations
-Montrez que R{a, b, c) ⇔ a + b = c définit une opération sur ℕ, mais pas S(a, b, c) ⇔ a — b = c ni T(a, b, c) ⇔ a + b + c = 0.
+Montrez que stem:[R{a, b, c) ⇔ a + b = c] définit une opération sur stem:[ℕ], mais pas stem:[S(a, b, c) ⇔ a - b = c] ni stem:[T(a, b, c) ⇔ a + b + c = 0].

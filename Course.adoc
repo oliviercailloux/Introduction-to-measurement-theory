@@ -74,7 +74,7 @@ Transitive relation: stem:[a R b R c ⇒ a R c]
 
 * Transire, to pass to the other side, convey an action
 // * I push my car VS I sleep in my car: push used transitively
-* Relates a to c through b
+* Relates stem:[a] to stem:[c] through stem:[b]
 
 ==== Reflexivity
 stem:[a R a]
@@ -82,6 +82,8 @@ stem:[a R a]
 ==== Start exercices
 See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.html[Exercices S1].
 TODO: up to and including exercice 3.
+// questions ?
+// bruit
 // introduction
 // corr exs to 3: irrefl? Hasse?
 
@@ -89,6 +91,7 @@ TODO: up to and including exercice 3.
 stem:[¬(a R a)]
 
 A relation that is not reflexive is not necessarily irreflexive (similarly for other properties).
+// Example: liking
 
 ==== Preorder
 * Transitive and reflexive
@@ -96,7 +99,7 @@ A relation that is not reflexive is not necessarily irreflexive (similarly for o
 
 Here: mostly transitive and reflexive relations
 
-Hasse diagram: stem:[a R b, a ≠ b], corresponds to a line descending from a to b.
+Hasse diagram: stem:[a R b, a ≠ b], corresponds to a line descending from stem:[a] to stem:[b].
 
 ==== Symmetry
 stem:[a R b ⇒ b R a]
@@ -122,12 +125,6 @@ Each element in an equivalence relation has an associated equivalence class. The
 * Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by stem:[sym(R)]) and orders them (possibly partially)
 * That ordering is a relation on its quotient by stem:[sym(R)] and is called the reduction of a preorder stem:[R]
 * Formally, the reduction of stem:[R] is defined as stem:[{(a^***, b^***) ∈ (ℱ(R) // sym(R))² | ∃ a ∈ a^***, b ∈ b^*** | a R b}].
-
-==== Side-uniqueness, ontoness
-* Right-unique: stem:[a R b ∧ a R c ⇒ b = c]
-* A right-unique relation is a function from stem:[𝒟(R)] to stem:[cc "I"(R)]; we can write stem:[R(a)] to denote the single stem:[b ∈ cc "I"(R)] such that stem:[a R b].
-* Onto stem:[Y] (right-total over stem:[Y]): stem:[Y = cc "I"(R)]
-* Left-unique (injective): stem:[b R a ∧ c R a ⇒ b = c]
 
 ==== Weak completeness
 stem:[a ≠ b ⇒ a R b ∨ b R a]
@@ -157,6 +154,12 @@ The reduction of a complete preorder stem:[R] is a complete order on stem:[ℱ(R
 // === Strict order
 // Transitive and irreflexive
 // (Often called: strict partial order)
+
+==== Side-uniqueness, ontoness
+* Right-unique: stem:[a R b ∧ a R c ⇒ b = c]
+* A right-unique relation is a function from stem:[𝒟(R)] to stem:[cc "I"(R)]; we can write stem:[R(a)] to denote the single stem:[b ∈ cc "I"(R)] such that stem:[a R b].
+* Onto stem:[Y] (right-total over stem:[Y]): stem:[Y = cc "I"(R)]
+* Left-unique (injective): stem:[b R a ∧ c R a ⇒ b = c]
 
 ==== Generalisation to binary operations
 * A relation from stem:[X] to stem:[Y] is a subset of stem:[X × Y]. It is non homogeneous when stem:[X ≠ Y].
