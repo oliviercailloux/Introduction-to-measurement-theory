@@ -26,7 +26,7 @@ Préciser et démontrer : une relation symétrique n’est pas asymétrique, sau
 
 Préciser et démontrer : une relation asymétrique n’est pas symétrique, sauf si…
 
-Caractériser les relations symétriques et antisymétriques.
+Caractériser les relations qui sont à la fois symétriques et antisymétriques.
 
 == Inverse
 Définissons l’inverse de stem:[R] comme : stem:[R^{-1} = {(b, a) | (a, b) ∈ R}].

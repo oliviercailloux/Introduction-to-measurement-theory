@@ -50,7 +50,7 @@ https://github.com/oliviercailloux/Teaching/blob/main/README.adoc#take-notes[Tak
 * stem:[∉]
 * Produce other sets: stem:[{x ∈ A | …}], stem:[∪], stem:[∩], stem:[℘], stem:[×]
 * Also: primitive elements
-* Ordered pair, sets thereof, domain stem:[𝒟], image stem:[𝓘], field stem:[ℱ]
+* Ordered pair, sets thereof, domain stem:[𝒟], image stem:[cc "I"], field stem:[ℱ]
 
 References
 
@@ -73,7 +73,7 @@ In this document, properties of a relation stem:[R] are expressed with implicit 
 Transitive relation: stem:[a R b R c ⇒ a R c]
 
 * Transire, to pass to the other side, convey an action
-* I push my car VS I sleep in my car: push used transitively
+// * I push my car VS I sleep in my car: push used transitively
 * Relates a to c through b
 
 ==== Reflexivity
@@ -83,6 +83,7 @@ stem:[a R a]
 See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.html[Exercices S1].
 TODO: up to and including exercice 3.
 // introduction
+// corr exs to 3: irrefl? Hasse?
 
 ==== Irreflexivity
 stem:[¬(a R a)]
@@ -100,6 +101,8 @@ Hasse diagram: stem:[a R b, a ≠ b], corresponds to a line descending from a to
 ==== Symmetry
 stem:[a R b ⇒ b R a]
 
+Symmetric part of a relation stem:[R]: stem:[sym(R) = {(a, b) ∈ R | (b, a) ∈ R}].
+
 ==== Asymmetry
 stem:[a R b ⇒ ¬(b R a)]
 
@@ -113,9 +116,8 @@ See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.htm
 ==== Equivalence
 An equivalence relation is a transitive (, reflexive) and symmetric relation.
 
-Each element in an equivalence relation has an associated equivalence class. The set of equivalence classes, called the quotient by stem:[R], is denoted by stem:[ℱ(R) // R]. It partitions (disjointly covers) stem:[ℱ(R)].
+Each element in an equivalence relation has an associated equivalence class. The set of equivalence classes, called the quotient by stem:[R], is denoted by stem:[ℱ(R) // R]. It partitions (disjointly classifies) stem:[ℱ(R)].
 
-* Symmetric part of a relation stem:[R]: stem:[sym(R) = {(a, b) ∈ R | (b, a) ∈ R}]
 * The symmetric part of a preorder stem:[R] is an equivalence relation
 * Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by stem:[sym(R)]) and orders them (possibly partially)
 * That ordering is a relation on its quotient by stem:[sym(R)] and is called the reduction of a preorder stem:[R]
@@ -123,8 +125,8 @@ Each element in an equivalence relation has an associated equivalence class. The
 
 ==== Side-uniqueness, ontoness
 * Right-unique: stem:[a R b ∧ a R c ⇒ b = c]
-* A right-unique relation is a function from stem:[𝒟(R)] to stem:[𝓘(R)]; we can write stem:[R(a)] to denote the single stem:[b ∈ 𝓘(R)] such that stem:[a R b].
-* Onto stem:[Y] (right-total over stem:[Y]): stem:[Y = 𝓘(R)]
+* A right-unique relation is a function from stem:[𝒟(R)] to stem:[cc "I"(R)]; we can write stem:[R(a)] to denote the single stem:[b ∈ cc "I"(R)] such that stem:[a R b].
+* Onto stem:[Y] (right-total over stem:[Y]): stem:[Y = cc "I"(R)]
 * Left-unique (injective): stem:[b R a ∧ c R a ⇒ b = c]
 
 ==== Weak completeness
@@ -159,11 +161,11 @@ The reduction of a complete preorder stem:[R] is a complete order on stem:[ℱ(R
 ==== Generalisation to binary operations
 * A relation from stem:[X] to stem:[Y] is a subset of stem:[X × Y]. It is non homogeneous when stem:[X ≠ Y].
 * A binary operation stem:[α] on stem:[A] is a right-unique relation from stem:[A × A] to stem:[A] whose domain is stem:[(A × A)].
-* It can be viewed as a function from stem:[A × A] to stem:[A]; we can write stem:[a α b] to denote the single stem:[c ∈ 𝓘(α)] such that stem:[(a, b) α c].
+* It can be viewed as a function from stem:[A × A] to stem:[A]; we can write stem:[a α b] to denote the single stem:[c ∈ cc "I"(α)] such that stem:[(a, b) α c].
 * Examples: stem:[+], stem:[×] on stem:[ℕ].
 
 ==== Note about terminology
-For many authors (excluding Halmos but including Roberts), the set on which stem:[R] is defined is exogenous, thus a relation is a pair stem:[(A, R)] with stem:[R ⊆ A²] (hence stem:[ℱ(R) ⊆ A]). This allows for the possibility that stem:[ℱ(R) ≠ A]. Weak completeness is then defined as stem:[∀ a ≠ b ∈ A: a R b ν b R a]. Similarly, other definitions (such as reflexivity) then differ from those given here. In this document, we assume stem:[A] is chosen equal to stem:[ℱ(R)], in which case the definitions coincide.
+For many authors (excluding Halmos but including Roberts), the set on which stem:[R] is defined is exogenous, thus a relation is a pair stem:[(A, R)] with stem:[R ⊆ A²] (hence stem:[ℱ(R) ⊆ A]). This allows for the possibility that stem:[ℱ(R) ≠ A]. Weak completeness is then defined as stem:[∀ a ≠ b ∈ A: a R b ν b R a]. Similarly, other definitions (such as reflexivity) then differ from those given here (one consequence is that reflexivity no more follows from transitivity and symmetry). In this document, we assume stem:[A] is chosen equal to stem:[ℱ(R)], in which case the definitions coincide.
 
 ==== Exercices
 See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex2.html[Exercices S2].
@@ -177,7 +179,7 @@ See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex2.htm
 * Similarly for relation “preferred to” on sets of objects.
 
 * Relation stem:[R] on stem:[A] corresponds to relation stem:[T] on stem:[ℝ] through function stem:[f] from stem:[A] to stem:[ℝ]: stem:[a R b ⇔ f(a) T f(b)].
-* (If stem:[T] is restricted to the image of stem:[f], it is determined uniquely by stem:[f] and stem:[R], in other words, stem:[R] never corresponds to two relations stem:[T1 ≠ T2] through a single function stem:[f] when stem:[ℱ(T1) = ℱ(T2) = 𝓘(f)]. Proof: if R corresponds to T1 and T2 through f with ℱ(T1) = ℱ(T2) = 𝓘(f), then x T1 y iff a R b, for any a ∈ f-1(x), b ∈ f-1(y), iff x * T2 y thus T1 = T2.)
+* (If stem:[T] is restricted to the image of stem:[f], it is determined uniquely by stem:[f] and stem:[R], in other words, stem:[R] never corresponds to two relations stem:[T1 ≠ T2] through a single function stem:[f] when stem:[ℱ(T1) = ℱ(T2) = cc "I"(f)]. Proof: if R corresponds to T1 and T2 through f with ℱ(T1) = ℱ(T2) = 𝓘(f), then x T1 y iff a R b, for any a ∈ f-1(x), b ∈ f-1(y), iff x * T2 y thus T1 = T2.)
 * Operation stem:[⊙] on stem:[A] corresponds to operation stem:[α] on stem:[ℝ] through function stem:[f] from stem:[A] to stem:[ℝ]: stem:[f(a ⊙ b) = f(a) α f(b)].
 * stem:[R] is homomorphic to stem:[T] iff it corresponds to stem:[T] through some function stem:[f].
 * stem:[(R, ⊙)] is homomorphic to stem:[(T, α)] iff stem:[R] corresponds to stem:[T] and stem:[⊙] to stem:[α] through the same function stem:[f].
