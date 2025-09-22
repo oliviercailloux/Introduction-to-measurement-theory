@@ -3,7 +3,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Exercices S1</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-      <meta name="dc.modified" content="2025-09-10T22:10:08Z"/>
+      <meta name="dc.modified" content="2025-09-22T20:27:53Z"/>
       <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
       <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script></head>
    <body class="home">
@@ -18,13 +18,15 @@
                   <div class="title">Table des matières</div>
                   <ul class="toc">
                      <li><a href="#_sororit%C3%A9"><span class="label">1</span><span class="sep">. </span>Sororité</a></li>
-                     <li><a href="#_gauchisme"><span class="label">2</span><span class="sep">. </span>Gauchisme</a></li>
-                     <li><a href="#_op%C3%A9rations_sur_les_relations"><span class="label">3</span><span class="sep">. </span>Opérations sur les relations</a></li>
-                     <li><a href="#_antisym%C3%A9trie"><span class="label">4</span><span class="sep">. </span>Antisymétrie</a></li>
-                     <li><a href="#_inverse"><span class="label">5</span><span class="sep">. </span>Inverse</a></li>
-                     <li><a href="#_op%C3%A9rations_propri%C3%A9t%C3%A9s"><span class="label">6</span><span class="sep">. </span>Opérations &amp; propriétés</a></li>
-                     <li><a href="#_%C3%A0_un_pr%C3%A8s"><span class="label">7</span><span class="sep">. </span>À un près</a></li>
-                     <li><a href="#_exp%C3%A9riences"><span class="label">8</span><span class="sep">. </span>Expériences</a></li>
+                     <li><a href="#_de_m%C3%AAmes_parents"><span class="label">2</span><span class="sep">. </span>De mêmes parents</a></li>
+                     <li><a href="#_gauchisme"><span class="label">3</span><span class="sep">. </span>Gauchisme</a></li>
+                     <li><a href="#_gauchisme_rel%C3%A2ch%C3%A9"><span class="label">4</span><span class="sep">. </span>Gauchisme relâché</a></li>
+                     <li><a href="#_op%C3%A9rations_sur_les_relations"><span class="label">5</span><span class="sep">. </span>Opérations sur les relations</a></li>
+                     <li><a href="#_antisym%C3%A9trie"><span class="label">6</span><span class="sep">. </span>Antisymétrie</a></li>
+                     <li><a href="#_inverse"><span class="label">7</span><span class="sep">. </span>Inverse</a></li>
+                     <li><a href="#_op%C3%A9rations_propri%C3%A9t%C3%A9s"><span class="label">8</span><span class="sep">. </span>Opérations &amp; propriétés</a></li>
+                     <li><a href="#_%C3%A0_un_pr%C3%A8s"><span class="label">9</span><span class="sep">. </span>À un près</a></li>
+                     <li><a href="#_exp%C3%A9riences"><span class="label">10</span><span class="sep">. </span>Expériences</a></li>
                   </ul>
                </div>
             </div>
@@ -32,28 +34,45 @@
                <header>
                   <h2><span class="label">1</span><span class="sep">. </span>Sororité</h2>
                </header>
-               <p class="simpara">Imaginez que dans cette classe se trouve trois familles de deux ou trois enfants chacune
-                  (imaginez comme vous voulez qui en est membre).
+               <p class="simpara">Imaginez que dans cette classe se trouve trois familles de deux ou trois enfants chacune.
                   Nos familles fictives volontaires : {Laure, Laureline}, {Agnès, Blanche}, {Roxane,
                   Anna, Charline}.
                   Les autres sont issus de familles distinctes.</p>
-               <p class="simpara">Définissez la relation représentant « sœur de » dans cette classe, selon deux façons
-                  raisonnables de comprendre cette expression, l’une réflexive, l’autre irréflexive.
-                  Cette relation est-elle transitive ?
-                  Définissez la relation sur un sous-ensemble de personnes pour lui faire satisfaire
-                  une propriété supplémentaire au choix vue en cours.</p>
+               <p class="simpara">Définissez la relation représentant « sœur de » dans cette classe, au sens intuitif
+                  du terme, c’est-à-dire définissant une relation irréflexive. Démontrez qu’elle est
+                  irréflexive.
+                  Démontrez que cette relation n’est pas transitive.</p>
+            </section>
+            <section id="_de_mêmes_parents" class="section">
+               <header>
+                  <h2><span class="label">2</span><span class="sep">. </span>De mêmes parents</h2>
+               </header>
+               <p class="simpara">Poursuivons l’hypothèse précédente de familles fictives dans notre classe.</p>
+               <p class="simpara">Définissez la relation <a href="https://fr.wikipedia.org/w/index.php?title=S%C5%93ur&amp;oldid=223147623" class="link">représentant</a> « personne de sexe féminin née des mêmes parents » dans cette classe. Démontrez qu’elle
+                  est réflexive.
+                  Argumentez informellement de sa transitivité.
+                  Imaginez d’autres familles fictives dans la classe qui rendraient la relation non
+                  réflexive.</p>
             </section>
             <section id="_gauchisme" class="section">
                <header>
-                  <h2><span class="label">2</span><span class="sep">. </span>Gauchisme</h2>
+                  <h2><span class="label">3</span><span class="sep">. </span>Gauchisme</h2>
                </header>
-               <p class="simpara">Définissez la relation représentant « assis à la gauche de » dans cette classe, en
-                  précisant comment vous comprenez cette relation.
+               <p class="simpara">Définissez la relation représentant « assis à la gauche de et sur la même rangée »
+                  dans cette classe.
+                  Quelles propriétés satisfait-elle ?</p>
+            </section>
+            <section id="_gauchisme_relâché" class="section">
+               <header>
+                  <h2><span class="label">4</span><span class="sep">. </span>Gauchisme relâché</h2>
+               </header>
+               <p class="simpara">Définissez la relation représentant « plus proche ou aussi proche du mur de gauche »
+                  dans cette classe.
                   Quelles propriétés satisfait-elle ?</p>
             </section>
             <section id="_opérations_sur_les_relations" class="section">
                <header>
-                  <h2><span class="label">3</span><span class="sep">. </span>Opérations sur les relations</h2>
+                  <h2><span class="label">5</span><span class="sep">. </span>Opérations sur les relations</h2>
                </header>
                <p class="simpara">Avec <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>S</mi></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -75,16 +94,16 @@
             </section>
             <section id="_antisymétrie" class="section">
                <header>
-                  <h2><span class="label">4</span><span class="sep">. </span>Antisymétrie</h2>
+                  <h2><span class="label">6</span><span class="sep">. </span>Antisymétrie</h2>
                </header>
                <p class="simpara">Démontrer : une relation est asymétrique ssi elle est irréflexive et antisymétrique.</p>
                <p class="simpara">Préciser et démontrer : une relation symétrique n’est pas asymétrique, sauf si…</p>
                <p class="simpara">Préciser et démontrer : une relation asymétrique n’est pas symétrique, sauf si…</p>
-               <p class="simpara">Caractériser les relations symétriques et antisymétriques.</p>
+               <p class="simpara">Caractériser les relations qui sont à la fois symétriques et antisymétriques.</p>
             </section>
             <section id="_inverse" class="section">
                <header>
-                  <h2><span class="label">5</span><span class="sep">. </span>Inverse</h2>
+                  <h2><span class="label">7</span><span class="sep">. </span>Inverse</h2>
                </header>
                <p class="simpara">Définissons l’inverse de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>R</mi></math></span> comme : <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -150,7 +169,7 @@
             </section>
             <section id="_opérations_propriétés" class="section">
                <header>
-                  <h2><span class="label">6</span><span class="sep">. </span>Opérations &amp; propriétés</h2>
+                  <h2><span class="label">8</span><span class="sep">. </span>Opérations &amp; propriétés</h2>
                </header>
                <p class="simpara">Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>R</mi></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -176,7 +195,7 @@
             </section>
             <section id="_à_un_près" class="section">
                <header>
-                  <h2><span class="label">7</span><span class="sep">. </span>À un près</h2>
+                  <h2><span class="label">9</span><span class="sep">. </span>À un près</h2>
                </header>
                <p class="simpara">Définissons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>R</mi>
@@ -212,7 +231,7 @@
             </section>
             <section id="_expériences" class="section">
                <header>
-                  <h2><span class="label">8</span><span class="sep">. </span>Expériences</h2>
+                  <h2><span class="label">10</span><span class="sep">. </span>Expériences</h2>
                </header>
                <p class="simpara">Effectuez les exercices 13 et 16 du livre de Roberts, pages 23 et 24, considérant
                   nos cinq propriétés favorites.</p>

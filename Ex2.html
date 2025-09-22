@@ -3,10 +3,9 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Exercices S2</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-      <meta name="dc.modified" content="2025-09-10T22:10:08Z"/>
+      <meta name="dc.modified" content="2025-09-22T20:27:54Z"/>
       <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
-      <link href="./css/docbook.css" rel="stylesheet" media="screen"/>
-   </head>
+      <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script></head>
    <body class="home">
       <nav class="top"></nav>
       <main>
@@ -18,136 +17,781 @@
                <div class="lot toc">
                   <div class="title">Table des matières</div>
                   <ul class="toc">
-                     <li><a href="#_s%C3%A9quences"><span class="label">1</span><span class="sep">. </span>Séquences</a></li>
-                     <li><a href="#_d%C3%A9finition_d%C3%A9quivalence"><span class="label">2</span><span class="sep">. </span>Définition d’équivalence</a></li>
-                     <li><a href="#_op%C3%A9rations_entre_%C3%A9quivalences"><span class="label">3</span><span class="sep">. </span>Opérations entre équivalences</a></li>
-                     <li><a href="#_classes"><span class="label">4</span><span class="sep">. </span>Classes</a></li>
-                     <li><a href="#_composition_it%C3%A9r%C3%A9e"><span class="label">5</span><span class="sep">. </span>Composition itérée</a></li>
-                     <li><a href="#_la_relation"><span class="label">6</span><span class="sep">. </span>La relation ≥</a></li>
-                     <li><a href="#_r%C3%A9duction"><span class="label">7</span><span class="sep">. </span>Réduction</a></li>
-                     <li><a href="#_presque"><span class="label">8</span><span class="sep">. </span>Presque</a></li>
-                     <li><a href="#_ordre_lexicographique"><span class="label">9</span><span class="sep">. </span>Ordre lexicographique</a></li>
-                     <li><a href="#_n%C3%A9cessit%C3%A9"><span class="label">10</span><span class="sep">. </span>Nécessité</a></li>
-                     <li><a href="#_r%C3%A9duction_compl%C3%A8te"><span class="label">11</span><span class="sep">. </span>Réduction complète</a></li>
-                     <li><a href="#_diagrammes"><span class="label">12</span><span class="sep">. </span>Diagrammes</a></li>
-                     <li><a href="#_inclusion"><span class="label">13</span><span class="sep">. </span>Inclusion</a></li>
-                     <li><a href="#_dimension"><span class="label">14</span><span class="sep">. </span>Dimension</a></li>
-                     <li><a href="#_op%C3%A9rations"><span class="label">15</span><span class="sep">. </span>Opérations</a></li>
+                     <li><a href="#_rouages"><span class="label">1</span><span class="sep">. </span>Rouages</a></li>
+                     <li><a href="#_amiti%C3%A9"><span class="label">2</span><span class="sep">. </span>Amitié</a></li>
+                     <li><a href="#_grandeur"><span class="label">3</span><span class="sep">. </span>Grandeur</a></li>
+                     <li><a href="#_d%C3%A9finition_d%C3%A9quivalence"><span class="label">4</span><span class="sep">. </span>Définition d’équivalence</a></li>
+                     <li><a href="#_op%C3%A9rations_entre_%C3%A9quivalences"><span class="label">5</span><span class="sep">. </span>Opérations entre équivalences</a></li>
+                     <li><a href="#_classes"><span class="label">6</span><span class="sep">. </span>Classes</a></li>
+                     <li><a href="#_composition_it%C3%A9r%C3%A9e"><span class="label">7</span><span class="sep">. </span>Composition itérée</a></li>
+                     <li><a href="#_la_relation"><span class="label">8</span><span class="sep">. </span>La relation ≥</a></li>
+                     <li><a href="#_r%C3%A9duction"><span class="label">9</span><span class="sep">. </span>Réduction</a></li>
+                     <li><a href="#_presque"><span class="label">10</span><span class="sep">. </span>Presque</a></li>
+                     <li><a href="#_ordre_lexicographique"><span class="label">11</span><span class="sep">. </span>Ordre lexicographique</a></li>
+                     <li><a href="#_n%C3%A9cessit%C3%A9"><span class="label">12</span><span class="sep">. </span>Nécessité</a></li>
+                     <li><a href="#_r%C3%A9duction_compl%C3%A8te"><span class="label">13</span><span class="sep">. </span>Réduction complète</a></li>
+                     <li><a href="#_diagrammes"><span class="label">14</span><span class="sep">. </span>Diagrammes</a></li>
+                     <li><a href="#_inclusion"><span class="label">15</span><span class="sep">. </span>Inclusion</a></li>
+                     <li><a href="#_dimension"><span class="label">16</span><span class="sep">. </span>Dimension</a></li>
+                     <li><a href="#_op%C3%A9rations"><span class="label">17</span><span class="sep">. </span>Opérations</a></li>
                   </ul>
                </div>
             </div>
-            <section id="_séquences" class="section">
+            <section id="_rouages" class="section">
                <header>
-                  <h2><span class="label">1</span><span class="sep">. </span>Séquences</h2>
+                  <h2><span class="label">1</span><span class="sep">. </span>Rouages</h2>
                </header>
-               <p class="simpara">Considérons l’ensemble des séquences binaires de taille 10.
-                  Définissons R contenant les paires de séquences contenant le même nombre de 1.
-                  Montrez que R est une relation d’équivalence.
-                  Identifiez les classes.</p>
+               <p class="simpara">La relation “ont le même nombre de roues” sur un ensemble de véhicules est-elle une
+                  relation d’équivalence ?
+                  Donnez un exemple de telle relation sur un ensemble de six éléments qui forment une
+                  seule classe d’équivalence.
+                  Donnez un exemple de telle relation sur un ensemble de six éléments qui forment trois
+                  classes d’équivalence.</p>
+            </section>
+            <section id="_amitié" class="section">
+               <header>
+                  <h2><span class="label">2</span><span class="sep">. </span>Amitié</h2>
+               </header>
+               <p class="simpara">La relation “est ami avec” sur un ensemble de gens est-elle une relation d’équivalence
+                  ? Considérez vous-même et deux autres personnes hypothétiques et imaginez trois scénarios
+                  différents.</p>
+            </section>
+            <section id="_grandeur" class="section">
+               <header>
+                  <h2><span class="label">3</span><span class="sep">. </span>Grandeur</h2>
+               </header>
+               <p class="simpara">Montrez que la relation “au moins aussi grand que” sur un ensemble de gens de mêmes
+                  tailles est une relation d’équivalence.</p>
             </section>
             <section id="_définition_déquivalence" class="section">
                <header>
-                  <h2><span class="label">2</span><span class="sep">. </span>Définition d’équivalence</h2>
+                  <h2><span class="label">4</span><span class="sep">. </span>Définition d’équivalence</h2>
                </header>
-               <p class="simpara">Montrez que les trois propriétés indiquées sont requises dans la définition d’équivalence.</p>
+               <p class="simpara">Montrez que les trois propriétés indiquées ne sont pas requises dans la définition
+                  d’équivalence.</p>
             </section>
             <section id="_opérations_entre_équivalences" class="section">
                <header>
-                  <h2><span class="label">3</span><span class="sep">. </span>Opérations entre équivalences</h2>
+                  <h2><span class="label">5</span><span class="sep">. </span>Opérations entre équivalences</h2>
                </header>
-               <p class="simpara">Si R et S sont des équivalences, R ∪ S en est-elle une ? Et R ∩ S ?</p>
+               <p class="simpara">Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>S</mi></math></span> sont des équivalences, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi>
+                        <mo>∪</mo>
+                        <mi>S</mi></math></span> en est-elle une ? Et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi>
+                        <mo>∩</mo>
+                        <mi>S</mi></math></span> ?</p>
             </section>
             <section id="_classes" class="section">
                <header>
-                  <h2><span class="label">4</span><span class="sep">. </span>Classes</h2>
+                  <h2><span class="label">6</span><span class="sep">. </span>Classes</h2>
                </header>
-               <p class="simpara">Si R est une relation d’équivalence, alors a* = b* ⇔ a ∈ b*.</p>
+               <p class="simpara">Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> est une relation d’équivalence, alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msup>
+                           <mi>a</mi>
+                           <mo>⋆</mo>
+                        </msup>
+                        <mo>=</mo>
+                        <msup>
+                           <mi>b</mi>
+                           <mo>⋆</mo>
+                        </msup>
+                        <mo>⇔</mo>
+                        <mi>a</mi>
+                        <mo>∈</mo>
+                        <msup>
+                           <mi>b</mi>
+                           <mo>⋆</mo>
+                        </msup></math></span>.</p>
             </section>
             <section id="_composition_itérée" class="section">
                <header>
-                  <h2><span class="label">5</span><span class="sep">. </span>Composition itérée</h2>
+                  <h2><span class="label">7</span><span class="sep">. </span>Composition itérée</h2>
                </header>
                <p class="simpara">Effectuez l’exercice 8 page 27 du livre de Roberts. (Plus difficile)</p>
             </section>
             <section id="_la_relation" class="section">
                <header>
-                  <h2><span class="label">6</span><span class="sep">. </span>La relation ≥</h2>
+                  <h2><span class="label">8</span><span class="sep">. </span>La relation ≥</h2>
                </header>
-               <p class="simpara">Définissons A = {(a, b): a, b ∈ {1, 2, 3, 4}} et (a, b)R(c, d) ⇔ a ≥ c.
-                  Montrez que R est un préordre complet et calculez la réduction R*.</p>
+               <p class="simpara">Définissons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>A</mi>
+                        <mo>=</mo>
+                        <mrow>
+                           <mo>{</mo>
+                           <mrow>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>b</mi>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>:</mo>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                              <mo>∈</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mn>1</mn>
+                                    <mo>,</mo>
+                                    <mn>2</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                    <mo>,</mo>
+                                    <mn>4</mn>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>}</mo>
+                        </mrow></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mi>R</mi>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>c</mi>
+                              <mo>,</mo>
+                              <mi>d</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>⇔</mo>
+                        <mi>a</mi>
+                        <mo>≥</mo>
+                        <mi>c</mi></math></span>.
+                  Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> est un préordre complet et calculez la réduction <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msup>
+                           <mi>R</mi>
+                           <mo>⋆</mo>
+                        </msup></math></span>.</p>
             </section>
             <section id="_réduction" class="section">
                <header>
-                  <h2><span class="label">7</span><span class="sep">. </span>Réduction</h2>
+                  <h2><span class="label">9</span><span class="sep">. </span>Réduction</h2>
                </header>
-               <p class="simpara">Considérons R contenant ces paires.</p>
-               <p class="simpara">(a, a),(b, b), (x, x),(y,y),(a, a), (β, β),(γ, γ),
-                  (y, x),(x,y), (x, a), (x, b),(y, a),(y, b), (a, β),
-                  (a, γ),(β, α), (β, γ),(γ, α), (γ, β), (α, x), (α, y),
-                  (α, a), (α, b), (β, x) (β,y), (β, a), (β, b), (γ, x),
-                  (γ, y), (γ, α), (γ, b)</p>
-               <p class="simpara">Montrez que R est un préordre complet et calculez sa réduction.</p>
+               <p class="simpara">Considérons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> contenant ces paires :
+                  <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>a</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>b</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>x</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>y</mi>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>a</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>β</mi>
+                              <mo>,</mo>
+                              <mi>β</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>γ</mi>
+                              <mo>,</mo>
+                              <mi>γ</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>y</mi>
+                              <mo>,</mo>
+                              <mi>x</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>a</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>y</mi>
+                              <mo>,</mo>
+                              <mi>a</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>y</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>β</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>γ</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>β</mi>
+                              <mo>,</mo>
+                              <mi>α</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>β</mi>
+                              <mo>,</mo>
+                              <mi>γ</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>γ</mi>
+                              <mo>,</mo>
+                              <mi>α</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>γ</mi>
+                              <mo>,</mo>
+                              <mi>β</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>α</mi>
+                              <mo>,</mo>
+                              <mi>x</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>α</mi>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>α</mi>
+                              <mo>,</mo>
+                              <mi>a</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>α</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>β</mi>
+                              <mo>,</mo>
+                              <mi>x</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>β</mi>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>β</mi>
+                              <mo>,</mo>
+                              <mi>a</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>β</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>γ</mi>
+                              <mo>,</mo>
+                              <mi>x</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>γ</mi>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>γ</mi>
+                              <mo>,</mo>
+                              <mi>α</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>γ</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow></math></span>.</p>
+               <p class="simpara">Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> est un préordre complet et calculez sa réduction.</p>
             </section>
             <section id="_presque" class="section">
                <header>
-                  <h2><span class="label">8</span><span class="sep">. </span>Presque</h2>
+                  <h2><span class="label">10</span><span class="sep">. </span>Presque</h2>
                </header>
-               <p class="simpara">Définissons P sur les paires de réels comme
-                  (a, b)P(s, t)
-                  ⇔
-                  a ≥ s &amp; b ≥ t
-                  &amp; (a &gt;s or b&gt;t).</p>
-               <p class="simpara">Montrez que P n’est pas un préordre complet.</p>
+               <p class="simpara">Définissons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi></math></span> sur les paires de réels comme
+                  <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mi>P</mi>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>s</mi>
+                              <mo>,</mo>
+                              <mi>t</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>⇔</mo>
+                        <mi>a</mi>
+                        <mo>≥</mo>
+                        <mi>s</mi>
+                        <mo>&amp;</mo>
+                        <mi>b</mi>
+                        <mo>≥</mo>
+                        <mi>t</mi>
+                        <mo>&amp;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>&gt;</mo>
+                              <mi>s</mi>
+                              <mi>or</mi>
+                              <mi>b</mi>
+                              <mo>&gt;</mo>
+                              <mi>t</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow></math></span>.</p>
+               <p class="simpara">Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi></math></span> n’est pas un préordre complet.</p>
             </section>
             <section id="_ordre_lexicographique" class="section">
                <header>
-                  <h2><span class="label">9</span><span class="sep">. </span>Ordre lexicographique</h2>
+                  <h2><span class="label">11</span><span class="sep">. </span>Ordre lexicographique</h2>
                </header>
-               <p class="simpara">Définissons P sur les paires de réels comme
-                  (a, b)P(s, t)
-                  ⇔
-                  a ≥ s or (a = s and b≥t).</p>
+               <p class="simpara">Définissons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>P</mi></math></span> sur les paires de réels comme
+                  <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mi>P</mi>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>s</mi>
+                              <mo>,</mo>
+                              <mi>t</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>⇔</mo>
+                        <mi>a</mi>
+                        <mo>≥</mo>
+                        <mi>s</mi>
+                        <mi>or</mi>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>=</mo>
+                              <mi>s</mi>
+                              <mi>and</mi>
+                              <mi>b</mi>
+                              <mo>≥</mo>
+                              <mi>t</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow></math></span>.</p>
                <p class="simpara">Est-elle une sorte de relation vue en cours ?</p>
             </section>
             <section id="_nécessité" class="section">
                <header>
-                  <h2><span class="label">10</span><span class="sep">. </span>Nécessité</h2>
+                  <h2><span class="label">12</span><span class="sep">. </span>Nécessité</h2>
                </header>
                <p class="simpara">Montrez que les définitions (ordre, préordre complet, ordre complet) requièrent toutes
                   les propriétés indiquées</p>
             </section>
             <section id="_réduction_complète" class="section">
                <header>
-                  <h2><span class="label">11</span><span class="sep">. </span>Réduction complète</h2>
+                  <h2><span class="label">13</span><span class="sep">. </span>Réduction complète</h2>
                </header>
-               <p class="simpara">Si R est un ordre complet, montrer que R* est fortement complet et antisymétrique.</p>
+               <p class="simpara">Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> est un ordre complet, montrer que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msup>
+                           <mi>R</mi>
+                           <mo>⋆</mo>
+                        </msup></math></span> est fortement complet et antisymétrique.</p>
             </section>
             <section id="_diagrammes" class="section">
                <header>
-                  <h2><span class="label">12</span><span class="sep">. </span>Diagrammes</h2>
+                  <h2><span class="label">14</span><span class="sep">. </span>Diagrammes</h2>
                </header>
                <p class="simpara">Choisissez le diagramme approprié pour représenter la relation
-                  R = {(1, 1), (2, 2), (3, 3), (4, 4), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)}.</p>
+                  <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi>
+                        <mo>=</mo>
+                        <mrow>
+                           <mo>{</mo>
+                           <mtable>
+                              <mtr>
+                                 <mtd>
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>1</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd>
+                                    <mn>2</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>2</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd>
+                                    <mn>3</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>3</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd>
+                                    <mn>4</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>4</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd>
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>3</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd>
+                                    <mn>1</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>4</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd>
+                                    <mn>2</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>3</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd>
+                                    <mn>2</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>4</mn>
+                                 </mtd>
+                              </mtr>
+                              <mtr>
+                                 <mtd>
+                                    <mn>3</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>4</mn>
+                                 </mtd>
+                              </mtr>
+                           </mtable>
+                           <mo>}</mo>
+                        </mrow></math></span>.</p>
             </section>
             <section id="_inclusion" class="section">
                <header>
-                  <h2><span class="label">13</span><span class="sep">. </span>Inclusion</h2>
+                  <h2><span class="label">15</span><span class="sep">. </span>Inclusion</h2>
                </header>
-               <p class="simpara">Quel est le type de la relation ⊆ sur les sous-ensembles de {1, 2, 3, 4} ?
+               <p class="simpara">Quel est le type de la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mo>⊆</mo></math></span> sur les sous-ensembles de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo>{</mo>
+                           <mrow>
+                              <mn>1</mn>
+                              <mo>,</mo>
+                              <mn>2</mn>
+                              <mo>,</mo>
+                              <mn>3</mn>
+                              <mo>,</mo>
+                              <mn>4</mn>
+                           </mrow>
+                           <mo>}</mo>
+                        </mrow></math></span> ?
                   Choisissez le diagramme approprié pour représenter cette relation.</p>
             </section>
             <section id="_dimension" class="section">
                <header>
-                  <h2><span class="label">14</span><span class="sep">. </span>Dimension</h2>
+                  <h2><span class="label">16</span><span class="sep">. </span>Dimension</h2>
                </header>
                <p class="simpara">Effectuez les exercices 12 à 18 du livre de Roberts, pages 39 à 40 (plus difficile).</p>
             </section>
             <section id="_opérations" class="section">
                <header>
-                  <h2><span class="label">15</span><span class="sep">. </span>Opérations</h2>
+                  <h2><span class="label">17</span><span class="sep">. </span>Opérations</h2>
                </header>
-               <p class="simpara">Montrez que R{a, b, c) ⇔ a + b = c définit une opération sur ℕ, mais pas S(a, b, c)
-                  ⇔ a — b = c ni T(a, b, c) ⇔ a + b + c = 0.</p>
+               <p class="simpara">Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi>
+                        <mrow>
+                           <mo>{</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                              <mo>,</mo>
+                              <mi>c</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>⇔</mo>
+                        <mi>a</mi>
+                        <mo>+</mo>
+                        <mi>b</mi>
+                        <mo>=</mo>
+                        <mi>c</mi></math></span> définit une opération sur <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>ℕ</mi></math></span>, mais pas <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>S</mi>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                              <mo>,</mo>
+                              <mi>c</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>⇔</mo>
+                        <mi>a</mi>
+                        <mo>−</mo>
+                        <mi>b</mi>
+                        <mo>=</mo>
+                        <mi>c</mi></math></span> ni <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>T</mi>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                              <mo>,</mo>
+                              <mi>c</mi>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>⇔</mo>
+                        <mi>a</mi>
+                        <mo>+</mo>
+                        <mi>b</mi>
+                        <mo>+</mo>
+                        <mi>c</mi>
+                        <mo>=</mo>
+                        <mn>0</mn></math></span>.</p>
             </section>
          </article>
       </main>

@@ -3,7 +3,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Introduction to measurement theory</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-      <meta name="dc.modified" content="2025-09-10T22:10:08Z"/>
+      <meta name="dc.modified" content="2025-09-22T20:27:53Z"/>
       <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
       <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script></head>
    <body class="home">
@@ -41,11 +41,11 @@
                            </li>
                            <li><a href="#_a_zoo_of_relations"><span class="label">2<span class="sep">.</span>2</span><span class="sep">. </span>A zoo of relations</a><ul class="toc">
                                  <li><a href="#_equivalence"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>1</span><span class="sep">. </span>Equivalence</a></li>
-                                 <li><a href="#_side_uniqueness_ontoness"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>2</span><span class="sep">. </span>Side-uniqueness, ontoness</a></li>
-                                 <li><a href="#_weak_completeness"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>3</span><span class="sep">. </span>Weak completeness</a></li>
-                                 <li><a href="#_order"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>4</span><span class="sep">. </span>Order</a></li>
-                                 <li><a href="#_complete_preorder"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>5</span><span class="sep">. </span>Complete preorder</a></li>
-                                 <li><a href="#_complete_order"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>6</span><span class="sep">. </span>Complete order</a></li>
+                                 <li><a href="#_weak_completeness"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>2</span><span class="sep">. </span>Weak completeness</a></li>
+                                 <li><a href="#_order"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>3</span><span class="sep">. </span>Order</a></li>
+                                 <li><a href="#_complete_preorder"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>4</span><span class="sep">. </span>Complete preorder</a></li>
+                                 <li><a href="#_complete_order"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>5</span><span class="sep">. </span>Complete order</a></li>
+                                 <li><a href="#_side_uniqueness_ontoness"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>6</span><span class="sep">. </span>Side-uniqueness, ontoness</a></li>
                                  <li><a href="#_generalisation_to_binary_operations"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>7</span><span class="sep">. </span>Generalisation to binary operations</a></li>
                                  <li><a href="#_note_about_terminology"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>8</span><span class="sep">. </span>Note about terminology</a></li>
                                  <li><a href="#_exercices_2"><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>9</span><span class="sep">. </span>Exercices</a></li>
@@ -361,7 +361,10 @@
                            <p class="simpara">Transire, to pass to the other side, convey an action</p>
                         </li>
                         <li>
-                           <p class="simpara">Relates a to c through b</p>
+                           <p class="simpara">Relates <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>a</mi></math></span> to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>c</mi></math></span> through <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>b</mi></math></span></p>
                         </li>
                      </ul>
                   </section>
@@ -419,7 +422,9 @@
                               <mo>,</mo>
                               <mi>a</mi>
                               <mo>≠</mo>
-                              <mi>b</mi></math></span>, corresponds to a line descending from a to b.</p>
+                              <mi>b</mi></math></span>, corresponds to a line descending from <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi></math></span> to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi></math></span>.</p>
                   </section>
                   <section id="_symmetry" class="section">
                      <header>
@@ -433,6 +438,46 @@
                               <mi>b</mi>
                               <mi>R</mi>
                               <mi>a</mi></math></span></p>
+                     <p class="simpara">Symmetric part of a relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span>: <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>s</mi>
+                              <mi>y</mi>
+                              <mi>m</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>b</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>∈</mo>
+                                    <mi>R</mi>
+                                    <mo>|</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>b</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>∈</mo>
+                                    <mi>R</mi>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span>.</p>
                   </section>
                   <section id="_asymmetry" class="section">
                      <header>
@@ -504,7 +549,7 @@
                                  <mo>)</mo>
                               </mrow>
                               <mo>/</mo>
-                              <mi>R</mi></math></span>. It partitions (disjointly covers) <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span>. It partitions (disjointly classifies) <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mi>ℱ</mi>
                               <mrow>
                                  <mo>(</mo>
@@ -512,48 +557,6 @@
                                  <mo>)</mo>
                               </mrow></math></span>.</p>
                      <ul class="itemizedlist">
-                        <li>
-                           <p class="simpara">Symmetric part of a relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                    <mi>R</mi></math></span>: <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                    <mi>s</mi>
-                                    <mi>y</mi>
-                                    <mi>m</mi>
-                                    <mrow>
-                                       <mo>(</mo>
-                                       <mi>R</mi>
-                                       <mo>)</mo>
-                                    </mrow>
-                                    <mo>=</mo>
-                                    <mrow>
-                                       <mo>{</mo>
-                                       <mrow>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mrow>
-                                                <mi>a</mi>
-                                                <mo>,</mo>
-                                                <mi>b</mi>
-                                             </mrow>
-                                             <mo>)</mo>
-                                          </mrow>
-                                          <mo>∈</mo>
-                                          <mi>R</mi>
-                                          <mo>|</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mrow>
-                                                <mi>b</mi>
-                                                <mo>,</mo>
-                                                <mi>a</mi>
-                                             </mrow>
-                                             <mo>)</mo>
-                                          </mrow>
-                                          <mo>∈</mo>
-                                          <mi>R</mi>
-                                       </mrow>
-                                       <mo>}</mo>
-                                    </mrow></math></span></p>
-                        </li>
                         <li>
                            <p class="simpara">The symmetric part of a preorder <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                     <mi>R</mi></math></span> is an equivalence relation</p>
@@ -655,9 +658,93 @@
                         </li>
                      </ul>
                   </section>
+                  <section id="_weak_completeness" class="section">
+                     <header>
+                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>2</span><span class="sep">. </span>Weak completeness</h4>
+                     </header>
+                     <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mo>≠</mo>
+                              <mi>b</mi>
+                              <mo>⇒</mo>
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi>
+                              <mo>∨</mo>
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span></p>
+                  </section>
+                  <section id="_order" class="section">
+                     <header>
+                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>3</span><span class="sep">. </span>Order</h4>
+                     </header>
+                     <ul class="itemizedlist">
+                        <li>
+                           <p class="simpara">Transitive, reflexive, antisymmetric</p>
+                        </li>
+                        <li>
+                           <p class="simpara">(Also called: partial order)</p>
+                        </li>
+                     </ul>
+                     <p class="simpara">Intuitively: a (possibly partial) ranking without ties</p>
+                  </section>
+                  <section id="_complete_preorder" class="section">
+                     <header>
+                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>4</span><span class="sep">. </span>Complete preorder</h4>
+                     </header>
+                     <ul class="itemizedlist">
+                        <li>
+                           <p class="simpara">Transitive, reflexive, weakly complete</p>
+                        </li>
+                        <li>
+                           <p class="simpara">(Often called: weak order)</p>
+                        </li>
+                        <li>
+                           <p class="simpara">Intuitively: a ranking with ties</p>
+                        </li>
+                        <li>
+                           <p class="simpara">The symmetric part of a complete preorder is an equivalence relation</p>
+                        </li>
+                        <li>
+                           <p class="simpara">A complete preorder defines equivalence classes and orders them completely</p>
+                        </li>
+                     </ul>
+                  </section>
+                  <section id="_complete_order" class="section">
+                     <header>
+                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>5</span><span class="sep">. </span>Complete order</h4>
+                     </header>
+                     <ul class="itemizedlist">
+                        <li>
+                           <p class="simpara">Transitive, reflexive, weakly complete, antisymmetric</p>
+                        </li>
+                        <li>
+                           <p class="simpara">(Also called: simple order, linear order, total order)</p>
+                        </li>
+                     </ul>
+                     <p class="simpara">Intuitively: a ranking without ties</p>
+                     <p class="simpara">The reduction of a complete preorder <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span> is a complete order on <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>/</mo>
+                              <mi>s</mi>
+                              <mi>y</mi>
+                              <mi>m</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow></math></span>.</p>
+                  </section>
                   <section id="_side_uniqueness_ontoness" class="section">
                      <header>
-                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>2</span><span class="sep">. </span>Side-uniqueness, ontoness</h4>
+                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>6</span><span class="sep">. </span>Side-uniqueness, ontoness</h4>
                      </header>
                      <ul class="itemizedlist">
                         <li>
@@ -740,90 +827,6 @@
                                     <mi>c</mi></math></span></p>
                         </li>
                      </ul>
-                  </section>
-                  <section id="_weak_completeness" class="section">
-                     <header>
-                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>3</span><span class="sep">. </span>Weak completeness</h4>
-                     </header>
-                     <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>a</mi>
-                              <mo>≠</mo>
-                              <mi>b</mi>
-                              <mo>⇒</mo>
-                              <mi>a</mi>
-                              <mi>R</mi>
-                              <mi>b</mi>
-                              <mo>∨</mo>
-                              <mi>b</mi>
-                              <mi>R</mi>
-                              <mi>a</mi></math></span></p>
-                  </section>
-                  <section id="_order" class="section">
-                     <header>
-                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>4</span><span class="sep">. </span>Order</h4>
-                     </header>
-                     <ul class="itemizedlist">
-                        <li>
-                           <p class="simpara">Transitive, reflexive, antisymmetric</p>
-                        </li>
-                        <li>
-                           <p class="simpara">(Also called: partial order)</p>
-                        </li>
-                     </ul>
-                     <p class="simpara">Intuitively: a (possibly partial) ranking without ties</p>
-                  </section>
-                  <section id="_complete_preorder" class="section">
-                     <header>
-                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>5</span><span class="sep">. </span>Complete preorder</h4>
-                     </header>
-                     <ul class="itemizedlist">
-                        <li>
-                           <p class="simpara">Transitive, reflexive, weakly complete</p>
-                        </li>
-                        <li>
-                           <p class="simpara">(Often called: weak order)</p>
-                        </li>
-                        <li>
-                           <p class="simpara">Intuitively: a ranking with ties</p>
-                        </li>
-                        <li>
-                           <p class="simpara">The symmetric part of a complete preorder is an equivalence relation</p>
-                        </li>
-                        <li>
-                           <p class="simpara">A complete preorder defines equivalence classes and orders them completely</p>
-                        </li>
-                     </ul>
-                  </section>
-                  <section id="_complete_order" class="section">
-                     <header>
-                        <h4><span class="label">2<span class="sep">.</span>2<span class="sep">.</span>6</span><span class="sep">. </span>Complete order</h4>
-                     </header>
-                     <ul class="itemizedlist">
-                        <li>
-                           <p class="simpara">Transitive, reflexive, weakly complete, antisymmetric</p>
-                        </li>
-                        <li>
-                           <p class="simpara">(Also called: simple order, linear order, total order)</p>
-                        </li>
-                     </ul>
-                     <p class="simpara">Intuitively: a ranking without ties</p>
-                     <p class="simpara">The reduction of a complete preorder <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>R</mi></math></span> is a complete order on <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>ℱ</mi>
-                              <mrow>
-                                 <mo>(</mo>
-                                 <mi>R</mi>
-                                 <mo>)</mo>
-                              </mrow>
-                              <mo>/</mo>
-                              <mi>s</mi>
-                              <mi>y</mi>
-                              <mi>m</mi>
-                              <mrow>
-                                 <mo>(</mo>
-                                 <mi>R</mi>
-                                 <mo>)</mo>
-                              </mrow></math></span>.</p>
                   </section>
                   <section id="_generalisation_to_binary_operations" class="section">
                      <header>
@@ -947,7 +950,8 @@
                               <mi>b</mi>
                               <mi>R</mi>
                               <mi>a</mi></math></span>. Similarly, other definitions (such as reflexivity) then differ from those given
-                        here. In this document, we assume <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        here (one consequence is that reflexivity no more follows from transitivity and symmetry).
+                        In this document, we assume <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mi>A</mi></math></span> is chosen equal to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mi>ℱ</mi>
                               <mrow>
