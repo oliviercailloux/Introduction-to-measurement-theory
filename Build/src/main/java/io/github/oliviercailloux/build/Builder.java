@@ -43,6 +43,9 @@ public class Builder implements AutoCloseable {
       if (Files.exists(OUTPUT_DIR.resolve("js/"))) {
         MoreFiles.deleteRecursively(OUTPUT_DIR.resolve("js/"));
       }
+      Files.deleteIfExists(OUTPUT_DIR.resolve("Course.fo"));
+      Files.deleteIfExists(OUTPUT_DIR.resolve("Ex1.fo"));
+      Files.deleteIfExists(OUTPUT_DIR.resolve("Ex2.fo"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Course.html"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Ex1.html"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Ex2.html"));
