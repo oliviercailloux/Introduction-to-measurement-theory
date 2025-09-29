@@ -15,14 +15,14 @@ Montrez que la relation “au moins aussi grand que” sur un ensemble de gens d
 == Définition d’équivalence
 Montrez que les trois propriétés indiquées ne sont pas requises dans la définition d’équivalence.
 
-== Opérations entre équivalences
+== Manipulations d’équivalences
 Si stem:[R] et stem:[S] sont des équivalences, stem:[R ∪ S] en est-elle une ? Et stem:[R ∩ S] ?
 
 == Classes
 Si stem:[R] est une relation d’équivalence, alors stem:[a^*** = b^*** ⇔ a ∈ b^***].
 
 == Composition itérée
-Effectuez l’exercice 8 page 27 du livre de Roberts. (Plus difficile)
+Effectuez l’exercice 8 page 27 du livre de Roberts (plus difficile).
 
 == La relation ≥
 Définissons stem:[A = {(a, b): a, b ∈ {1, 2, 3, 4}}] et stem:[(a, b)R(c, d) ⇔ a ≥ c].
@@ -30,9 +30,9 @@ Montrez que stem:[R] est un préordre complet et calculez la réduction stem:[R^
 
 == Réduction
 Considérons stem:[R] contenant ces paires :
-stem:[(a, a),(b, b), (x, x),(y,y),(a, a), (β, β),(γ, γ),
-(y, x),(x,y), (x, a), (x, b),(y, a),(y, b), (a, β),
-(a, γ),(β, α), (β, γ),(γ, α), (γ, β), (α, x), (α, y),
+stem:[(a, a), (b, b), (x, x), (y,y), (a, a), (β, β), (γ, γ),
+(y, x), (x,y), (x, a), (x, b), (y, a), (y, b), (a, β),
+(a, γ), (β, α), (β, γ), (γ, α), (γ, β), (α, x), (α, y),
 (α, a), (α, b), (β, x) (β,y), (β, a), (β, b), (γ, x),
 (γ, y), (γ, α), (γ, b)].
 
