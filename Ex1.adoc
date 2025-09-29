@@ -7,13 +7,17 @@ Imaginez que dans cette classe se trouve trois familles de deux ou trois enfants
 Nos familles fictives volontaires : {Laure, Laureline}, {Agnès, Blanche}, {Roxane, Anna, Charline}.
 Les autres sont issus de familles distinctes.
 
-Définissez la relation représentant « sœur de » dans cette classe, au sens intuitif du terme, c’est-à-dire définissant une relation irréflexive. Démontrez qu’elle est irréflexive.
+Définissez la relation représentant « sœur de » dans cette classe, au sens intuitif du terme, c’est-à-dire définissant une relation irréflexive. 
+Calculez le champ de cette relation.
+Démontrez qu’elle est irréflexive.
 Démontrez que cette relation n’est pas transitive.
 
 == De mêmes parents
 Poursuivons l’hypothèse précédente de familles fictives dans notre classe.
 
-Définissez la relation https://fr.wikipedia.org/w/index.php?title=S%C5%93ur&oldid=223147623[représentant] « personne de sexe féminin née des mêmes parents » dans cette classe. Démontrez qu’elle est réflexive.
+Définissez la relation https://fr.wikipedia.org/w/index.php?title=S%C5%93ur&oldid=223147623[représentant] « personne de sexe féminin née des mêmes parents » dans cette classe. 
+Calculez le champ de cette relation.
+Démontrez qu’elle est réflexive.
 Argumentez informellement de sa transitivité.
 Imaginez d’autres familles fictives dans la classe qui rendraient la relation non réflexive.
 
@@ -28,7 +32,9 @@ Définissez la relation représentant « plus proche ou aussi proche du mur de
 Quelles propriétés satisfait-elle ?
 
 == Opérations sur les relations
-Avec stem:[S] et stem:[G] les relations ci-dessus (dans une certaine acception de votre choix), calculez stem:[S ∪ G] et stem:[S ∩ G]. Pour quelles façons de comprendre ces relations a-t-on stem:[S ∪ G = ∅] ? Même question pour stem:[S ∩ G]. Représentez ces relations graphiquement selon la méthode la plus appropriée.
+Avec stem:[S] et stem:[G] les relations ci-dessus (dans une certaine acception de votre choix), calculez stem:[S ∪ G] et stem:[S ∩ G]. 
+Pour quelles relations ci-dessus a-t-on stem:[S ∪ G = ∅] ? Même question pour stem:[S ∩ G]. 
+Représentez ces relations graphiquement selon la méthode la plus appropriée.
 
 == Antisymétrie
 Démontrer : une relation est asymétrique ssi elle est irréflexive et antisymétrique.
