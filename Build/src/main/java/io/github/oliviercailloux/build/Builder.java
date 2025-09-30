@@ -46,13 +46,16 @@ public class Builder implements AutoCloseable {
       Files.deleteIfExists(OUTPUT_DIR.resolve("Course.fo"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Ex1.fo"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Ex2.fo"));
+      Files.deleteIfExists(OUTPUT_DIR.resolve("Sol1.fo"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Course.html"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Ex1.html"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Ex2.html"));
+      Files.deleteIfExists(OUTPUT_DIR.resolve("Sol1.html"));
 
       builder.convert("Course");
       builder.convert("Ex1");
       builder.convert("Ex2");
+      builder.convert("Sol1");
 
       LOGGER.debug("Copying resources.");
       DocBookXslt3Resources.copyResourcesTo(OUTPUT_DIR);
