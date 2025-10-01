@@ -3,8 +3,8 @@
 
 == Rouages
 La relation “ont le même nombre de roues” sur un ensemble de véhicules est-elle une relation d’équivalence ? 
-Donnez un exemple de telle relation sur un ensemble de six éléments qui forment une seule classe d’équivalence. 
-Donnez un exemple de telle relation sur un ensemble de six éléments qui forment trois classes d’équivalence.
+Donnez un exemple de telle relation sur un ensemble de six véhicules qui forment une seule classe d’équivalence. 
+Donnez un exemple de telle relation sur un ensemble de six véhicules qui forment trois classes d’équivalence.
 
 == Amitié
 La relation “est ami avec” sur un ensemble de gens est-elle une relation d’équivalence ? Considérez vous-même et deux autres personnes hypothétiques et imaginez trois scénarios différents.
