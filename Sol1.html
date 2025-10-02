@@ -3,7 +3,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Solutions S1</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-      <meta name="dc.modified" content="2025-10-01T07:09:23Z"/>
+      <meta name="dc.modified" content="2025-10-02T14:41:38Z"/>
       <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
       <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script></head>
    <body class="home">
@@ -20,6 +20,7 @@
                      <li><a href="#_sororit%C3%A9"><span class="label">1</span><span class="sep">. </span>Sororité</a></li>
                      <li><a href="#_de_m%C3%AAmes_parents"><span class="label">2</span><span class="sep">. </span>De mêmes parents</a></li>
                      <li><a href="#_gauchisme"><span class="label">3</span><span class="sep">. </span>Gauchisme</a></li>
+                     <li><a href="#_antisym%C3%A9trie_caract%C3%A9risation"><span class="label">4</span><span class="sep">. </span>Antisymétrie : caractérisation</a></li>
                   </ul>
                </div>
             </div>
@@ -1098,6 +1099,661 @@
                               </mrow></math></span>, pour la même raison que pour l’asymétrie.</p>
                   </li>
                </ul>
+            </section>
+            <section id="_antisymétrie_caractérisation" class="section">
+               <header>
+                  <h2><span class="label">4</span><span class="sep">. </span>Antisymétrie : caractérisation</h2>
+               </header>
+               <p class="simpara">Prouvons qu’une relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> satisfait symétrie et antisymétrie ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi>
+                        <mo>=</mo>
+                        <mrow>
+                           <mo>{</mo>
+                           <mrow>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>a</mi>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>|</mo>
+                              <mi>a</mi>
+                              <mo>∈</mo>
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>}</mo>
+                        </mrow></math></span>.</p>
+               <ul class="itemizedlist">
+                  <li>
+                     <p class="simpara">Considérons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mi>a</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span> et montrons que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span> est symétrique.
+                        Considérons n’importe quels <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                              <mo>∈</mo>
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow></math></span>. Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>¬</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mi>R</mi>
+                                    <mi>b</mi>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow></math></span>, alors l’implication <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi>
+                              <mo>⇒</mo>
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span> est satisfaite. Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi></math></span>, alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mo>=</mo>
+                              <mi>b</mi></math></span> (sinon on n’aurait pas <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mi>a</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span>) et donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span>. Dans les deux cas, l’implication est satisfaite.</p>
+                  </li>
+                  <li>
+                     <p class="simpara">Considérons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mi>a</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span> et montrons que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span> est antisymétrique.
+                        Considérons n’importe quels <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mo>≠</mo>
+                              <mi>b</mi>
+                              <mo>∈</mo>
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow></math></span>. On a <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>¬</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mi>R</mi>
+                                    <mi>b</mi>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow></math></span> (sinon on n’aurait pas <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mi>a</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span>), donc l’implication <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi>
+                              <mo>⇒</mo>
+                              <mo>¬</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>b</mi>
+                                    <mi>R</mi>
+                                    <mi>a</mi>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow></math></span> est satisfaite.</p>
+                  </li>
+                  <li>
+                     <p class="simpara">Considérons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span> symétrique et antisymétrique, et montrons que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mi>a</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span>.
+                        Considérons n’importe quelle paire <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi></math></span>. Par symétrie, on a <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span>. Par la contraposée de l’implication d’antisymétrie <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mo>≠</mo>
+                              <mi>b</mi>
+                              <mo>⇒</mo>
+                              <mo>¬</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>b</mi>
+                                    <mi>R</mi>
+                                    <mi>a</mi>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow></math></span>, à savoir <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi>
+                              <mo>⇒</mo>
+                              <mi>a</mi>
+                              <mo>=</mo>
+                              <mi>b</mi></math></span>, on obtient <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mo>=</mo>
+                              <mi>b</mi></math></span>.
+                        Ceci établit que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi>
+                              <mo>⊆</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mi>a</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span>.
+                        Pour établir que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mi>a</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow>
+                              <mo>⊆</mo>
+                              <mi>R</mi></math></span>, considérons n’importe quel <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mo>∈</mo>
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow></math></span>. Comme <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>=</mo>
+                              <mi>𝒟</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>∪</mo>
+                              <mstyle mathvariant="script">
+                                 <mtext>I</mtext>
+                              </mstyle>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow></math></span>, il existe <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mo>∈</mo>
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow></math></span> tel que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi></math></span> ou <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span>.
+                        Par symétrie, si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi></math></span>, alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span>, et si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span>, alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi></math></span>. Dans les deux cas, on a <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi>
+                              <mo>∧</mo>
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span>, donc par la contraposée <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>a</mi>
+                              <mo>⇒</mo>
+                              <mi>a</mi>
+                              <mo>=</mo>
+                              <mi>b</mi></math></span> de l’implication d’antisymétrie, on obtient <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mo>=</mo>
+                              <mi>b</mi></math></span>. Donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>a</mi></math></span>.</p>
+                  </li>
+               </ul>
+               <div class="admonition note">
+                  <div>
+                     <div class="icon">ⓘ</div>
+                     <div class="body">
+                        <header>
+                           <div class="title">Note</div>
+                        </header>
+                        <div>
+                           <p class="simpara">La preuve ci-dessus se trouve presque mécaniquement en écrivant pour chaque partie
+                              les hypothèses, la conclusion et les définitions des termes mobilisés, et en se demandant
+                              comment obtenir la conclusion à partir des hypothèses. Si on veut aller plus loin,
+                              une preuve plus élégante peut être obtenue en évitant de décomposer l’équivalence
+                              en deux implications, ce qui rend généralement la preuve plus courte et plus agréable
+                              à lire et souvent plus informative. Une telle preuve est souvent plus difficile à
+                              trouver, c’est pourquoi elle n’est pas demandée dans le cadre de ce cours. Voici un
+                              exemple de rédaction.</p>
+                           <p class="simpara">Prouvons qu’une relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>R</mi></math></span> satisfait symétrie et antisymétrie ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>R</mi>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>a</mi>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>|</mo>
+                                          <mi>a</mi>
+                                          <mo>∈</mo>
+                                          <mi>ℱ</mi>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow></math></span>.
+                              Notons d’abord que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>R</mi></math></span> satisfait symétrie et antisymétrie ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mo>∀</mo>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>b</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>:</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mi>R</mi>
+                                          <mi>b</mi>
+                                          <mo>⇒</mo>
+                                          <mi>b</mi>
+                                          <mi>R</mi>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>∧</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>≠</mo>
+                                          <mi>b</mi>
+                                          <mo>∧</mo>
+                                          <mi>a</mi>
+                                          <mi>R</mi>
+                                          <mi>b</mi>
+                                          <mo>⇒</mo>
+                                          <mo>¬</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>b</mi>
+                                                <mi>R</mi>
+                                                <mi>a</mi>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow></math></span>. Réécrivant l’implication d’antisymétrie en <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mi>R</mi>
+                                          <mi>b</mi>
+                                          <mo>∧</mo>
+                                          <mi>b</mi>
+                                          <mi>R</mi>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>⇒</mo>
+                                    <mi>a</mi>
+                                    <mo>=</mo>
+                                    <mi>b</mi></math></span>, on obtient que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>R</mi></math></span> satisfait symétrie et antisymétrie ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mo>∀</mo>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>b</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>:</mo>
+                                    <mi>a</mi>
+                                    <mi>R</mi>
+                                    <mi>b</mi>
+                                    <mo>⇒</mo>
+                                    <mi>a</mi>
+                                    <mo>=</mo>
+                                    <mi>b</mi></math></span>. Or, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mo>∀</mo>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>b</mi>
+                                    <mo>∈</mo>
+                                    <mi>ℱ</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>:</mo>
+                                    <mi>a</mi>
+                                    <mi>R</mi>
+                                    <mi>b</mi>
+                                    <mo>⇒</mo>
+                                    <mi>a</mi>
+                                    <mo>=</mo>
+                                    <mi>b</mi></math></span> ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>R</mi>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>b</mi>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>|</mo>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>b</mi>
+                                          <mo>∈</mo>
+                                          <mi>ℱ</mi>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>∧</mo>
+                                          <mi>a</mi>
+                                          <mo>=</mo>
+                                          <mi>b</mi>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow></math></span>.
+                              Notons enfin que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>b</mi>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>|</mo>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>b</mi>
+                                          <mo>∈</mo>
+                                          <mi>ℱ</mi>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>∧</mo>
+                                          <mi>a</mi>
+                                          <mo>=</mo>
+                                          <mi>b</mi>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>a</mi>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>|</mo>
+                                          <mi>a</mi>
+                                          <mo>∈</mo>
+                                          <mi>ℱ</mi>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow></math></span>.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </section>
          </article>
       </main>
