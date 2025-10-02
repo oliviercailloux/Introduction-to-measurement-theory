@@ -19,6 +19,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import javax.xml.transform.TransformerFactory;
 import org.asciidoctor.Asciidoctor;
+import org.asciidoctor.Attributes;
 import org.asciidoctor.Options;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -71,7 +72,8 @@ public class Builder implements AutoCloseable {
 
   private Builder() {
     asciidoctor = Asciidoctor.Factory.create();
-    options = Options.builder().standalone(true).backend("docbook").build();
+    Attributes attributes = Attributes.builder().attribute("relfilesuffix", ".html").build();
+    options = Options.builder().standalone(true).backend("docbook").attributes(attributes).build();
     docBookChecker = DocBookConformityChecker.usingEmbeddedSchema();
 
     TransformerFactory underlying;

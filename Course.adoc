@@ -78,7 +78,7 @@ Transitive relation: stem:[a R b R c ⇒ a R c]
 stem:[a R a]
 
 ==== Start exercices
-See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.html[Exercices S1].
+See xref:Ex1.adoc[Exercices S1].
 
 ==== Irreflexivity
 stem:[¬(a R a)]
@@ -95,7 +95,7 @@ Here: mostly transitive and reflexive relations
 https://en.wikipedia.org/wiki/Helmut_Hasse[Hasse] diagram: stem:[a R b, a ≠ b], corresponds to a line descending from stem:[a] to stem:[b].
 
 ==== More exercices
-Complete https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.html[Exercices S1] apart from symmetry related aspects.
+Complete xref:Ex1.adoc[Exercices S1] apart from symmetry related aspects.
 
 ==== Symmetry
 stem:[a R b ⇒ b R a]
@@ -107,9 +107,9 @@ stem:[a R b ⇒ ¬(b R a)]
 stem:[a ≠ b ∧ a R b ⇒ ¬(b R a)]
 
 ==== Exercices
-TODO: Complete https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex1.html[Exercices S1].
+TODO: Complete xref:Ex1.adoc[Exercices S1].
 
-Solutions to some of the exercices are https://oliviercailloux.github.io/Introduction-to-measurement-theory/Sol1.html[here].
+Solutions to some of the exercices are xref:Sol1.adoc[here].
 
 === A zoo of relations
 ==== Equivalence
@@ -126,7 +126,7 @@ An equivalence relation is a transitive (, reflexive) and symmetric relation.
 * That ordering is a relation on its quotient by stem:[sym(R)] and is called the reduction of stem:[R]
 * Formally, the reduction of stem:[R] is defined as stem:[{(a^***, b^***) ∈ (ℱ(R) // sym(R))² | ∃ a ∈ a^***, b ∈ b^*** | a R b}].
 
-https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex2.html[Exercices S2] up to “Composition itérée”.
+xref:Ex2.adoc[Exercices S2] up to “Composition itérée”.
 
 ==== Order
 * Transitive, reflexive, antisymmetric
@@ -165,7 +165,7 @@ The reduction of a complete preorder stem:[R] is a complete order on stem:[ℱ(R
 For many authors (excluding Halmos but including Roberts), the set on which stem:[R] is defined is exogenous, thus a relation is a pair stem:[(A, R)] with stem:[R ⊆ A²] (hence stem:[ℱ(R) ⊆ A]). This allows for the possibility that stem:[ℱ(R) ≠ A]. Completeness is then defined as stem:[∀ a ≠ b ∈ A: a R b ν b R a]. Similarly, other definitions (such as reflexivity) then differ from those given here (one consequence is that reflexivity no more follows from transitivity and symmetry). In this document, we assume stem:[A] is chosen equal to stem:[ℱ(R)], in which case the definitions coincide.
 
 ==== Exercices
-See https://oliviercailloux.github.io/Introduction-to-measurement-theory/Ex2.html[Exercices S2].
+See xref:Ex2.adoc[Exercices S2].
 
 == From relations to numbers
 === Side-uniqueness, ontoness
