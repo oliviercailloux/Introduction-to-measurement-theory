@@ -25,3 +25,27 @@ Pour raccourcir la réponse, supposons qu’il n’y ait que six personnes et tr
 - La relation n’est pas symétrique : formellement, on a bien stem:[∃a, b ∈ ℱ(G) | aGb ∧ ¬(bGa)], par exemple stem:["Laure" G "Laureline"] mais pas stem:["Laureline" G "Laure"].
 - La relation est asymétrique : formellement, on a bien stem:[∀a, b ∈ ℱ(G): aGb ⇒ ¬(bGa)] puisque stem:[¬("Laureline" G "Laure")], stem:[¬("Agnès" G "Laure")], stem:[¬("Agnès" G "Laureline")] et stem:[¬("Roxane" G "Blanche")].
 - La relation est antisymétrique : formellement, on a bien stem:[∀a ≠ b ∈ ℱ(G): aGb ⇒ ¬(bGa)], pour la même raison que pour l’asymétrie.
+
+== Antisymétrie : caractérisation
+Prouvons qu’une relation stem:[R] satisfait symétrie et antisymétrie ssi stem:[R = {(a, a) | a ∈ ℱ(R)}].
+
+- Considérons stem:[R = {(a, a) | a ∈ ℱ(R)}] et montrons que stem:[R] est symétrique.
+Considérons n’importe quels stem:[a, b ∈ ℱ(R)]. Si stem:[¬(aRb)], alors l’implication stem:[aRb ⇒ bRa] est satisfaite. Si stem:[aRb], alors stem:[a = b] (sinon on n’aurait pas stem:[R = {(a, a) | a ∈ ℱ(R)}]) et donc stem:[bRa]. Dans les deux cas, l’implication est satisfaite.
+- Considérons stem:[R = {(a, a) | a ∈ ℱ(R)}] et montrons que stem:[R] est antisymétrique.
+Considérons n’importe quels stem:[a ≠ b ∈ ℱ(R)]. On a stem:[¬(aRb)] (sinon on n’aurait pas stem:[R = {(a, a) | a ∈ ℱ(R)}]), donc l’implication stem:[aRb ⇒ ¬(bRa)] est satisfaite.
+- Considérons stem:[R] symétrique et antisymétrique, et montrons que stem:[R = {(a, a) | a ∈ ℱ(R)}].
+Considérons n’importe quelle paire stem:[aRb]. Par symétrie, on a stem:[bRa]. Par la contraposée de l’implication d’antisymétrie stem:[a ≠ b ⇒ ¬(bRa)], à savoir stem:[bRa ⇒ a = b], on obtient stem:[a = b]. 
+Ceci établit que stem:[R ⊆ {(a, a) | a ∈ ℱ(R)}].
+Pour établir que stem:[{(a, a) | a ∈ ℱ(R)} ⊆ R], considérons n’importe quel stem:[a ∈ ℱ(R)]. Comme stem:[ℱ(R) = 𝒟(R) ∪ cc "I"(R)], il existe stem:[b ∈ ℱ(R)] tel que stem:[aRb] ou stem:[bRa].
+Par symétrie, si stem:[aRb], alors stem:[bRa], et si stem:[bRa], alors stem:[aRb]. Dans les deux cas, on a stem:[aRb ∧ bRa], donc par la contraposée stem:[bRa ⇒ a = b] de l’implication d’antisymétrie, on obtient stem:[a = b]. Donc stem:[aRa].
+
+[NOTE]
+====
+La preuve ci-dessus se trouve presque mécaniquement en écrivant pour chaque partie les hypothèses, la conclusion et les définitions des termes mobilisés, et en se demandant comment obtenir la conclusion à partir des hypothèses. Si on veut aller plus loin, une preuve plus élégante peut être obtenue en évitant de décomposer l’équivalence en deux implications, ce qui rend généralement la preuve plus courte et plus agréable à lire et souvent plus informative. Une telle preuve est souvent plus difficile à trouver, c’est pourquoi elle n’est pas demandée dans le cadre de ce cours. Voici un exemple de rédaction.
+
+Prouvons qu’une relation stem:[R] satisfait symétrie et antisymétrie ssi stem:[R = {(a, a) | a ∈ ℱ(R)}].
+Notons d’abord que stem:[R] satisfait symétrie et antisymétrie ssi stem:[∀a, b ∈ ℱ(R): (aRb ⇒ bRa) ∧ (a ≠ b ∧ aRb ⇒ ¬(bRa))]. Réécrivant l’implication d’antisymétrie en stem:[(aRb ∧ bRa) ⇒ a = b], on obtient que stem:[R] satisfait symétrie et antisymétrie ssi stem:[∀a, b ∈ ℱ(R): aRb ⇒ a = b]. Or, stem:[∀a, b ∈ ℱ(R): aRb ⇒ a = b] ssi stem:[R = {(a, b) | a, b ∈ ℱ(R) ∧ a = b}].
+// Or, stem:[∀a, b ∈ ℱ(R): aRb ⇒ a = b] ssi stem:[∀ aRb: a = b].
+// L’objectif équivaut à stem:[R = {(a, a) | ∃ (a, b) ∈ R}].
+Notons enfin que stem:[{(a, b) | a, b ∈ ℱ(R) ∧ a = b} = {(a, a) | a ∈ ℱ(R)}].
+====
