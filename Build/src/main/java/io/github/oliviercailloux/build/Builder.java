@@ -59,8 +59,8 @@ public class Builder implements AutoCloseable {
       Files.deleteIfExists(OUTPUT_DIR.resolve("Ex1.html"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Ex2.html"));
       Files.deleteIfExists(OUTPUT_DIR.resolve("Sol1.html"));
-      Files.deleteIfExists(OUTPUT_LOCAL_DIR.resolve("Exam1.fo"));
-      Files.deleteIfExists(OUTPUT_LOCAL_DIR.resolve("Exam1.html"));
+      Files.deleteIfExists(OUTPUT_DIR.resolve("Exam1.fo"));
+      Files.deleteIfExists(OUTPUT_DIR.resolve("Exam1.html"));
 
       builder.convertAll();
 
@@ -102,7 +102,7 @@ public class Builder implements AutoCloseable {
     convert("Ex1");
     convert("Ex2");
     convert("Sol1");
-    convert("Exam1", OUTPUT_LOCAL_DIR, factory.usingStylesheet(TO_HTML_MY_STYLE));
+    convert("Exam1", OUTPUT_DIR, factory.usingStylesheet(TO_HTML_MY_STYLE));
   }
 
   public void convert(String name) throws IOException {
