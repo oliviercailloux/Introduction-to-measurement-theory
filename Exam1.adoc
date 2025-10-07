@@ -1,0 +1,51 @@
+= Contrôle intermédiaire octobre 2025
+:lang: fr
+
+Calculatrices et documents interdits.
+Je ne fournirai pas d’éclaircissements sur l’énoncé pendant l’examen.
+
+Consignes de réponse.
+
+- Répondez sur feuille blanche séparée, pas sur la feuille d’énoncé.
+- Indiquez votre prénom et nom en haut de chaque feuille.
+- Indiquez à quelle partie d’exercice vous répondez par son numéro complet (par exemple 1.2).
+
+Rappels et notations.
+
+- Le cardinal d’un ensemble stem:[A], noté stem:[#A], est le nombre d’éléments de stem:[A].
+- Étant donné stem:[n ∈ ℕ], les entiers entre 1 et stem:[n] sont notés stem:[⟦n⟧ = {i ∈ ℕ | 1 ≤ i ≤ n}].
+- Une relation stem:[R] est asymétrique ssi stem:[∀a, b ∈ ℱ(R): aRb ⇒ ¬(bRa)].
+
+== Animaux
+Soit la relation stem:[R_1 = {text((Souris, Chat)), text((Souris, Souris)), text((Chat, Loup)), text((Souris, Loup))], stem:[text((Chat, Chat)), text((Coyote, Coyote)), text((Souris, Coyote)), text((Chat, Coyote)), text((Loup, Coyote))], stem:[text((Coyote, Loup)), text((Coyote, Ours)), text((Loup, Loup)), text((Souris, Ours)), text((Loup, Ours))], stem:[text((Ours, Ours)), text((Chat, Ours))}].
+
+. Donnez le cardinal de stem:[R_1]. Écrivez la réponse sous la forme stem:[#R_1 = …], il n’est pas demandé de justification.
+. Donnez le champ de stem:[R_1]. Écrivez la réponse sous la forme stem:[ℱ(R_1) = …], il n’est pas demandé de justification.
+. Donnez le cardinal de stem:[ℱ(R_1)]. Écrivez la réponse sous la forme stem:[#ℱ(R_1) = …], il n’est pas demandé de justification.
+. Indiquez en français ce que pourrait représenter cette relation. Écrivez la réponse sous la forme stem:[xR_1y] ssi ….
+. Représentez graphiquement cette relation avec la méthode la plus appropriée. Justifiez informellement et brièvement votre choix de méthode (une phrase suffit).
+
+== Entre deux zoos
+. Donnez une relation stem:[R_2] sur un ensemble d’animaux qui n’est ni symétrique, ni asymétrique, ni réflexive, ni irréflexive. Justifiez informellement et brièvement pourquoi votre relation ne satisfait aucune de ces propriétés (une ou deux phrases en tout suffisent).
+. En général, quel est le cardinal minimal d’une relation qui n’est ni symétrique, ni asymétrique, ni réflexive, ni irréflexive ? Justifiez informellement et brièvement.
+. Quel est le cardinal minimal de l’image stem:[cc "I"(R)] d’une relation qui n’est ni symétrique, ni asymétrique, ni réflexive, ni irréflexive ? Justifiez informellement et brièvement.
+
+== Les entiers
+Considérons la relation stem:[N] sur stem:[⟦1000⟧] définie par stem:[iNj] ssi stem:[i < j]. 
+
+. Calculez stem:[#N]. Écrivez la réponse sous la forme stem:[#N = …]. Justifiez brièvement (informellement ou en détaillant vos calculs).
+. La relation stem:[N] satisfait-elle l’antisymétrie ? Justifiez informellement et brièvement (une phrase suffit).
+. Même question pour la transitivité.
+
+== Éléments imagés
+Étant donné une relation stem:[R] et un élément stem:[a ∈ ℱ(R)], définissons l’ensemble stem:[R(a) = {b ∈ ℱ(R) | aRb}].
+
+Les questions ci-dessous font référence aux relations stem:[R_1] et stem:[N] définies dans les exercices précédents.
+
+. Calculez stem:[R_1(Souris)]. Écrivez la réponse sous la forme stem:[R_1(Souris) = …] (en indiquant explicitement le contenu de cet ensemble), il n’est pas demandé de justification.
+. Calculez stem:[E = {(a, b) ∈ ℱ(R_1) × ℱ(R_1) | #(R_1(a) ∩ R_1(b)) ≤ 1}]. Écrivez la réponse sous la forme stem:[E = …] (en indiquant explicitement le contenu de cet ensemble), justifiez informellement et brièvement.
+. Donnez le champ de stem:[E]. Écrivez la réponse sous la forme stem:[ℱ(E) = …], il n’est pas demandé de justification.
+. Calculez stem:[F = {(i, j) ∈ ⟦1000⟧ × ⟦1000⟧ | #(N(i) ∩ N(j)) ≤ 1}]. Écrivez la réponse sous la forme stem:[F = {(i, j) | …}] (en indiquant une condition simple sur stem:[i] et stem:[j]), justifiez informellement et brièvement.
+. Donnez le champ de stem:[F]. Écrivez la réponse sous la forme stem:[ℱ(F) = …], il n’est pas demandé de justification.
+. La relation stem:[F] est-elle réflexive ? Justifiez informellement et brièvement, puis démontrez-le formellement.
+. Étant donné stem:[1 ≤ n ∈ ℕ], définissons la relation stem:[F_n = {(i, j) ∈ ⟦n⟧ × ⟦n⟧ | #(N(i) ∩ N(j)) ≤ 1}]. Pour quelles valeurs de stem:[n] la relation stem:[F_n] est-elle irréflexive ? Justifiez informellement et brièvement, puis démontrez-le formellement.
