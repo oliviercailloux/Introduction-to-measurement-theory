@@ -1,0 +1,231 @@
+= Contrôle intermédiaire - Corrigé
+:lang: fr
+
+Les notes sont des indications supplémentaires pour la compréhension, mais elles ne sont pas requises dans les réponses.
+
+== Animaux
+=== Cardinal de la relation
+
+stem:[#R_1 = 16]
+
+=== Champ de la relation
+
+stem:[ℱ(R_1) = {\text{Souris}, \text{Chat}, \text{Loup}, \text{Coyote}, \text{Ours}}]
+
+=== Cardinal du champ
+
+stem:[#ℱ(R_1) = 5]
+
+=== Interprétation sémantique
+
+Toute interprétation cohérente avec la structure de la relation est acceptable, a condition qu’elle inclue bien les paires homogènes (de type stem:[(a, a)]). Par exemple :
+
+- stem:[xR_1y] ssi stem:[x] n’est pas significativement plus grand que stem:[y]
+- stem:[xR_1y] ssi stem:[x] a approximativement la même taille ou est plus petit que stem:[y]
+- stem:[xR_1y] ssi stem:[x] peut être chassé par stem:[y] ou stem:[x] égale stem:[y]
+- stem:[xR_1y] ssi stem:[x] est dominé par stem:[y] ou au même niveau que stem:[y] dans la chaine alimentaire
+
+=== Représentation graphique
+
+**Méthode choisie :** Diagramme de Hasse
+
+**Justification :** stem:[R_1] est un préordre (réflexive et transitive)
+
+**Diagramme de Hasse :**
+
+----
+       Souris
+         |
+       Chat
+      /  |  \
+     /   |   \
+  Loup  -- Coyote
+     \   |   /
+      \  |  /
+       Ours
+----
+
+_Note : le diagramme de Hasse est la représentation la plus appropriée car il simplifie la visualisation : les boucles réflexives et les liens déductibles de la transitivité (Souris → Loup, Souris → Coyote, Souris → Ours et Chat → Ours) sont implicites dans le diagramme de Hasse. Le double lien entre Loup et Coyote indique qu'ils sont équivalents (même niveau)._
+
+== Entre deux zoos
+
+=== Relation sans propriétés classiques
+
+**Exemple :**
+
+stem:[R_2 = {(\text{Chat}, \text{Chat}), (\text{Souris}, \text{Chat})}]
+
+**Justification :**
+
+* Pas symétrique : manquent (Souris, Souris) et (Chat, Souris) pour que tous les couples symétriques existent
+* Pas asymétrique ni irréflexive à cause de (Chat, Chat)
+* Pas réflexive : il manque (Souris, Souris)
+
+_Note : De nombreux autres exemples sont possibles, par exemple stem:[R_2 = {(\text{Chat}, \text{Chat}), (\text{Chat}, \text{Souris}), (\text{Souris}, \text{Chat})}]._
+
+=== Cardinal minimal général
+
+**Cardinal minimal : 2**
+
+**Justification :**
+
+* Avec 0 éléments : la relation stem:[∅] est symétrique, asymétrique, réflexive et irréflexive
+* Avec 1 élément : toute relation est soit réflexive stem:[{(a, a)}], soit irréflexive stem:[∅]
+* Avec 2 éléments, on a l’exemple ci-dessus.
+
+=== Cardinal minimal de l'image
+
+**Cardinal minimal de l'image : 2**
+
+**Justification :**
+
+* Avec 0 éléments : si l’image est vide, le champ l’est aussi, et donc la relation également, or la relation stem:[∅] est symétrique, asymétrique, réflexive et irréflexive
+* Avec 1 éléments, on a l’exemple ci-dessus.
+
+== Les entiers
+
+=== Cardinal de N
+
+stem:[#N = 499\,500]
+
+**Justification :**
+
+La relation N contient tous les couples stem:[(i, j)] avec stem:[1 ≤ i < j ≤ 1000]. C'est le nombre de façons de choisir 2 éléments distincts parmi 1000 dans un ordre croissant, soit :
+
+stem:[#N = C((1000),(2)) = (1000 × 999)/(2) = (999\,000)/(2) = 499\,500]
+
+_Note : plus explicitement, on a stem:[N = {(1, 2), (1, 3), ..., (1, 1000)} ∪ {(2, 3), (2, 4), ..., (2, 1000)} ∪ ... ∪ {(999, 1000)}] et le nombre d'éléments dans chaque sous-ensemble est respectivement 999, 998, ..., 1, donc stem:[#N = 999 + 998 + ... + 1 = 999 × (999 + 1)/2] (intuitivement, (999 + 1)/2 est la moyenne des éléments sommés)._
+
+=== Réflexivité de N
+
+**Non, N n'est pas réflexive.**
+
+**Justification :** Pour être réflexive, il faudrait que stem:[∀i ∈ ⟦1000⟧ : iNi], c'est-à-dire stem:[i < i], ce qui est faux. _Note : on peut aussi simplement observer l’absence de stem:[(2, 2)] dans N, par exemple, puisque 2 n'est pas strictement inférieur à 2._
+
+=== Irréflexivité de N
+
+**Oui, N est irréflexive.**
+
+**Justification :** Pour tout stem:[i ∈ ⟦1000⟧], on a stem:[¬(i < i)], donc stem:[¬(iNi)]. La relation ne contient aucune boucle.
+
+=== Antisymétrie de N
+
+**Oui, N est antisymétrique.**
+
+**Justification :** Si stem:[iNj] alors stem:[i < j], donc stem:[j ≮ i], donc stem:[¬(jNi)]. On ne peut jamais avoir simultanément stem:[iNj] et stem:[jNi].
+
+=== Transitivité de N
+
+**Oui, N est transitive.**
+
+**Justification :** Si stem:[iNj] et stem:[jNk], alors stem:[i < j] et stem:[j < k], donc stem:[i < k] par transitivité de <, donc stem:[iNk].
+
+== Éléments imagés
+
+=== Calcul de stem:[R_1(\text{Souris})]
+
+stem:[R_1(\text{Souris}) = {\text{Souris}, \text{Chat}, \text{Loup}, \text{Coyote}, \text{Ours}}]
+
+=== Calcul de stem:[E]
+
+**Calcul des images nécessaires :**
+
+* stem:[R_1(\text{Souris}) = {\text{Souris}, \text{Chat}, \text{Loup}, \text{Coyote}, \text{Ours}}]
+* stem:[R_1(\text{Chat}) = {\text{Chat}, \text{Loup}, \text{Coyote}, \text{Ours}}]
+* stem:[R_1(\text{Loup}) = {\text{Loup}, \text{Coyote}, \text{Ours}}]
+* stem:[R_1(\text{Coyote}) = {\text{Coyote}, \text{Loup}, \text{Ours}}]
+* stem:[R_1(\text{Ours}) = {\text{Ours}}]
+
+Il faut trouver tous les couples stem:[(a, b)] tels que stem:[#(R_1(a) ∩ R_1(b)) ≤ 1].
+
+**Observation clé :** Seul Ours a une image réduite à un singleton stem:[{\text{Ours}}]. Pour tous les autres animaux, leurs images contiennent au moins 3 éléments.
+
+**Vérification des intersections :**
+
+* stem:[R_1(\text{Souris}) ∩ R_1(\text{Chat}) = {\text{Chat}, \text{Loup}, \text{Coyote}, \text{Ours}}] → cardinal 4
+* stem:[R_1(\text{Souris}) ∩ R_1(\text{Loup}) = {\text{Loup}, \text{Coyote}, \text{Ours}}] → cardinal 3
+* stem:[R_1(\text{Souris}) ∩ R_1(\text{Coyote}) = {\text{Coyote}, \text{Loup}, \text{Ours}}] → cardinal 3
+* stem:[R_1(\text{Chat}) ∩ R_1(\text{Loup}) = {\text{Loup}, \text{Coyote}, \text{Ours}}] → cardinal 3
+* stem:[R_1(\text{Chat}) ∩ R_1(\text{Coyote}) = {\text{Coyote}, \text{Loup}, \text{Ours}}] → cardinal 3
+* stem:[R_1(\text{Loup}) ∩ R_1(\text{Coyote}) = {\text{Loup}, \text{Coyote}, \text{Ours}}] → cardinal 3
+
+Toutes les intersections impliquant deux animaux différents de Ours ont un cardinal ≥ 3.
+
+Les seules intersections avec cardinal ≤ 1 sont celles impliquant Ours :
+
+* stem:[R_1(a) ∩ R_1(\text{Ours}) = {\text{Ours}}] pour tout stem:[a ∈ ℱ(R_1)]
+* stem:[R_1(\text{Ours}) ∩ R_1(b) = {\text{Ours}}] pour tout stem:[b ∈ ℱ(R_1)]
+
+**Réponse :**
+
+stem:[E = {(\text{Souris}, \text{Ours}), (\text{Chat}, \text{Ours}), (\text{Loup}, \text{Ours}), (\text{Coyote}, \text{Ours}), (\text{Ours}, \text{Souris}), (\text{Ours}, \text{Chat}), (\text{Ours}, \text{Loup}), (\text{Ours}, \text{Coyote}), (\text{Ours}, \text{Ours})}]
+
+**Justification :** L'intersection ne contient au plus 1 élément que lorsque au moins l'un des deux animaux est Ours, car stem:[R_1(\text{Ours}) = {\text{Ours}}] est le seul singleton.
+
+=== Champ de stem:[E]
+
+stem:[ℱ(E) = {\text{Souris}, \text{Chat}, \text{Loup}, \text{Coyote}, \text{Ours}}]
+
+=== Calcul de stem:[F]
+
+stem:[F = {(i, j) | i, j ∈ ⟦1000⟧ text( et ) max(i, j) ≥ 999}]
+
+Ou de manière équivalente :
+
+stem:[F = {(i, j) | i, j ∈ ⟦1000⟧ text( et ) (i ≥ 999 text( ou ) j ≥ 999)}]
+
+**Justification :**
+
+Pour deux entiers i et j, on a :
+
+* stem:[N(i) = {k | i < k ≤ 1000}]
+* stem:[N(j) = {k | j < k ≤ 1000}]
+
+L'intersection est :
+
+stem:[N(i) ∩ N(j) = {k | max(i, j) < k ≤ 1000}]
+
+Le cardinal de cette intersection est stem:[1000 - max(i, j)].
+
+Pour que stem:[#(N(i) ∩ N(j)) ≤ 1], il faut :
+
+stem:[1000 - max(i, j) ≤ 1]
+
+Soit stem:[max(i, j) ≥ 999].
+
+Cela se produit si et seulement si stem:[i ≥ 999] ou stem:[j ≥ 999], c'est-à-dire si au moins l'un des deux entiers vaut 999 ou 1000.
+
+=== Réflexivité de stem:[F]
+
+**Non, F n'est pas réflexive.**
+
+**Justification informelle :** Par exemple, stem:[(1, 1) ∉ F] car stem:[max(1, 1) = 1 < 999].
+
+**Démonstration formelle :**
+
+Pour que F soit réflexive, il faudrait que stem:[∀i ∈ ⟦1000⟧ : (i, i) ∈ F].
+
+Or stem:[(i, i) ∈ F ⇔ max(i, i) ≥ 999 ⇔ i ≥ 999].
+
+Donc pour stem:[i = 1], on a stem:[(1, 1) ∉ F].
+
+Par conséquent, F n'est pas réflexive.
+
+=== Irréflexivité de stem:[F]
+
+**Non, F n'est pas irréflexive.**
+
+**Justification informelle :** On a stem:[(999, 999) ∈ F] et stem:[(1000, 1000) ∈ F] car stem:[max(999, 999) = 999 ≥ 999] et stem:[max(1000, 1000) = 1000 ≥ 999].
+
+**Démonstration formelle :**
+
+Pour que F soit irréflexive, il faudrait que stem:[∀i ∈ ⟦1000⟧ : (i, i) ∉ F].
+
+Or pour stem:[i = 999], on a stem:[max(999, 999) = 999 ≥ 999], donc stem:[(999, 999) ∈ F].
+
+Par conséquent, F n'est pas irréflexive.
+
+stem:[F_n] est irréflexive ssi stem:[n = 1].
+
+Pour stem:[n = 1] : stem:[F_1 = ∅] (irréflexive vacuellement)
+Pour stem:[n ≥ 2] : stem:[(n,n) ∈ F_n] car stem:[#N(n) = 0 ≤ 1] (donc pas irréflexive)
