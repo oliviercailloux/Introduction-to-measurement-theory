@@ -29,11 +29,11 @@ Utilisons un diagramme de Hasse car stem:[R_1] est un préordre (relation réfle
        Souris
          |
        Chat
-      /  |  \
-     /   |   \
+      /     \
+     /       \
   Loup  -- Coyote
-     \   |   /
-      \  |  /
+     \       /
+      \     /
        Ours
 ----
 
@@ -47,25 +47,23 @@ Par exemple, stem:[R_2 = {](Chat, Chat), (Souris, Chat)stem:[}].
 * Pas asymétrique ni irréflexive à cause de (Chat, Chat)
 * Pas réflexive : il manque (Souris, Souris)
 
-_Note : De nombreux autres exemples sont possibles, par exemple stem:[R_2 = {](Chat, Chat), (Chat, Souris), (Souris, Chat)}]._
+_Note : De nombreux autres exemples sont possibles, par exemple stem:[R_2 = {](Chat, Chat), (Chat, Souris), (Souris, Chat)stem:[}]._
 
 === Cardinal minimal général
-Le cardinal minimal est 2.
+Le cardinal minimal est 2 (exemple ci-dessus).
 
 * Avec 0 éléments : la relation stem:[∅] est symétrique, asymétrique, réflexive et irréflexive
-* Avec 1 élément : toute relation est soit réflexive stem:[{(a, a)}], soit irréflexive stem:[∅]
+* Avec 1 élément : toute relation stem:[{text(()a, b)}] est réflexive si stem:[a = b] et irréflexive si stem:[a ≠ b]
 
 === Cardinal minimal de l'image
-Le cardinal minimal de l’image est 1.
-
-* Avec 0 éléments : si l’image est vide, le champ l’est aussi, et donc la relation également, or la relation stem:[∅] est symétrique, asymétrique, réflexive et irréflexive
-* Avec 1 élément, on a l’exemple ci-dessus.
+Le cardinal minimal de l’image est 1 (exemple ci-dessus).
+En effet, avec 0 éléments, donc stem:[cc "I"(R) = ∅], on a stem:[ℱ(R) = ∅], donc stem:[R = ∅], or la relation stem:[∅] est symétrique, asymétrique, réflexive et irréflexive.
 
 == Les entiers
 === Cardinal de N
-stem:[#N = 499\,500]. En effet, la relation stem:[N] contient tous les couples stem:[(i, j)] avec stem:[1 ≤ i < j ≤ 1000]. C’est le nombre de façons de choisir 2 éléments distincts parmi 1000 dans un ordre croissant, soit stem:[#N = C(1000, 2) = (1000 × 999) / 2 = 999000 / 2].
+stem:[#N = 499 500]. En effet, la relation stem:[N] contient tous les couples stem:[(i, j)] avec stem:[1 ≤ i < j ≤ 1000]. C’est le nombre de façons de choisir 2 éléments distincts parmi 1000 dans un ordre croissant, soit stem:[#N = C(1000, 2) = (1000 × 999) / 2 = (999 000) / 2].
 
-_Note : une autre réponse possible est d’observer que stem:[N = {(1, 2), (1, 3), ..., (1, 1000)} ∪ {(2, 3), (2, 4), ..., (2, 1000)} ∪ ... ∪ {(999, 1000)}] et le nombre d'éléments dans chaque sous-ensemble est respectivement 999, 998, ..., 1, donc stem:[#N = 999 + 998 + ... + 1 = 999 × (999 + 1)/2] (intuitivement, (999 + 1)/2 est la moyenne des éléments sommés)._
+_Note : une autre réponse possible est d’observer que stem:[N = {(1, 2), (1, 3), ..., (1, 1000)} ∪ {(2, 3), (2, 4), ..., (2, 1000)} ∪ ... ∪ {text(()999, 1000)}] et le nombre d'éléments dans chaque sous-ensemble est respectivement 999, 998, ..., 1, donc stem:[#N = 999 + 998 + ... + 1 = 999 × (999 + 1)/2] (intuitivement, (999 + 1)/2 est la moyenne des éléments sommés)._
 // La réponse stem:[#N = 99000 / 2] au lieu de stem:[#N = 499\,500] est acceptée (mais vous devriez travailler votre calcul mental !)._
 
 === Réflexivité de N
@@ -132,7 +130,7 @@ Les seules intersections avec cardinal ≤ 1 sont celles impliquant Ours :
 === Champ de stem:[E]
 stem:[ℱ(E) = {text(Souris), text(Chat), text(Loup), text(Coyote), text(Ours)}]
 
-_Note : la simple réponse stem:[ℱ(E) = ℱ(R_1)] est également acceptable (à supposer que vous ayez répondu correctement à la question <<fr1>>)._
+_Note : la simple réponse stem:[ℱ(E) = ℱ(R_1)] est également acceptable (à supposer que vous ayez répondu correctement à la <<fr1>>)._
 
 === Calcul de stem:[F]
 stem:[F = {(i, j) | i, j ∈ ⟦1000⟧ ∧ max(i, j) ≥ 999}]
