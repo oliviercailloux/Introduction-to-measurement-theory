@@ -109,7 +109,7 @@ stem:[a ≠ b ∧ a R b ⇒ ¬(b R a)]
 ==== Exercices
 TODO: Complete xref:Ex1.adoc[Exercices S1].
 
-Solutions to some of the exercices are xref:Sol1.adoc[here].
+Solutions to xref:Sol1.adoc[some of the exercices]; to the xref:Corr1.adoc[control].
 
 === A zoo of relations
 ==== Equivalence
