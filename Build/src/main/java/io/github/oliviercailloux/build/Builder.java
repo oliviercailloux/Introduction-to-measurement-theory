@@ -102,6 +102,7 @@ public class Builder implements AutoCloseable {
     convert("Ex1");
     convert("Ex2");
     convert("Sol1");
+    convert("Corr1");
     convert("Exam1", OUTPUT_DIR, factory.usingStylesheet(TO_HTML_MY_STYLE));
   }
 
