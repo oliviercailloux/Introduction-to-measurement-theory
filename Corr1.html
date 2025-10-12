@@ -1,0 +1,1909 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Contrôle intermédiaire - Corrigé</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
+      <meta name="dc.modified" content="2025-10-12T09:44:54Z"/>
+      <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
+      <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script><script src="./js/copy-verbatim.js" defer="defer"></script></head>
+   <body class="home">
+      <nav class="top"></nav>
+      <main>
+         <article lang="fr" class="article component">
+            <header>
+               <h1>Contrôle intermédiaire - Corrigé</h1>
+            </header>
+            <div class="list-of-titles">
+               <div class="lot toc">
+                  <div class="title">Table des matières</div>
+                  <ul class="toc">
+                     <li><a href="#_animaux"><span class="label">1</span><span class="sep">. </span>Animaux</a><ul class="toc">
+                           <li><a href="#_cardinal_de_la_relation"><span class="label">1<span class="sep">.</span>1</span><span class="sep">. </span>Cardinal de la relation</a></li>
+                           <li><a href="#fr1"><span class="label">1<span class="sep">.</span>2</span><span class="sep">. </span>Champ de la relation</a></li>
+                           <li><a href="#_cardinal_du_champ"><span class="label">1<span class="sep">.</span>3</span><span class="sep">. </span>Cardinal du champ</a></li>
+                           <li><a href="#_interpr%C3%A9tation_s%C3%A9mantique"><span class="label">1<span class="sep">.</span>4</span><span class="sep">. </span>Interprétation sémantique</a></li>
+                           <li><a href="#_repr%C3%A9sentation_graphique"><span class="label">1<span class="sep">.</span>5</span><span class="sep">. </span>Représentation graphique</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#_entre_deux_zoos"><span class="label">2</span><span class="sep">. </span>Entre deux zoos</a><ul class="toc">
+                           <li><a href="#_relation_sans_propri%C3%A9t%C3%A9s_classiques"><span class="label">2<span class="sep">.</span>1</span><span class="sep">. </span>Relation sans propriétés classiques</a></li>
+                           <li><a href="#_cardinal_minimal_g%C3%A9n%C3%A9ral"><span class="label">2<span class="sep">.</span>2</span><span class="sep">. </span>Cardinal minimal général</a></li>
+                           <li><a href="#_cardinal_minimal_de_limage"><span class="label">2<span class="sep">.</span>3</span><span class="sep">. </span>Cardinal minimal de l’image</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#_les_entiers"><span class="label">3</span><span class="sep">. </span>Les entiers</a><ul class="toc">
+                           <li><a href="#_cardinal_de_n"><span class="label">3<span class="sep">.</span>1</span><span class="sep">. </span>Cardinal de N</a></li>
+                           <li><a href="#_r%C3%A9flexivit%C3%A9_de_n"><span class="label">3<span class="sep">.</span>2</span><span class="sep">. </span>Réflexivité de N</a></li>
+                           <li><a href="#_irr%C3%A9flexivit%C3%A9_de_n"><span class="label">3<span class="sep">.</span>3</span><span class="sep">. </span>Irréflexivité de N</a></li>
+                           <li><a href="#_antisym%C3%A9trie_de_n"><span class="label">3<span class="sep">.</span>4</span><span class="sep">. </span>Antisymétrie de N</a></li>
+                           <li><a href="#_transitivit%C3%A9_de_n"><span class="label">3<span class="sep">.</span>5</span><span class="sep">. </span>Transitivité de N</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#_%C3%A9l%C3%A9ments_imag%C3%A9s"><span class="label">4</span><span class="sep">. </span>Éléments imagés</a><ul class="toc">
+                           <li><a href="#_calcul_de_r1souris"><span class="label">4<span class="sep">.</span>1</span><span class="sep">. </span>Calcul de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                       <msub>
+                                          <mi>R</mi>
+                                          <mn>1</mn>
+                                       </msub>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mtext>Souris</mtext>
+                                          <mo>)</mo>
+                                       </mrow></math></span></a></li>
+                           <li><a href="#_calcul_de_e"><span class="label">4<span class="sep">.</span>2</span><span class="sep">. </span>Calcul de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                       <mi>E</mi></math></span></a></li>
+                           <li><a href="#_champ_de_e"><span class="label">4<span class="sep">.</span>3</span><span class="sep">. </span>Champ de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                       <mi>E</mi></math></span></a></li>
+                           <li><a href="#_calcul_de_f"><span class="label">4<span class="sep">.</span>4</span><span class="sep">. </span>Calcul de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                       <mi>F</mi></math></span></a></li>
+                           <li><a href="#_calcul_de_f_2"><span class="label">4<span class="sep">.</span>5</span><span class="sep">. </span>Calcul de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                       <mi>ℱ</mi>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>F</mi>
+                                          <mo>)</mo>
+                                       </mrow></math></span></a></li>
+                           <li><a href="#_r%C3%A9flexivit%C3%A9_de_f"><span class="label">4<span class="sep">.</span>6</span><span class="sep">. </span>Réflexivité de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                       <mi>F</mi></math></span></a></li>
+                           <li><a href="#_irr%C3%A9flexivit%C3%A9_de_fn"><span class="label">4<span class="sep">.</span>7</span><span class="sep">. </span>Irréflexivité de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                       <msub>
+                                          <mi>F</mi>
+                                          <mi>n</mi>
+                                       </msub></math></span></a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="db-bfs">
+               <p class="simpara">Les notes sont des indications supplémentaires pour la compréhension, mais elles ne
+                  sont pas requises dans les réponses.</p>
+            </div>
+            <section id="_animaux" class="section">
+               <header>
+                  <h2><span class="label">1</span><span class="sep">. </span>Animaux</h2>
+               </header>
+               <section id="_cardinal_de_la_relation" class="section">
+                  <header>
+                     <h3><span class="label">1<span class="sep">.</span>1</span><span class="sep">. </span>Cardinal de la relation</h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>#</mo>
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub>
+                           <mo>=</mo>
+                           <mn>16</mn></math></span></p>
+               </section>
+               <section id="fr1" class="section">
+                  <header>
+                     <h3><span class="label">1<span class="sep">.</span>2</span><span class="sep">. </span>Champ de la relation</h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>ℱ</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <msub>
+                                 <mi>R</mi>
+                                 <mn>1</mn>
+                              </msub>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mrow>
+                              <mo>{</mo>
+                              <mrow>
+                                 <mtext>Souris</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Chat</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Loup</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Coyote</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Ours</mtext>
+                              </mrow>
+                              <mo>}</mo>
+                           </mrow></math></span></p>
+               </section>
+               <section id="_cardinal_du_champ" class="section">
+                  <header>
+                     <h3><span class="label">1<span class="sep">.</span>3</span><span class="sep">. </span>Cardinal du champ</h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>#</mo>
+                           <mi>ℱ</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <msub>
+                                 <mi>R</mi>
+                                 <mn>1</mn>
+                              </msub>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mn>5</mn></math></span></p>
+               </section>
+               <section id="_interprétation_sémantique" class="section">
+                  <header>
+                     <h3><span class="label">1<span class="sep">.</span>4</span><span class="sep">. </span>Interprétation sémantique</h3>
+                  </header>
+                  <p class="simpara">Toute interprétation cohérente avec la structure de la relation est acceptable, à
+                     condition qu’elle inclue bien les paires homogènes (de type <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                                 <mo>,</mo>
+                                 <mi>a</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow></math></span>). Par exemple :</p>
+                  <ul class="itemizedlist">
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mi>y</mi></math></span> ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi></math></span> n’est pas significativement plus grand que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>y</mi></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mi>y</mi></math></span> ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi></math></span> a approximativement la même taille ou est plus petit que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>y</mi></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mi>y</mi></math></span> ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi></math></span> peut être chassé par <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>y</mi></math></span> ou <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi></math></span> égale <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>y</mi></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mi>y</mi></math></span> ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>x</mi></math></span> est dominé par <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>y</mi></math></span> ou au même niveau que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>y</mi></math></span> dans la chaine alimentaire</p>
+                     </li>
+                  </ul>
+               </section>
+               <section id="_représentation_graphique" class="section">
+                  <header>
+                     <h3><span class="label">1<span class="sep">.</span>5</span><span class="sep">. </span>Représentation graphique</h3>
+                  </header>
+                  <p class="simpara">Utilisons un diagramme de Hasse car <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub></math></span> est un préordre (relation réflexive et transitive).</p>
+                  <div class="pre-wrap screen-wrap">
+                     <pre class="screen verbatim verblines"><span class="line"><span class="ld"><code>       Souris</code></span></span>
+<span class="line"><span class="ld"><code>         |</code></span></span>
+<span class="line"><span class="ld"><code>       Chat</code></span></span>
+<span class="line"><span class="ld"><code>      /  |  \</code></span></span>
+<span class="line"><span class="ld"><code>     /   |   \</code></span></span>
+<span class="line"><span class="ld"><code>  Loup  -- Coyote</code></span></span>
+<span class="line"><span class="ld"><code>     \   |   /</code></span></span>
+<span class="line"><span class="ld"><code>      \  |  /</code></span></span>
+<span class="line"><span class="ld"><code>       Ours</code></span></span></pre>
+                  </div>
+                  <p class="simpara"><em>Note : le diagramme de Hasse est la représentation la plus appropriée car il simplifie
+                        la visualisation : les boucles réflexives et les liens déductibles de la transitivité
+                        (Souris → Loup, Souris → Coyote, Souris → Ours et Chat → Ours) sont implicites dans
+                        le diagramme de Hasse. Le double lien entre Loup et Coyote indique qu’ils sont considérés
+                        comme équivalents par <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <msub>
+                                 <mi>R</mi>
+                                 <mn>1</mn>
+                              </msub></math></span>.</em></p>
+               </section>
+            </section>
+            <section id="_entre_deux_zoos" class="section">
+               <header>
+                  <h2><span class="label">2</span><span class="sep">. </span>Entre deux zoos</h2>
+               </header>
+               <section id="_relation_sans_propriétés_classiques" class="section">
+                  <header>
+                     <h3><span class="label">2<span class="sep">.</span>1</span><span class="sep">. </span>Relation sans propriétés classiques</h3>
+                  </header>
+                  <p class="simpara">Par exemple, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <msub>
+                              <mi>R</mi>
+                              <mn>2</mn>
+                           </msub>
+                           <mo>=</mo>
+                           <mrow>
+                              <mo>{</mo>
+                           </mrow></math></span>(Chat, Chat), (Souris, Chat)<span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>}</mo></math></span>.</p>
+                  <ul class="itemizedlist">
+                     <li>
+                        <p class="simpara">Pas symétrique : manquent (Souris, Souris) et (Chat, Souris) pour satisfaire la symétrie</p>
+                     </li>
+                     <li>
+                        <p class="simpara">Pas asymétrique ni irréflexive à cause de (Chat, Chat)</p>
+                     </li>
+                     <li>
+                        <p class="simpara">Pas réflexive : il manque (Souris, Souris)</p>
+                     </li>
+                  </ul>
+                  <p class="simpara"><em>Note : De nombreux autres exemples sont possibles, par exemple <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <msub>
+                                 <mi>R</mi>
+                                 <mn>2</mn>
+                              </msub>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                              </mrow></math></span>(Chat, Chat), (Chat, Souris), (Souris, Chat)}].</em></p>
+               </section>
+               <section id="_cardinal_minimal_général" class="section">
+                  <header>
+                     <h3><span class="label">2<span class="sep">.</span>2</span><span class="sep">. </span>Cardinal minimal général</h3>
+                  </header>
+                  <p class="simpara">Le cardinal minimal est 2.</p>
+                  <ul class="itemizedlist">
+                     <li>
+                        <p class="simpara">Avec 0 éléments : la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mo>∅</mo></math></span> est symétrique, asymétrique, réflexive et irréflexive</p>
+                     </li>
+                     <li>
+                        <p class="simpara">Avec 1 élément : toute relation est soit réflexive <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtable>
+                                       <mtr>
+                                          <mtd>
+                                             <mi>a</mi>
+                                          </mtd>
+                                          <mtd>
+                                             <mi>a</mi>
+                                          </mtd>
+                                       </mtr>
+                                    </mtable>
+                                    <mo>}</mo>
+                                 </mrow></math></span>, soit irréflexive <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mo>∅</mo></math></span></p>
+                     </li>
+                  </ul>
+               </section>
+               <section id="_cardinal_minimal_de_limage" class="section">
+                  <header>
+                     <h3><span class="label">2<span class="sep">.</span>3</span><span class="sep">. </span>Cardinal minimal de l’image</h3>
+                  </header>
+                  <p class="simpara">Le cardinal minimal de l’image est 1.</p>
+                  <ul class="itemizedlist">
+                     <li>
+                        <p class="simpara">Avec 0 éléments : si l’image est vide, le champ l’est aussi, et donc la relation également,
+                           or la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mo>∅</mo></math></span> est symétrique, asymétrique, réflexive et irréflexive</p>
+                     </li>
+                     <li>
+                        <p class="simpara">Avec 1 élément, on a l’exemple ci-dessus.</p>
+                     </li>
+                  </ul>
+               </section>
+            </section>
+            <section id="_les_entiers" class="section">
+               <header>
+                  <h2><span class="label">3</span><span class="sep">. </span>Les entiers</h2>
+               </header>
+               <section id="_cardinal_de_n" class="section">
+                  <header>
+                     <h3><span class="label">3<span class="sep">.</span>1</span><span class="sep">. </span>Cardinal de N</h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>#</mo>
+                           <mi>N</mi>
+                           <mo>=</mo>
+                           <mn>499</mn>
+                           <mo>\</mo>
+                           <mo>,</mo>
+                           <mn>500</mn></math></span>. En effet, la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>N</mi></math></span> contient tous les couples <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>i</mi>
+                                 <mo>,</mo>
+                                 <mi>j</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow></math></span> avec <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mn>1</mn>
+                           <mo>≤</mo>
+                           <mi>i</mi>
+                           <mo>&lt;</mo>
+                           <mi>j</mi>
+                           <mo>≤</mo>
+                           <mn>1000</mn></math></span>. C’est le nombre de façons de choisir 2 éléments distincts parmi 1000 dans un ordre
+                     croissant, soit <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>#</mo>
+                           <mi>N</mi>
+                           <mo>=</mo>
+                           <mi>C</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mn>1000</mn>
+                                 <mo>,</mo>
+                                 <mn>2</mn>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mfrac>
+                              <mrow>
+                                 <mn>1000</mn>
+                                 <mo>×</mo>
+                                 <mn>999</mn>
+                              </mrow>
+                              <mn>2</mn>
+                           </mfrac>
+                           <mo>=</mo>
+                           <mfrac>
+                              <mn>999000</mn>
+                              <mn>2</mn>
+                           </mfrac></math></span>.</p>
+                  <p class="simpara"><em>Note : une autre réponse possible est d’observer que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>N</mi>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mn>1</mn>
+                                          <mo>,</mo>
+                                          <mn>2</mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mn>1</mn>
+                                          <mo>,</mo>
+                                          <mn>3</mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mo>…</mo>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mn>1</mn>
+                                          <mo>,</mo>
+                                          <mn>1000</mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow>
+                              <mo>∪</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mn>2</mn>
+                                          <mo>,</mo>
+                                          <mn>3</mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mn>2</mn>
+                                          <mo>,</mo>
+                                          <mn>4</mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mo>…</mo>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mn>2</mn>
+                                          <mo>,</mo>
+                                          <mn>1000</mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow>
+                              <mo>∪</mo>
+                              <mo>…</mo>
+                              <mo>∪</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mtable>
+                                    <mtr>
+                                       <mtd>
+                                          <mn>999</mn>
+                                       </mtd>
+                                       <mtd>
+                                          <mn>1000</mn>
+                                       </mtd>
+                                    </mtr>
+                                 </mtable>
+                                 <mo>}</mo>
+                              </mrow></math></span> et le nombre d’éléments dans chaque sous-ensemble est respectivement 999, 998, …​,
+                        1, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>#</mo>
+                              <mi>N</mi>
+                              <mo>=</mo>
+                              <mn>999</mn>
+                              <mo>+</mo>
+                              <mn>998</mn>
+                              <mo>+</mo>
+                              <mo>…</mo>
+                              <mo>+</mo>
+                              <mn>1</mn>
+                              <mo>=</mo>
+                              <mn>999</mn>
+                              <mo>×</mo>
+                              <mfrac>
+                                 <mrow>
+                                    <mn>999</mn>
+                                    <mo>+</mo>
+                                    <mn>1</mn>
+                                 </mrow>
+                                 <mn>2</mn>
+                              </mfrac></math></span> (intuitivement, (999 + 1)/2 est la moyenne des éléments sommés).</em></p>
+               </section>
+               <section id="_réflexivité_de_n" class="section">
+                  <header>
+                     <h3><span class="label">3<span class="sep">.</span>2</span><span class="sep">. </span>Réflexivité de N</h3>
+                  </header>
+                  <p class="simpara">La relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>N</mi></math></span> n’est pas réflexive : pour être réflexive, il faudrait que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>∀</mo>
+                           <mi>i</mi>
+                           <mo>∈</mo>
+                           <mo>⟦</mo>
+                           <mn>1000</mn>
+                           <mo>⟧</mo>
+                           <mo>:</mo>
+                           <mi>i</mi>
+                           <mi>N</mi>
+                           <mi>i</mi></math></span>, c’est-à-dire <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mo>&lt;</mo>
+                           <mi>i</mi></math></span>, ce qui est faux.
+                     <em>Note : on peut aussi simplement observer l’absence de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>2</mn>
+                                    <mo>,</mo>
+                                    <mn>2</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow></math></span> dans N, par exemple, puisque 2 n’est pas strictement inférieur à 2.</em></p>
+               </section>
+               <section id="_irréflexivité_de_n" class="section">
+                  <header>
+                     <h3><span class="label">3<span class="sep">.</span>3</span><span class="sep">. </span>Irréflexivité de N</h3>
+                  </header>
+                  <p class="simpara">La relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>N</mi></math></span> est irréflexive : pour tout <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mo>∈</mo>
+                           <mo>⟦</mo>
+                           <mn>1000</mn>
+                           <mo>⟧</mo></math></span>, on a bien <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>¬</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>i</mi>
+                                 <mo>&lt;</mo>
+                                 <mi>i</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow></math></span>, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>¬</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>i</mi>
+                                 <mi>N</mi>
+                                 <mi>i</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow></math></span>.</p>
+               </section>
+               <section id="_antisymétrie_de_n" class="section">
+                  <header>
+                     <h3><span class="label">3<span class="sep">.</span>4</span><span class="sep">. </span>Antisymétrie de N</h3>
+                  </header>
+                  <p class="simpara">La relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>N</mi></math></span> est antisymétrique : si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mi>N</mi>
+                           <mi>j</mi></math></span> alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mo>&lt;</mo>
+                           <mi>j</mi></math></span>, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>j</mi>
+                           <mo>≮</mo>
+                           <mi>i</mi></math></span>, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>¬</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>j</mi>
+                                 <mi>N</mi>
+                                 <mi>i</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow></math></span>.</p>
+               </section>
+               <section id="_transitivité_de_n" class="section">
+                  <header>
+                     <h3><span class="label">3<span class="sep">.</span>5</span><span class="sep">. </span>Transitivité de N</h3>
+                  </header>
+                  <p class="simpara">La relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>N</mi></math></span> est transitive : si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mi>N</mi>
+                           <mi>j</mi></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>j</mi>
+                           <mi>N</mi>
+                           <mi>k</mi></math></span>, alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mo>&lt;</mo>
+                           <mi>j</mi>
+                           <mo>&lt;</mo>
+                           <mi>k</mi></math></span>, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mo>&lt;</mo>
+                           <mi>k</mi></math></span>, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mi>N</mi>
+                           <mi>k</mi></math></span>.</p>
+               </section>
+            </section>
+            <section id="_éléments_imagés" class="section">
+               <header>
+                  <h2><span class="label">4</span><span class="sep">. </span>Éléments imagés</h2>
+               </header>
+               <section id="_calcul_de_r1souris" class="section">
+                  <header>
+                     <h3><span class="label">4<span class="sep">.</span>1</span><span class="sep">. </span>Calcul de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <msub>
+                                 <mi>R</mi>
+                                 <mn>1</mn>
+                              </msub>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mtext>Souris</mtext>
+                                 <mo>)</mo>
+                              </mrow></math></span></h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub>
+                           <mrow>
+                              <mo>(</mo>
+                              <mtext>Souris</mtext>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mrow>
+                              <mo>{</mo>
+                              <mrow>
+                                 <mtext>Souris</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Chat</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Loup</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Coyote</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Ours</mtext>
+                              </mrow>
+                              <mo>}</mo>
+                           </mrow></math></span></p>
+               </section>
+               <section id="_calcul_de_e" class="section">
+                  <header>
+                     <h3><span class="label">4<span class="sep">.</span>2</span><span class="sep">. </span>Calcul de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>E</mi></math></span></h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>E</mi>
+                           <mo>=</mo>
+                           <mrow>
+                              <mo>{</mo>
+                           </mrow></math></span>(Souris, Ours), (Ours, Souris), (Chat, Ours), (Ours, Chat), (Loup, Ours), (Ours, Loup),
+                     (Coyote, Ours), (Ours, Coyote), (Ours, Ours)<span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>}</mo></math></span>.</p>
+                  <p class="simpara">En effet, pour chaque animal <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>a</mi></math></span>, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>a</mi>
+                              <mo>)</mo>
+                           </mrow></math></span> est l’ensemble des animaux au même niveau ou plus bas que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>a</mi></math></span> dans le diagramme de Hasse ci-dessus.
+                     Cet ensemble contient uniquement Ours si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>a</mi></math></span> est Ours, et sinon, donc si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>a</mi></math></span> est au niveau de Loup et Coyote ou plus haut (Chat ou Souris), alors l’ensemble <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>a</mi>
+                              <mo>)</mo>
+                           </mrow></math></span> contient au moins Loup, Coyote et Ours.</p>
+                  <p class="simpara">Donc, si un des animaux d’une paire <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                                 <mo>,</mo>
+                                 <mi>b</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow></math></span> est Ours, alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>a</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>∩</mo>
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>b</mi>
+                              <mo>)</mo>
+                           </mrow></math></span> contient au plus Ours, donc son cardinal est au plus 1, donc ces paires sont dans
+                     <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>E</mi></math></span> ; si aucun des animaux d’une paire <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                                 <mo>,</mo>
+                                 <mi>b</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow></math></span> n’est Ours, alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>a</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>∩</mo>
+                           <msub>
+                              <mi>R</mi>
+                              <mn>1</mn>
+                           </msub>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>b</mi>
+                              <mo>)</mo>
+                           </mrow></math></span> contient au moins Loup, Coyote et Ours, ces paires sont donc exclues de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>E</mi></math></span>.</p>
+                  <p class="simpara">Il s’ensuit qu’une paire est dans <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>E</mi></math></span> ssi au moins l’un des deux animaux est Ours.</p>
+                  <p class="simpara"><em>Note : on peut aussi trouver la réponse par calcul exhaustif, indiqué ci-dessous.
+                        L’inconvénient de cette approche (outre son inélégance et le risque d’erreur d’inattention)
+                        est qu’elle ne met pas sur la voie pour les questions suivantes.</em></p>
+                  <ul class="itemizedlist">
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Souris</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Souris</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Chat</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Chat</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Coyote</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>}</mo>
+                                 </mrow></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Souris</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Souris</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Souris</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Chat</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 5</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Souris</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Chat</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 4</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Souris</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Souris</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Coyote</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Souris</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 1</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Chat</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Coyote</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 1</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Coyote</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 1</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Coyote</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Coyote</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Coyote</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mtext>Loup</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Coyote</mtext>
+                                       <mo>,</mo>
+                                       <mtext>Ours</mtext>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 3</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Coyote</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 1</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>}</mo>
+                                 </mrow></math></span> → cardinal 1</p>
+                     </li>
+                     <li>
+                        <p class="simpara">Omettons les paires restantes, qui sont déductibles en observant que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>)</mo>
+                                 </mrow></math></span>, donc par exemple <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Chat</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Loup</mtext>
+                                    <mo>)</mo>
+                                 </mrow></math></span>.</p>
+                     </li>
+                  </ul>
+                  <p class="simpara">Toutes les intersections impliquant deux animaux différents de Ours ont un cardinal
+                     ≥ 3.</p>
+                  <p class="simpara">Les seules intersections avec cardinal ≤ 1 sont celles impliquant Ours :</p>
+                  <ul class="itemizedlist">
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>}</mo>
+                                 </mrow></math></span> pour tout <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>a</mi>
+                                 <mo>∈</mo>
+                                 <mi>ℱ</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <msub>
+                                       <mi>R</mi>
+                                       <mn>1</mn>
+                                    </msub>
+                                    <mo>)</mo>
+                                 </mrow></math></span></p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mtext>Ours</mtext>
+                                    <mo>}</mo>
+                                 </mrow></math></span> pour tout <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>b</mi>
+                                 <mo>∈</mo>
+                                 <mi>ℱ</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <msub>
+                                       <mi>R</mi>
+                                       <mn>1</mn>
+                                    </msub>
+                                    <mo>)</mo>
+                                 </mrow></math></span></p>
+                     </li>
+                  </ul>
+               </section>
+               <section id="_champ_de_e" class="section">
+                  <header>
+                     <h3><span class="label">4<span class="sep">.</span>3</span><span class="sep">. </span>Champ de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>E</mi></math></span></h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>ℱ</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>E</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mrow>
+                              <mo>{</mo>
+                              <mrow>
+                                 <mtext>Souris</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Chat</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Loup</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Coyote</mtext>
+                                 <mo>,</mo>
+                                 <mtext>Ours</mtext>
+                              </mrow>
+                              <mo>}</mo>
+                           </mrow></math></span></p>
+                  <p class="simpara"><em>Note : la simple réponse <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>E</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>=</mo>
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <msub>
+                                    <mi>R</mi>
+                                    <mn>1</mn>
+                                 </msub>
+                                 <mo>)</mo>
+                              </mrow></math></span> est également acceptable (à supposer que vous ayez répondu correctement à la question
+                        <a href="#fr1" class="xref xref-section">Section <span class="label">1<span class="sep">.</span>2</span>, « Champ de la relation »</a>).</em></p>
+               </section>
+               <section id="_calcul_de_f" class="section">
+                  <header>
+                     <h3><span class="label">4<span class="sep">.</span>4</span><span class="sep">. </span>Calcul de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>F</mi></math></span></h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>F</mi>
+                           <mo>=</mo>
+                           <mrow>
+                              <mo>{</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>i</mi>
+                                       <mo>,</mo>
+                                       <mi>j</mi>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>|</mo>
+                                 <mi>i</mi>
+                                 <mo>,</mo>
+                                 <mi>j</mi>
+                                 <mo>∈</mo>
+                                 <mo>⟦</mo>
+                                 <mn>1000</mn>
+                                 <mo>⟧</mo>
+                                 <mo>∧</mo>
+                                 <mo>max</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>i</mi>
+                                       <mo>,</mo>
+                                       <mi>j</mi>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>≥</mo>
+                                 <mn>999</mn>
+                              </mrow>
+                              <mo>}</mo>
+                           </mrow></math></span></p>
+                  <p class="simpara">En effet, pour tout <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi>
+                           <mo>∈</mo>
+                           <mo>⟦</mo>
+                           <mn>1000</mn>
+                           <mo>⟧</mo></math></span>, on a <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>N</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>i</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mrow>
+                              <mo>{</mo>
+                              <mrow>
+                                 <mi>k</mi>
+                                 <mo>|</mo>
+                                 <mi>i</mi>
+                                 <mo>&lt;</mo>
+                                 <mi>k</mi>
+                                 <mo>≤</mo>
+                                 <mn>1000</mn>
+                              </mrow>
+                              <mo>}</mo>
+                           </mrow></math></span>.
+                     Donc, pour deux entiers <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>i</mi></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>j</mi></math></span>, on a <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>N</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>i</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>∩</mo>
+                           <mi>N</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>j</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mrow>
+                              <mo>{</mo>
+                              <mrow>
+                                 <mi>k</mi>
+                                 <mo>|</mo>
+                                 <mo>max</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>i</mi>
+                                       <mo>,</mo>
+                                       <mi>j</mi>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>&lt;</mo>
+                                 <mi>k</mi>
+                                 <mo>≤</mo>
+                                 <mn>1000</mn>
+                              </mrow>
+                              <mo>}</mo>
+                           </mrow></math></span>.
+                     Cette intersection contient au plus un élément ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>max</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>i</mi>
+                                 <mo>,</mo>
+                                 <mi>j</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>≥</mo>
+                           <mn>999</mn></math></span>.</p>
+                  <p class="simpara"><em>Note : de multiples formulations existent, par exemple la réponse <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>F</mi>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>i</mi>
+                                          <mo>,</mo>
+                                          <mi>j</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>∈</mo>
+                                    <mo>⟦</mo>
+                                    <mn>1000</mn>
+                                    <mo>⟧</mo>
+                                    <mo>|</mo>
+                                    <mi>i</mi>
+                                    <mo>≥</mo>
+                                    <mn>999</mn>
+                                    <mo>∨</mo>
+                                    <mi>j</mi>
+                                    <mo>≥</mo>
+                                    <mn>999</mn>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span> est également acceptable.</em></p>
+               </section>
+               <section id="_calcul_de_f_2" class="section">
+                  <header>
+                     <h3><span class="label">4<span class="sep">.</span>5</span><span class="sep">. </span>Calcul de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>ℱ</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>F</mi>
+                                 <mo>)</mo>
+                              </mrow></math></span></h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>ℱ</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>F</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mo>⟦</mo>
+                           <mn>1000</mn>
+                           <mo>⟧</mo></math></span>.</p>
+                  <p class="simpara"><em>Note : une preuve (non demandée) est que pour tout <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>i</mi>
+                              <mo>∈</mo>
+                              <mo>⟦</mo>
+                              <mn>1000</mn>
+                              <mo>⟧</mo></math></span>, on a <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>i</mi>
+                                    <mo>,</mo>
+                                    <mn>999</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>∈</mo>
+                              <mi>F</mi></math></span>.</em></p>
+               </section>
+               <section id="_réflexivité_de_f" class="section">
+                  <header>
+                     <h3><span class="label">4<span class="sep">.</span>6</span><span class="sep">. </span>Réflexivité de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>F</mi></math></span></h3>
+                  </header>
+                  <p class="simpara">La relation n’est pas réflexive : par exemple, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mn>1</mn>
+                           <mo>∈</mo>
+                           <mi>ℱ</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>F</mi>
+                              <mo>)</mo>
+                           </mrow></math></span> mais <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mn>1</mn>
+                                 <mo>,</mo>
+                                 <mn>1</mn>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>∉</mo>
+                           <mi>F</mi></math></span> car <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>max</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mn>1</mn>
+                                 <mo>,</mo>
+                                 <mn>1</mn>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mn>1</mn>
+                           <mo>&lt;</mo>
+                           <mn>999</mn></math></span>.</p>
+               </section>
+               <section id="_irréflexivité_de_fn" class="section">
+                  <header>
+                     <h3><span class="label">4<span class="sep">.</span>7</span><span class="sep">. </span>Irréflexivité de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <msub>
+                                 <mi>F</mi>
+                                 <mi>n</mi>
+                              </msub></math></span></h3>
+                  </header>
+                  <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <msub>
+                              <mi>F</mi>
+                              <mi>n</mi>
+                           </msub></math></span> n’est pas irréflexive, quel que soit <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>n</mi></math></span>.
+                     En effet, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>n</mi>
+                                 <mo>,</mo>
+                                 <mi>n</mi>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>∈</mo>
+                           <msub>
+                              <mi>F</mi>
+                              <mi>n</mi>
+                           </msub></math></span> car <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>#</mo>
+                           <mi>N</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>n</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mn>0</mn>
+                           <mo>≤</mo>
+                           <mn>1</mn></math></span>.</p>
+                  <p class="simpara"><em>Note : cette réponse considère <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>N</mi></math></span> définie sur <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>⟦</mo>
+                              <mi>n</mi>
+                              <mo>⟧</mo></math></span>, ce qui n’était pas explicite. Une réponse qui considère que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>N</mi></math></span> reste borné à 1000 quand <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>n</mi></math></span> change est également acceptée.</em></p>
+               </section>
+            </section>
+         </article>
+      </main>
+      <nav class="bottom"></nav>
+   </body>
+</html>
