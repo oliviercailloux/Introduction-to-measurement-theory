@@ -3,7 +3,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Contrôle intermédiaire - Corrigé</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-      <meta name="dc.modified" content="2025-10-12T09:44:54Z"/>
+      <meta name="dc.modified" content="2025-10-12T10:13:56Z"/>
       <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
       <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script><script src="./js/copy-verbatim.js" defer="defer"></script></head>
    <body class="home">
@@ -223,11 +223,11 @@
                      <pre class="screen verbatim verblines"><span class="line"><span class="ld"><code>       Souris</code></span></span>
 <span class="line"><span class="ld"><code>         |</code></span></span>
 <span class="line"><span class="ld"><code>       Chat</code></span></span>
-<span class="line"><span class="ld"><code>      /  |  \</code></span></span>
-<span class="line"><span class="ld"><code>     /   |   \</code></span></span>
+<span class="line"><span class="ld"><code>      /     \</code></span></span>
+<span class="line"><span class="ld"><code>     /       \</code></span></span>
 <span class="line"><span class="ld"><code>  Loup  -- Coyote</code></span></span>
-<span class="line"><span class="ld"><code>     \   |   /</code></span></span>
-<span class="line"><span class="ld"><code>      \  |  /</code></span></span>
+<span class="line"><span class="ld"><code>     \       /</code></span></span>
+<span class="line"><span class="ld"><code>      \     /</code></span></span>
 <span class="line"><span class="ld"><code>       Ours</code></span></span></pre>
                   </div>
                   <p class="simpara"><em>Note : le diagramme de Hasse est la représentation la plus appropriée car il simplifie
@@ -278,35 +278,38 @@
                               <mo>=</mo>
                               <mrow>
                                  <mo>{</mo>
-                              </mrow></math></span>(Chat, Chat), (Chat, Souris), (Souris, Chat)}].</em></p>
+                              </mrow></math></span>(Chat, Chat), (Chat, Souris), (Souris, Chat)<span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>}</mo></math></span>.</em></p>
                </section>
                <section id="_cardinal_minimal_général" class="section">
                   <header>
                      <h3><span class="label">2<span class="sep">.</span>2</span><span class="sep">. </span>Cardinal minimal général</h3>
                   </header>
-                  <p class="simpara">Le cardinal minimal est 2.</p>
+                  <p class="simpara">Le cardinal minimal est 2 (exemple ci-dessus).</p>
                   <ul class="itemizedlist">
                      <li>
                         <p class="simpara">Avec 0 éléments : la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mo>∅</mo></math></span> est symétrique, asymétrique, réflexive et irréflexive</p>
                      </li>
                      <li>
-                        <p class="simpara">Avec 1 élément : toute relation est soit réflexive <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <p class="simpara">Avec 1 élément : toute relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mrow>
                                     <mo>{</mo>
-                                    <mtable>
-                                       <mtr>
-                                          <mtd>
-                                             <mi>a</mi>
-                                          </mtd>
-                                          <mtd>
-                                             <mi>a</mi>
-                                          </mtd>
-                                       </mtr>
-                                    </mtable>
-                                    <mo>}</mo>
-                                 </mrow></math></span>, soit irréflexive <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                 <mo>∅</mo></math></span></p>
+                                    <mrow>
+                                       <mtext>(</mtext>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>b</mi>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>}</mo></math></span> est réflexive si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>a</mi>
+                                 <mo>=</mo>
+                                 <mi>b</mi></math></span> et irréflexive si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>a</mi>
+                                 <mo>≠</mo>
+                                 <mi>b</mi></math></span></p>
                      </li>
                   </ul>
                </section>
@@ -314,17 +317,30 @@
                   <header>
                      <h3><span class="label">2<span class="sep">.</span>3</span><span class="sep">. </span>Cardinal minimal de l’image</h3>
                   </header>
-                  <p class="simpara">Le cardinal minimal de l’image est 1.</p>
-                  <ul class="itemizedlist">
-                     <li>
-                        <p class="simpara">Avec 0 éléments : si l’image est vide, le champ l’est aussi, et donc la relation également,
-                           or la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                 <mo>∅</mo></math></span> est symétrique, asymétrique, réflexive et irréflexive</p>
-                     </li>
-                     <li>
-                        <p class="simpara">Avec 1 élément, on a l’exemple ci-dessus.</p>
-                     </li>
-                  </ul>
+                  <p class="simpara">Le cardinal minimal de l’image est 1 (exemple ci-dessus).
+                     En effet, avec 0 éléments, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mstyle mathvariant="script">
+                              <mtext>I</mtext>
+                           </mstyle>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>R</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mo>∅</mo></math></span>, on a <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>ℱ</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>R</mi>
+                              <mo>)</mo>
+                           </mrow>
+                           <mo>=</mo>
+                           <mo>∅</mo></math></span>, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>R</mi>
+                           <mo>=</mo>
+                           <mo>∅</mo></math></span>, or la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>∅</mo></math></span> est symétrique, asymétrique, réflexive et irréflexive.</p>
                </section>
             </section>
             <section id="_les_entiers" class="section">
@@ -340,8 +356,7 @@
                            <mi>N</mi>
                            <mo>=</mo>
                            <mn>499</mn>
-                           <mo>\</mo>
-                           <mo>,</mo>
+                           <mo> </mo>
                            <mn>500</mn></math></span>. En effet, la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                            <mi>N</mi></math></span> contient tous les couples <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                            <mrow>
@@ -385,7 +400,11 @@
                            </mfrac>
                            <mo>=</mo>
                            <mfrac>
-                              <mn>999000</mn>
+                              <mrow>
+                                 <mn>999</mn>
+                                 <mo> </mo>
+                                 <mn>000</mn>
+                              </mrow>
                               <mn>2</mn>
                            </mfrac></math></span>.</p>
                   <p class="simpara"><em>Note : une autre réponse possible est d’observer que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -471,18 +490,15 @@
                               <mo>∪</mo>
                               <mrow>
                                  <mo>{</mo>
-                                 <mtable>
-                                    <mtr>
-                                       <mtd>
-                                          <mn>999</mn>
-                                       </mtd>
-                                       <mtd>
-                                          <mn>1000</mn>
-                                       </mtd>
-                                    </mtr>
-                                 </mtable>
-                                 <mo>}</mo>
-                              </mrow></math></span> et le nombre d’éléments dans chaque sous-ensemble est respectivement 999, 998, …​,
+                                 <mrow>
+                                    <mtext>(</mtext>
+                                    <mn>999</mn>
+                                    <mo>,</mo>
+                                    <mn>1000</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>}</mo></math></span> et le nombre d’éléments dans chaque sous-ensemble est respectivement 999, 998, …​,
                         1, donc <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mo>#</mo>
                               <mi>N</mi>
@@ -1618,8 +1634,7 @@
                                     <mn>1</mn>
                                  </msub>
                                  <mo>)</mo>
-                              </mrow></math></span> est également acceptable (à supposer que vous ayez répondu correctement à la question
-                        <a href="#fr1" class="xref xref-section">Section <span class="label">1<span class="sep">.</span>2</span>, « Champ de la relation »</a>).</em></p>
+                              </mrow></math></span> est également acceptable (à supposer que vous ayez répondu correctement à la <a href="#fr1" class="xref xref-section">Section <span class="label">1<span class="sep">.</span>2</span>, « Champ de la relation »</a>).</em></p>
                </section>
                <section id="_calcul_de_f" class="section">
                   <header>
