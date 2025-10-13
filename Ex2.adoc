@@ -30,33 +30,29 @@ Effectuez l’exercice 8 page 27 du livre de Roberts (plus difficile).
 
 == La relation ≤ sur un membre
 Définissons l’ensemble de paires stem:[A = {1, 2, 3, 4}^2}], 
-définissons une relation stem:[R] sur stem:[A] comme et stem:[(a, b)R(c, d) ⇔ a ≤ c].
+définissons une relation stem:[R] sur stem:[A] comme stem:[(a, b) R (c, d) ⇔ a ≤ c].
 Montrez que stem:[R] est un préordre complet et calculez la réduction stem:[R^***].
 
 == Réduction
 Considérons stem:[R] contenant ces paires :
-stem:[(a, a), (b, b), (x, x), (y,y), (a, a), (β, β), (γ, γ),
-(y, x), (x,y), (x, a), (x, b), (y, a), (y, b), (a, β),
-(a, γ), (β, α), (β, γ), (γ, α), (γ, β), (α, x), (α, y),
-(α, a), (α, b), (β, x) (β,y), (β, a), (β, b), (γ, x),
-(γ, y), (γ, α), (γ, b)].
+stem:[(a, a), (b, b), (x, x), (y, y), (a, a), (β, β), (γ, γ)], stem:[(y, x), (x,y), (x, a), (x, b), (y, a), (y, b), (a, β)], stem:[(a, γ), (β, α), (β, γ), (γ, α), (γ, β), (α, x), (α, y)], stem:[(α, a), (α, b), (β, x), (β,y), (β, a), (β, b), (γ, x)], stem:[(γ, y), (γ, α), (γ, b)].
 
-Montrez que stem:[R] est un préordre complet et calculez sa réduction.
+Vérifiez que stem:[R] est un préordre complet et calculez sa réduction.
 
 == Presque
 Définissons stem:[P] sur les paires de réels comme 
-stem:[(a, b)P(s, t)
+stem:[(a, b) P (s, t)
 ⇔
-a ≥ s & b ≥ t
-& (a >s or b>t)].
+a ≥ s ∧ b ≥ t
+∧ (a > s ∨ b > t)].
 
 Montrez que stem:[P] n’est pas un préordre complet.
 
 == Ordre lexicographique
 Définissons stem:[P] sur les paires de réels comme 
-stem:[(a, b)P(s, t)
+stem:[(a, b) P (s, t)
 ⇔
-a ≥ s or (a = s and b≥t)].
+a ≥ s ∨ (a = s ∧ b ≥ t)].
 
 Est-elle une sorte de relation vue en cours ?
 
