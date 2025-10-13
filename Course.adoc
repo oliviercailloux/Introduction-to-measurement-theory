@@ -212,8 +212,8 @@ Uniqueness: to determine properties of the numbers that transfer to our observat
 
 Scale type: ordinal
 
-// === Exercices
-// See xref:Ex3.adoc[Exercices S3].
+=== Exercices
+See xref:Ex3.adoc[Exercices S3].
 
 == Wrap-up
 When facing a falsifiable or normative claim, think about:
