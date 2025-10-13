@@ -109,9 +109,9 @@ stem:[a ≠ b ∧ a R b ⇒ ¬(b R a)]
 For many authors (including Roberts but excluding Halmos), the set on which stem:[R] is defined is exogenous, thus a relation is a pair stem:[(A, R)] with stem:[R ⊆ A²] (hence stem:[ℱ(R) ⊆ A]). This allows for the possibility that stem:[ℱ(R) ≠ A]. Completeness is then defined as stem:[∀ a ≠ b ∈ A: a R b ν b R a]. Similarly, other definitions (such as reflexivity) then differ from those given here (one consequence is that reflexivity no more follows from transitivity and symmetry). In this document, we assume stem:[A] is chosen equal to stem:[ℱ(R)], in which case the definitions coincide.
 
 === Exercices
-xref:Ex1.adoc[Exercices S1], xref:Exam1.adoc[Intermediate control 2025].
+xref:Ex1.adoc[Exercices S1], xref:Exam1.adoc[Intermediate control 2025] (xref:Exam1.pdf[PDF]).
 
-Solutions to xref:Sol1.adoc[some of the exercices]; to the xref:Corr1.adoc[control].
+Solutions to xref:Sol1.adoc[some of the exercices]; to the xref:Corr1.adoc[control] (xref:Corr1.pdf[PDF]).
 
 == Sorts of preorders
 === Equivalence
