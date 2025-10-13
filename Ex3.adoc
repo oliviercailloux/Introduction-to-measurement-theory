@@ -1,0 +1,72 @@
+= Exercices S3
+:lang: fr
+
+== Fonction ou pas ?
+Pour chacune des relations suivantes, indiquez si elle est une fonction. Si oui, précisez son domaine et son image.
+
+. stem:[R = {(1, 2), (2, 3), (3, 4)}]
+. stem:[S = {(1, 2), (1, 3)}]
+. stem:[T = {(x, y) ∈ ℝ² | y² = x}]
+. stem:[U = {(a, b) | a divise b}]
+
+== Unicité et totalité
+Donnez un exemple d’une relation qui est :
+
+. droite-unique mais pas gauche-unique ;
+. gauche-unique mais pas droite-unique ;
+. ni l’une ni l’autre ;
+. droite-totale sur un l’ensemble stem:[{a, b, c}].
+
+== Représenter une relation d’ordre
+On considère la relation stem:[R] sur stem:[A = {a, b, c}] définie par stem:[a R b], stem:[a R c], stem:[b R c], et stem:[x R x] pour tout stem:[x].
+
+. Montrez que stem:[R] est un ordre complet.
+. Trouvez une fonction stem:[f : A → ℝ] telle que stem:[a R b ⇔ f(a) ≥ f(b)].
+. La fonction stem:[f] est-elle unique ? Expliquez.
+
+== Préférence et représentation
+Une personne préfère stem:[x] à stem:[y] si elle choisit stem:[x] lorsque les deux options sont disponibles.
+On observe les choix suivants :
+stem:[a ≻ b], stem:[a ≻ c], stem:[b ≻ c].
+
+. Représentez la relation stem:[≽] associée à ces préférences.
+. Montrez qu’elle est complète et transitive.
+. Trouvez une fonction stem:[f : {a, b, c} → ℝ] telle que stem:[x ≻ y ⇔ f(x) > f(y)].
+
+== Homomorphismes
+Soit stem:[R] définie par stem:[a R b], stem:[b R c], stem:[c R d], et reflexivité.
+
+. Trouvez une fonction stem:[f : A → ℝ] telle que stem:[a R b ⇔ f(a) ≥ f(b)].
+. Proposez une autre fonction stem:[g] qui soit également homomorphe à stem:[R] et décrivez la transformation entre stem:[f] et stem:[g].
+
+== Non-transitivité et impossibilité de représentation
+Considérons stem:[R] sur stem:[A = {a, b, c}] avec stem:[a R b], stem:[b R c], mais stem:[¬(a R c)].
+Montrez qu’il n’existe pas de fonction stem:[f : A → ℝ] telle que stem:[a R b ⇔ f(a) ≥ f(b)].
+
+== Transformation admissible
+. Donnez un exemple d’une relation stem:[R] sur un ensemble stem:[A] et d’une fonction stem:[f] telle que stem:[R] soit homomorphe à stem:[≥] via stem:[f].
+. Proposez une transformation stem:[φ] telle que stem:[φ ∘ f] définisse un autre homomorphisme à stem:[≥].
+. Quelle est la nature de la transformation stem:[φ] (ordinale, intervalle, etc.) ?
+
+== Représentation et équivalence
+Soit stem:[R] une relation complète sur stem:[A = {x, y, z}] avec stem:[x R y], stem:[y R x], stem:[x R z], stem:[z R x].
+
+. Quelle est la partie symétrique de stem:[R] ?
+. Déterminez les classes d’équivalence de stem:[sym(R)].
+. Quelle est la réduction stem:[R^***] ?
+. Représentez cette réduction par une fonction numérique.
+
+== Interprétation économique (plus difficile)
+On considère une relation de préférence stem:[≽] sur un ensemble de paniers de consommation stem:[A = {(1, 0), (0, 1), (1, 1)}] définie par stem:[(x₁, x₂) ≽ (y₁, y₂)] ssi stem:[x₁ + x₂ ≥ y₁ + y₂].
+
+. Montrez que stem:[≽] est un préordre complet.
+. Proposez une fonction stem:[f(x₁, x₂)] qui la représente.
+. Donnez un exemple de transformation admissible stem:[φ] pour ce type d’échelle.
+
+== Difficulté supplémentaire : ordre strict
+Définissons la relation stem:[P] sur stem:[A = {a, b, c}] par stem:[a P b], stem:[b P c], et rien d’autre.
+
+. Montrez que stem:[P] est transitive et irréflexive.
+. Définissez la relation stem:[R = P ∪ {(x, x) | x ∈ A}]. Quelle est sa nature ?
+. Montrez que stem:[R] est homomorphe à stem:[≥].
+
