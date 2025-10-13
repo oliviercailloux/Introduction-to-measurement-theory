@@ -3,7 +3,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Exercices S2</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-      <meta name="dc.modified" content="2025-10-12T10:57:41Z"/>
+      <meta name="dc.modified" content="2025-10-13T16:50:28Z"/>
       <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
       <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script></head>
    <body class="home">
@@ -23,17 +23,17 @@
                      <li><a href="#_d%C3%A9finition_d%C3%A9quivalence"><span class="label">4</span><span class="sep">. </span>Définition d’équivalence</a></li>
                      <li><a href="#_manipulations_d%C3%A9quivalences"><span class="label">5</span><span class="sep">. </span>Manipulations d’équivalences</a></li>
                      <li><a href="#_classes"><span class="label">6</span><span class="sep">. </span>Classes</a></li>
-                     <li><a href="#_composition_it%C3%A9r%C3%A9e"><span class="label">7</span><span class="sep">. </span>Composition itérée</a></li>
-                     <li><a href="#_la_relation"><span class="label">8</span><span class="sep">. </span>La relation ≥</a></li>
-                     <li><a href="#_r%C3%A9duction"><span class="label">9</span><span class="sep">. </span>Réduction</a></li>
-                     <li><a href="#_presque"><span class="label">10</span><span class="sep">. </span>Presque</a></li>
-                     <li><a href="#_ordre_lexicographique"><span class="label">11</span><span class="sep">. </span>Ordre lexicographique</a></li>
-                     <li><a href="#_n%C3%A9cessit%C3%A9"><span class="label">12</span><span class="sep">. </span>Nécessité</a></li>
-                     <li><a href="#_r%C3%A9duction_compl%C3%A8te"><span class="label">13</span><span class="sep">. </span>Réduction complète</a></li>
-                     <li><a href="#_diagrammes"><span class="label">14</span><span class="sep">. </span>Diagrammes</a></li>
-                     <li><a href="#_inclusion"><span class="label">15</span><span class="sep">. </span>Inclusion</a></li>
-                     <li><a href="#_dimension"><span class="label">16</span><span class="sep">. </span>Dimension</a></li>
-                     <li><a href="#_op%C3%A9rations"><span class="label">17</span><span class="sep">. </span>Opérations</a></li>
+                     <li><a href="#_seul_au_monde"><span class="label">7</span><span class="sep">. </span>Seul au monde</a></li>
+                     <li><a href="#_composition_it%C3%A9r%C3%A9e"><span class="label">8</span><span class="sep">. </span>Composition itérée</a></li>
+                     <li><a href="#_la_relation_sur_un_membre"><span class="label">9</span><span class="sep">. </span>La relation ≤ sur un membre</a></li>
+                     <li><a href="#_r%C3%A9duction"><span class="label">10</span><span class="sep">. </span>Réduction</a></li>
+                     <li><a href="#_presque"><span class="label">11</span><span class="sep">. </span>Presque</a></li>
+                     <li><a href="#_ordre_lexicographique"><span class="label">12</span><span class="sep">. </span>Ordre lexicographique</a></li>
+                     <li><a href="#_n%C3%A9cessit%C3%A9"><span class="label">13</span><span class="sep">. </span>Nécessité</a></li>
+                     <li><a href="#_r%C3%A9duction_compl%C3%A8te"><span class="label">14</span><span class="sep">. </span>Réduction complète</a></li>
+                     <li><a href="#_diagrammes"><span class="label">15</span><span class="sep">. </span>Diagrammes</a></li>
+                     <li><a href="#_inclusion"><span class="label">16</span><span class="sep">. </span>Inclusion</a></li>
+                     <li><a href="#_dimension"><span class="label">17</span><span class="sep">. </span>Dimension</a></li>
                   </ul>
                </div>
             </div>
@@ -54,7 +54,8 @@
                </header>
                <p class="simpara">La relation “est ami avec” sur un ensemble de gens est-elle une relation d’équivalence
                   ? Considérez vous-même et deux autres personnes hypothétiques et imaginez trois scénarios
-                  différents.</p>
+                  différents, pour obtenir une relation à une classe d’équivalence, une relation à plusieurs
+                  classes d’équivalences, et une relation qui n’est pas une équivalence.</p>
             </section>
             <section id="_grandeur" class="section">
                <header>
@@ -88,7 +89,7 @@
                <header>
                   <h2><span class="label">6</span><span class="sep">. </span>Classes</h2>
                </header>
-               <p class="simpara">Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+               <p class="simpara">Démontrez : Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>R</mi></math></span> est une relation d’équivalence, alors <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <msup>
                            <mi>a</mi>
@@ -107,52 +108,80 @@
                            <mo>⋆</mo>
                         </msup></math></span>.</p>
             </section>
+            <section id="_seul_au_monde" class="section">
+               <header>
+                  <h2><span class="label">7</span><span class="sep">. </span>Seul au monde</h2>
+               </header>
+               <p class="simpara">Considérons une relation d’équivalence <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> et un élément <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>a</mi>
+                        <mo>∈</mo>
+                        <mi>F</mi>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi>R</mi>
+                           <mo>)</mo>
+                        </mrow></math></span>.
+                  Démontrez : <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mo>#</mo>
+                        <msup>
+                           <mi>a</mi>
+                           <mo>⋆</mo>
+                        </msup>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                        <mo>⇒</mo>
+                        <mo>∀</mo>
+                        <mi>x</mi>
+                        <mo>∈</mo>
+                        <mi>F</mi>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi>R</mi>
+                           <mo>)</mo>
+                        </mrow>
+                        <mo>,</mo>
+                        <mi>x</mi>
+                        <mi>R</mi>
+                        <mi>a</mi>
+                        <mo>⇒</mo>
+                        <mi>x</mi>
+                        <mo>=</mo>
+                        <mi>a</mi></math></span>.</p>
+            </section>
             <section id="_composition_itérée" class="section">
                <header>
-                  <h2><span class="label">7</span><span class="sep">. </span>Composition itérée</h2>
+                  <h2><span class="label">8</span><span class="sep">. </span>Composition itérée</h2>
                </header>
                <p class="simpara">Effectuez l’exercice 8 page 27 du livre de Roberts (plus difficile).</p>
             </section>
-            <section id="_la_relation" class="section">
+            <section id="_la_relation_sur_un_membre" class="section">
                <header>
-                  <h2><span class="label">8</span><span class="sep">. </span>La relation ≥</h2>
+                  <h2><span class="label">9</span><span class="sep">. </span>La relation ≤ sur un membre</h2>
                </header>
-               <p class="simpara">Définissons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+               <p class="simpara">Définissons l’ensemble de paires <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>A</mi>
                         <mo>=</mo>
-                        <mrow>
-                           <mo>{</mo>
+                        <msup>
                            <mrow>
+                              <mo>{</mo>
                               <mrow>
-                                 <mo>(</mo>
-                                 <mrow>
-                                    <mi>a</mi>
-                                    <mo>,</mo>
-                                    <mi>b</mi>
-                                 </mrow>
-                                 <mo>)</mo>
+                                 <mn>1</mn>
+                                 <mo>,</mo>
+                                 <mn>2</mn>
+                                 <mo>,</mo>
+                                 <mn>3</mn>
+                                 <mo>,</mo>
+                                 <mn>4</mn>
                               </mrow>
-                              <mo>:</mo>
-                              <mi>a</mi>
-                              <mo>,</mo>
-                              <mi>b</mi>
-                              <mo>∈</mo>
-                              <mrow>
-                                 <mo>{</mo>
-                                 <mrow>
-                                    <mn>1</mn>
-                                    <mo>,</mo>
-                                    <mn>2</mn>
-                                    <mo>,</mo>
-                                    <mn>3</mn>
-                                    <mo>,</mo>
-                                    <mn>4</mn>
-                                 </mrow>
-                                 <mo>}</mo>
-                              </mrow>
+                              <mo>}</mo>
                            </mrow>
-                           <mo>}</mo>
-                        </mrow></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mn>2</mn>
+                        </msup>
+                        <mo>}</mo></math></span>,
+                  définissons une relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> sur <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>A</mi></math></span> comme et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mrow>
                            <mo>(</mo>
                            <mrow>
@@ -174,7 +203,7 @@
                         </mrow>
                         <mo>⇔</mo>
                         <mi>a</mi>
-                        <mo>≥</mo>
+                        <mo>≤</mo>
                         <mi>c</mi></math></span>.
                   Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>R</mi></math></span> est un préordre complet et calculez la réduction <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -185,7 +214,7 @@
             </section>
             <section id="_réduction" class="section">
                <header>
-                  <h2><span class="label">9</span><span class="sep">. </span>Réduction</h2>
+                  <h2><span class="label">10</span><span class="sep">. </span>Réduction</h2>
                </header>
                <p class="simpara">Considérons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>R</mi></math></span> contenant ces paires :
@@ -503,7 +532,7 @@
             </section>
             <section id="_presque" class="section">
                <header>
-                  <h2><span class="label">10</span><span class="sep">. </span>Presque</h2>
+                  <h2><span class="label">11</span><span class="sep">. </span>Presque</h2>
                </header>
                <p class="simpara">Définissons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>P</mi></math></span> sur les paires de réels comme
@@ -554,7 +583,7 @@
             </section>
             <section id="_ordre_lexicographique" class="section">
                <header>
-                  <h2><span class="label">11</span><span class="sep">. </span>Ordre lexicographique</h2>
+                  <h2><span class="label">12</span><span class="sep">. </span>Ordre lexicographique</h2>
                </header>
                <p class="simpara">Définissons <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>P</mi></math></span> sur les paires de réels comme
@@ -600,14 +629,14 @@
             </section>
             <section id="_nécessité" class="section">
                <header>
-                  <h2><span class="label">12</span><span class="sep">. </span>Nécessité</h2>
+                  <h2><span class="label">13</span><span class="sep">. </span>Nécessité</h2>
                </header>
                <p class="simpara">Montrez que les définitions (ordre, préordre complet, ordre complet) requièrent toutes
                   les propriétés indiquées</p>
             </section>
             <section id="_réduction_complète" class="section">
                <header>
-                  <h2><span class="label">13</span><span class="sep">. </span>Réduction complète</h2>
+                  <h2><span class="label">14</span><span class="sep">. </span>Réduction complète</h2>
                </header>
                <p class="simpara">Si <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>R</mi></math></span> est un ordre complet, montrer que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -618,7 +647,7 @@
             </section>
             <section id="_diagrammes" class="section">
                <header>
-                  <h2><span class="label">14</span><span class="sep">. </span>Diagrammes</h2>
+                  <h2><span class="label">15</span><span class="sep">. </span>Diagrammes</h2>
                </header>
                <p class="simpara">Choisissez le diagramme approprié pour représenter la relation
                   <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -705,7 +734,7 @@
             </section>
             <section id="_inclusion" class="section">
                <header>
-                  <h2><span class="label">15</span><span class="sep">. </span>Inclusion</h2>
+                  <h2><span class="label">16</span><span class="sep">. </span>Inclusion</h2>
                </header>
                <p class="simpara">Quel est le type de la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mo>⊆</mo></math></span> sur les sous-ensembles de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -726,72 +755,9 @@
             </section>
             <section id="_dimension" class="section">
                <header>
-                  <h2><span class="label">16</span><span class="sep">. </span>Dimension</h2>
+                  <h2><span class="label">17</span><span class="sep">. </span>Dimension</h2>
                </header>
                <p class="simpara">Effectuez les exercices 12 à 18 du livre de Roberts, pages 39 à 40 (plus difficile).</p>
-            </section>
-            <section id="_opérations" class="section">
-               <header>
-                  <h2><span class="label">17</span><span class="sep">. </span>Opérations</h2>
-               </header>
-               <p class="simpara">Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mi>R</mi>
-                        <mrow>
-                           <mo>{</mo>
-                           <mrow>
-                              <mi>a</mi>
-                              <mo>,</mo>
-                              <mi>b</mi>
-                              <mo>,</mo>
-                              <mi>c</mi>
-                           </mrow>
-                           <mo>)</mo>
-                        </mrow>
-                        <mo>⇔</mo>
-                        <mi>a</mi>
-                        <mo>+</mo>
-                        <mi>b</mi>
-                        <mo>=</mo>
-                        <mi>c</mi></math></span> définit une opération sur <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mi>ℕ</mi></math></span>, mais pas <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mi>S</mi>
-                        <mrow>
-                           <mo>(</mo>
-                           <mrow>
-                              <mi>a</mi>
-                              <mo>,</mo>
-                              <mi>b</mi>
-                              <mo>,</mo>
-                              <mi>c</mi>
-                           </mrow>
-                           <mo>)</mo>
-                        </mrow>
-                        <mo>⇔</mo>
-                        <mi>a</mi>
-                        <mo>−</mo>
-                        <mi>b</mi>
-                        <mo>=</mo>
-                        <mi>c</mi></math></span> ni <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mi>T</mi>
-                        <mrow>
-                           <mo>(</mo>
-                           <mrow>
-                              <mi>a</mi>
-                              <mo>,</mo>
-                              <mi>b</mi>
-                              <mo>,</mo>
-                              <mi>c</mi>
-                           </mrow>
-                           <mo>)</mo>
-                        </mrow>
-                        <mo>⇔</mo>
-                        <mi>a</mi>
-                        <mo>+</mo>
-                        <mi>b</mi>
-                        <mo>+</mo>
-                        <mi>c</mi>
-                        <mo>=</mo>
-                        <mn>0</mn></math></span>.</p>
             </section>
          </article>
       </main>
