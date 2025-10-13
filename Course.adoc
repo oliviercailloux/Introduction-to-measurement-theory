@@ -56,7 +56,6 @@ References
 * For more context, read https://www.logicomix.com/[Logicomix].
 
 == Relations and properties of relations
-=== Definition and some properties
 * Relation from stem:[A] to stem:[A]: subset of stem:[A × A] (homogeneous relation, our focus)
 * Also called Binary relation on stem:[A]
 * Relations between objects, persons, …
@@ -64,29 +63,29 @@ References
 
 Directed graph
 
-==== Properties of relations
+=== Properties of relations
 In this document, properties of a relation stem:[R] are expressed with implicit qualifiers: a non bound letter stem:[x] is implicitly prefixed with stem:[∀x ∈ ℱ(R)]
 
-==== Transitivity
+=== Transitivity
 Transitive relation: stem:[a R b R c ⇒ a R c]
 
 * Transire, to pass to the other side, convey an action
 // * I push my car VS I sleep in my car: push used transitively
 * Relates stem:[a] to stem:[c] through stem:[b]
 
-==== Reflexivity
+=== Reflexivity
 stem:[a R a]
 
-==== Start exercices
+=== Start exercices
 See xref:Ex1.adoc[Exercices S1].
 
-==== Irreflexivity
+=== Irreflexivity
 stem:[¬(a R a)]
 
 A relation that is not reflexive is not necessarily irreflexive (similarly for other properties).
 // Example: liking
 
-==== Preorder
+=== Preorder
 * Transitive and reflexive
 * (Also called: partial preorder, quasi order)
 
@@ -94,18 +93,19 @@ Here: mostly transitive and reflexive relations
 
 https://en.wikipedia.org/wiki/Helmut_Hasse[Hasse] diagram: stem:[a R b, a ≠ b], corresponds to a line descending from stem:[a] to stem:[b].
 
-==== More exercices
+=== More exercices
 Complete xref:Ex1.adoc[Exercices S1] apart from symmetry related aspects.
 
-==== Symmetry
+=== Symmetry
 stem:[a R b ⇒ b R a]
 
-==== Asymmetry
+=== Asymmetry
 stem:[a R b ⇒ ¬(b R a)]
 
-==== Antisymmetry
+=== Antisymmetry
 stem:[a ≠ b ∧ a R b ⇒ ¬(b R a)]
 
+<<<<<<< HEAD
 ==== Exercices
 TODO: Complete xref:Ex1.adoc[Exercices S1].
 
@@ -113,47 +113,57 @@ Solutions to xref:Sol1.adoc[some of the exercices]; to the xref:Corr1.adoc[contr
 
 === A zoo of relations
 ==== Equivalence
+=======
+=== Note about terminology
+For many authors (including Roberts but excluding Halmos), the set on which stem:[R] is defined is exogenous, thus a relation is a pair stem:[(A, R)] with stem:[R ⊆ A²] (hence stem:[ℱ(R) ⊆ A]). This allows for the possibility that stem:[ℱ(R) ≠ A]. Completeness is then defined as stem:[∀ a ≠ b ∈ A: a R b ν b R a]. Similarly, other definitions (such as reflexivity) then differ from those given here (one consequence is that reflexivity no more follows from transitivity and symmetry). In this document, we assume stem:[A] is chosen equal to stem:[ℱ(R)], in which case the definitions coincide.
+
+=== Exercices
+xref:Ex1.adoc[Exercices S1], xref:Exam1.adoc[Intermediate control 2025].
+
+Solutions to xref:Sol1.adoc[some of the exercices]; to the xref:Corr1.adoc[control].
+
+== Sorts of preorders
+=== Equivalence
+>>>>>>> 901b288 (S6+)
 An equivalence relation is a transitive (, reflexive) and symmetric relation.
 
 - Each element in an equivalence relation has an associated equivalence class.
 - The equivalence class of an element stem:[a] is denoted by stem:[a^*** = {b ∈ ℱ(R) | a R b}].
 - The set of equivalence classes, called the quotient by stem:[R], is denoted by stem:[ℱ(R) // R]. It partitions (disjointly classifies) stem:[ℱ(R)].
 
-==== Reduction of a preorder
+=== Reduction of a preorder
 * Symmetric part of a relation stem:[R]: stem:[sym(R) = {(a, b) ∈ R | (b, a) ∈ R}].
 * The symmetric part of a preorder stem:[R] is an equivalence relation
 * Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by stem:[sym(R)]) and orders them (possibly partially)
 * That ordering is a relation on its quotient by stem:[sym(R)] and is called the reduction of stem:[R]
 * Formally, the reduction of stem:[R] is defined as stem:[{(a^***, b^***) ∈ (ℱ(R) // sym(R))² | ∃ a ∈ a^***, b ∈ b^*** | a R b}].
 
-xref:Ex2.adoc[Exercices S2] up to “Composition itérée”.
+// xref:Ex2.adoc[Exercices S2] up to “Composition itérée”.
 
-==== Order
-* Transitive, reflexive, antisymmetric
+=== Order
+Transitive, reflexive, antisymmetric
+
 * (Also called: partial order)
+* Intuitively: a (possibly partial) ranking without ties
 
-Intuitively: a (possibly partial) ranking without ties
-
-==== Completeness
+=== Completeness
 stem:[a ≠ b ⇒ a R b ∨ b R a]
 
 (More usually called weak completeness)
 
-==== Complete preorder
-* Transitive, reflexive, complete
+=== Complete preorder
+Transitive, reflexive, complete
+
 * (Often called: weak order)
-
-Interpretation
-
 * Intuitively: a ranking with ties
 * The symmetric part of a complete preorder is an equivalence relation
 * A complete preorder defines equivalence classes and orders them completely
 
-==== Complete order
-* Transitive, reflexive, complete, antisymmetric
-* (Also called: simple order, linear order, total order)
+=== Complete order
+Transitive, reflexive, complete, antisymmetric
 
-Intuitively: a ranking without ties
+* (Also called: simple order, linear order, total order)
+* Intuitively: a ranking without ties
 
 The reduction of a complete preorder stem:[R] is a complete order on stem:[ℱ(R) // sym(R)].
 
@@ -161,10 +171,7 @@ The reduction of a complete preorder stem:[R] is a complete order on stem:[ℱ(R
 // Transitive and irreflexive
 // (Often called: strict partial order)
 
-==== Note about terminology
-For many authors (excluding Halmos but including Roberts), the set on which stem:[R] is defined is exogenous, thus a relation is a pair stem:[(A, R)] with stem:[R ⊆ A²] (hence stem:[ℱ(R) ⊆ A]). This allows for the possibility that stem:[ℱ(R) ≠ A]. Completeness is then defined as stem:[∀ a ≠ b ∈ A: a R b ν b R a]. Similarly, other definitions (such as reflexivity) then differ from those given here (one consequence is that reflexivity no more follows from transitivity and symmetry). In this document, we assume stem:[A] is chosen equal to stem:[ℱ(R)], in which case the definitions coincide.
-
-==== Exercices
+=== Exercices
 See xref:Ex2.adoc[Exercices S2].
 
 == From relations to numbers
@@ -193,17 +200,20 @@ Uniqueness: to determine properties of the numbers that transfer to our observat
 == Representation of complete preorders
 === Arithmetic and infinite sets
 * Successor of stem:[s]: stem:[s ⋃ {s}]
-* Axiom of infinity: ∃ successor set A
-* ℕ: intersection of all successor sets in A
+* Axiom of infinity: stem:[∃] successor set stem:[A]
+* stem:[ℕ]: intersection of all successor sets in stem:[A]
 * Permits induction, which we use to define addition of zero, then addition of one, …
-* Finite set: bijection with an element of ℕ
+* Finite set: bijection with an element of stem:[ℕ]
 
 === The ≥ relation
-* If R is a complete preorder and ℱ(R) is finite, it is homomorphic to ≥.
+* If stem:[R] is a complete preorder and stem:[ℱ(R)] is finite, it is homomorphic to stem:[≥].
 * Necessary and sufficient conditions.
 * Can we relax finiteness?
 
 Scale type: ordinal
+
+// === Exercices
+// See xref:Ex3.adoc[Exercices S3].
 
 == Wrap-up
 When facing a falsifiable or normative claim, think about:
