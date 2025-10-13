@@ -1,7 +1,7 @@
 = Exercices S3
 :lang: fr
 
-== Fonction ou pas ?
+== En fonction ?
 Pour chacune des relations suivantes, indiquez si elle est une fonction. Si oui, précisez son domaine et son image.
 
 . stem:[R = {(1, 2), (2, 3), (3, 4)}]
@@ -9,7 +9,7 @@ Pour chacune des relations suivantes, indiquez si elle est une fonction. Si oui,
 . stem:[T = {(x, y) ∈ ℝ² | y² = x}]
 . stem:[U = {(a, b) | a divise b}]
 
-== Unicité et totalité
+== De gauche à droite
 Donnez un exemple d’une relation qui est :
 
 . droite-unique mais pas gauche-unique ;
