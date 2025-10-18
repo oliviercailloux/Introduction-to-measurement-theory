@@ -64,7 +64,7 @@ Soit stem:[R] définie par stem:[x R y], stem:[y R x], stem:[x R z], stem:[z R x
 == Interprétation économique
 Un consommateur peut détenir une télévision ou pas de télévision et un téléphone ou pas de téléphone. On représente chaque possibilité par une paire de nombres binaires, d’abord la possession de la télévision puis la possession du téléphone. La paire stem:[(0, 1)] représente pas de télévision et un téléphone, par exemple.
 
-On considère une relation de préférence stem:[≽] sur l’ensemble des paniers de consommation possibles stem:[A = {(0, 0), (1, 0), (0, 1), (1, 1)}] représentant sa préférence entre ces possibilités, sachant qu’il est indifférent entre une télévision et un téléphone.
+On considère une relation de préférence stem:[≽] sur l’ensemble des paniers de consommation possibles stem:[A = {text(()0, 0), (0, 1), (1, 0), (1, 1)}] représentant sa préférence entre ces possibilités, sachant qu’il est indifférent entre une télévision et un téléphone.
 
 . Définissez la relation stem:[≽] en extension (c-à-d en écrivant exhaustivement ses paires de paires).
 . Montrez que stem:[≽] est un préordre complet.

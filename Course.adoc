@@ -126,7 +126,7 @@ An equivalence relation is a transitive (, reflexive) and symmetric relation.
 * The symmetric part of a preorder stem:[R] is an equivalence relation
 * Intuitively speaking, a preorder defines equivalence classes (namely, its quotient by stem:[sym(R)]) and orders them (possibly partially)
 * That ordering is a relation on its quotient by stem:[sym(R)] and is called the reduction of stem:[R]
-* Formally, the reduction of stem:[R] is defined as stem:[{(a^***, b^***) ∈ (ℱ(R) // sym(R))² | ∃ a ∈ a^***, b ∈ b^*** | a R b}].
+* Formally, the reduction of stem:[R] is defined as stem:[R^*** = {(a^***, b^***) ∈ (ℱ(R) // sym(R))² | ∃ a ∈ a^***, b ∈ b^*** | a R b}].
 
 // xref:Ex2.adoc[Exercices S2] up to “Composition itérée”.
 

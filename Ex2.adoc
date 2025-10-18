@@ -2,12 +2,12 @@
 :lang: fr
 
 == Rouages
-La relation “ont le même nombre de roues” sur un ensemble de véhicules est-elle une relation d’équivalence ? 
+La relation « ont le même nombre de roues » sur un ensemble de véhicules est-elle une relation d’équivalence ? 
 Donnez un exemple de telle relation sur un ensemble de six véhicules qui forment une seule classe d’équivalence. 
 Donnez un exemple de telle relation sur un ensemble de six véhicules qui forment trois classes d’équivalence.
 
 == Amitié
-La relation “est ami avec” sur un ensemble de gens est-elle une relation d’équivalence ? Considérez vous-même et deux autres personnes hypothétiques et imaginez trois scénarios différents, pour obtenir une relation à une classe d’équivalence, une relation à plusieurs classes d’équivalences, et une relation qui n’est pas une équivalence.
+La relation « est ami avec » sur un ensemble de gens est-elle une relation d’équivalence ? Considérez vous-même et deux autres personnes hypothétiques et imaginez trois scénarios différents, pour obtenir une relation à une classe d’équivalence, une relation à plusieurs classes d’équivalences, et une relation qui n’est pas une équivalence.
 
 == Grandeur
 Montrez que la relation “au moins aussi grand que” sur un ensemble de gens de mêmes tailles est une relation d’équivalence.
@@ -29,7 +29,7 @@ Démontrez : stem:[#a^*** = 1 ⇒ ∀x ∈ F(R), xRa ⇒ x = a].
 Effectuez l’exercice 8 page 27 du livre de Roberts (plus difficile).
 
 == La relation ≤ sur un membre
-Définissons l’ensemble de paires stem:[A = {1, 2, 3, 4}^2}], 
+Définissons l’ensemble de paires stem:[A = {1, 2, 3, 4}^2], 
 définissons une relation stem:[R] sur stem:[A] comme stem:[(a, b) R (c, d) ⇔ a ≤ c].
 Montrez que stem:[R] est un préordre complet et calculez la réduction stem:[R^***].
 
@@ -64,7 +64,7 @@ Si stem:[R] est un ordre complet, montrer que stem:[R^***] est fortement complet
 
 == Diagrammes
 Choisissez le diagramme approprié pour représenter la relation
-stem:[R = {(1, 1), (2, 2), (3, 3), (4, 4), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)}].
+stem:[R = {text(()1, 1), (2, 2), (3, 3), (4, 4), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)}].
 
 == Inclusion
 Quel est le type de la relation stem:[⊆] sur les sous-ensembles de stem:[{1, 2, 3, 4}] ?
