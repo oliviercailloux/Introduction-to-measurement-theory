@@ -2,12 +2,13 @@
 :lang: fr
 
 == En fonction ?
-Pour chacune des relations suivantes, indiquez si elle est une fonction. Si oui, précisez son domaine et son image.
+Pour chacune des relations suivantes, précisez son domaine et son image et indiquez si elle est une fonction.
 
-. stem:[R = {(1, 2), (2, 3), (3, 4)}]
-. stem:[S = {(1, 2), (1, 3)}]
-. stem:[T = {(x, y) ∈ ℝ² | y² = x}]
-. stem:[U = {(a, b) | a divise b}]
+. stem:[{text(()1, 2), (2, 3), (3, 4)}]
+. stem:[{text(()1, 2), (2, 4), (3, 3)}]
+. stem:[{text(()1, 2), (1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)}]
+. stem:[{(x, y) ∈ ℝ² | y² = x}]
+. stem:[{(a, b) ∈ ℕ² | a \ text(divise)\ b}]
 
 == De gauche à droite
 Donnez un exemple d’une relation qui est :
@@ -25,48 +26,60 @@ On considère la relation stem:[R] sur stem:[A = {a, b, c}] définie par stem:[a
 . La fonction stem:[f] est-elle unique ? Expliquez.
 
 == Préférence et représentation
-Une personne préfère stem:[x] à stem:[y] si elle choisit stem:[x] lorsque les deux options sont disponibles.
+Une personne préfère stem:[x] à stem:[y], noté stem:[x ≻ y], si elle choisit stem:[x] lorsque les deux options sont disponibles.
 On observe les choix suivants :
 stem:[a ≻ b], stem:[a ≻ c], stem:[b ≻ c].
 
-. Représentez la relation stem:[≽] associée à ces préférences.
-. Montrez qu’elle est complète et transitive.
 . Trouvez une fonction stem:[f : {a, b, c} → ℝ] telle que stem:[x ≻ y ⇔ f(x) > f(y)].
+. Représentez la relation stem:[≽] associée à ces préférences, représentant stem:[x] préfére à stem:[y] ou stem:[x = y].
+. Montrez qu’elle est complète et transitive.
+. Trouvez une fonction stem:[f : {a, b, c} → ℝ] telle que stem:[x ≽ y ⇔ f(x) ≥ f(y)].
 
 == Homomorphismes
-Soit stem:[R] définie par stem:[a R b], stem:[b R c], stem:[c R d], et reflexivité.
+Soit stem:[R] définie par stem:[a R b], stem:[b R c], stem:[c R d], et les paires issues de la réflexivité et de la transitivité.
 
 . Trouvez une fonction stem:[f : A → ℝ] telle que stem:[a R b ⇔ f(a) ≥ f(b)].
-. Proposez une autre fonction stem:[g] qui soit également homomorphe à stem:[R] et décrivez la transformation entre stem:[f] et stem:[g].
+. Proposez une autre fonction stem:[g] qui décrive également un homomorphisme entre stem:[R] et stem:[≥] et décrivez la transformation entre stem:[f] et stem:[g].
 
 == Non-transitivité et impossibilité de représentation
 Considérons stem:[R] sur stem:[A = {a, b, c}] avec stem:[a R b], stem:[b R c], mais stem:[¬(a R c)].
 Montrez qu’il n’existe pas de fonction stem:[f : A → ℝ] telle que stem:[a R b ⇔ f(a) ≥ f(b)].
 
+== Plus deux fun
+. Soit stem:[R(a) = {b ∈ F(R) | aRb}]. Soit stem:[f(a) = - (#R(a) + 2)].
+. Soit stem:[R] définie par stem:[a R b], stem:[b R c], stem:[c R d], et les paires issues de la réflexivité et de la transitivité.
+. La relation stem:[R] est-elle homomorphe à stem:[≥] via stem:[f] ? Prouvez-le.
+
 == Transformation admissible
 . Donnez un exemple d’une relation stem:[R] sur un ensemble stem:[A] et d’une fonction stem:[f] telle que stem:[R] soit homomorphe à stem:[≥] via stem:[f].
-. Proposez une transformation stem:[φ] telle que stem:[φ ∘ f] définisse un autre homomorphisme à stem:[≥].
-. Quelle est la nature de la transformation stem:[φ] (ordinale, intervalle, etc.) ?
+. Proposez une transformation stem:[φ] telle que stem:[φ ∘ f] décrive un autre homomorphisme à stem:[≥].
 
 == Représentation et équivalence
-Soit stem:[R] une relation complète sur stem:[A = {x, y, z}] avec stem:[x R y], stem:[y R x], stem:[x R z], stem:[z R x].
+Soit stem:[R] définie par stem:[x R y], stem:[y R x], stem:[x R z], stem:[z R x], et les paires issues de la transitivité.
 
 . Quelle est la partie symétrique de stem:[R] ?
 . Déterminez les classes d’équivalence de stem:[sym(R)].
 . Quelle est la réduction stem:[R^***] ?
-. Représentez cette réduction par une fonction numérique.
 
-== Interprétation économique (plus difficile)
-On considère une relation de préférence stem:[≽] sur un ensemble de paniers de consommation stem:[A = {(1, 0), (0, 1), (1, 1)}] définie par stem:[(x₁, x₂) ≽ (y₁, y₂)] ssi stem:[x₁ + x₂ ≥ y₁ + y₂].
+== Interprétation économique
+Un consommateur peut détenir une télévision ou pas de télévision et un téléphone ou pas de téléphone. On représente chaque possibilité par une paire de nombres binaires, d’abord la possession de la télévision puis la possession du téléphone. La paire stem:[(0, 1)] représente pas de télévision et un téléphone, par exemple.
 
+On considère une relation de préférence stem:[≽] sur l’ensemble des paniers de consommation possibles stem:[A = {(0, 0), (1, 0), (0, 1), (1, 1)}] représentant sa préférence entre ces possibilités, sachant qu’il est indifférent entre une télévision et un téléphone.
+
+. Définissez la relation stem:[≽] en extension (c-à-d en écrivant exhaustivement ses paires de paires).
 . Montrez que stem:[≽] est un préordre complet.
-. Proposez une fonction stem:[f(x₁, x₂)] qui la représente.
-. Donnez un exemple de transformation admissible stem:[φ] pour ce type d’échelle.
+. Proposez une fonction stem:[f(x₁, x₂)] qui décrive l’homomorphisme de stem:[≽] avec stem:[≥].
 
-== Difficulté supplémentaire : ordre strict
+== Amas de biens
+Un consommateur peut détenir de 0 à 10 éléphants et de 0 à 10 girafes. On représente ses détentions par une paire d’entiers, le nombre d’éléphants d’abord. Quelles que soient ses possessions, le consommateur préfère plus d’animaux, et est indifférent entre un éléphant et deux girafes, donc par exemple il est indifférent entre stem:[(8, 6)] et stem:[(9, 4)].
+
+. Définissez la relation stem:[≽] mathématiquement, avec des conditions sur les nombres.
+. Montrez que stem:[≽] est un préordre complet.
+
+== Ordre strict
 Définissons la relation stem:[P] sur stem:[A = {a, b, c}] par stem:[a P b], stem:[b P c], et rien d’autre.
 
 . Montrez que stem:[P] est transitive et irréflexive.
-. Définissez la relation stem:[R = P ∪ {(x, x) | x ∈ A}]. Quelle est sa nature ?
+. Définissez la relation stem:[R = P ∪ {(x, x) | x ∈ A}]. Est-ce un type de relation vue au cours ? Pourquoi (pas) ?
 . Montrez que stem:[R] est homomorphe à stem:[≥].
 

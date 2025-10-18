@@ -176,8 +176,9 @@ See xref:Ex2.adoc[Exercices S2].
 * Given relation stem:[R] “looks shorter than” on stem:[A = {a, b, …}], can we assign numbers stem:[f(a)] so that stem:[f(a) < f(b) ⇔ a R b]?
 * Similarly for relations “preferred to”, “day with better air quality”.
 
-* Relation stem:[R] on stem:[A] corresponds to relation stem:[T] on stem:[ℝ] through function stem:[f] from stem:[A] to stem:[ℝ]: stem:[a R b ⇔ f(a) T f(b)].
-* stem:[R] is homomorphic to stem:[T] iff it corresponds to stem:[T] through some function stem:[f].
+* Relation stem:[R] on stem:[A] homomorphic to relation stem:[T] on stem:[ℝ] through function stem:[f] from stem:[A] to stem:[ℝ]: stem:[a R b ⇔ f(a) T f(b)].
+* stem:[R] is homomorphic to stem:[T] iff it is homomorphic to stem:[T] through some function stem:[f].
+* stem:[f] describes the homomorphism from stem:[R] to stem:[T].
 
 === Representation theorem
 * A theorem of the form: under such conditions on stem:[R], the system is homomorphic to stem:[T].
@@ -195,11 +196,11 @@ Uniqueness: to determine properties of the numbers that transfer to our observat
 * Finite set: bijection with an element of stem:[ℕ]
 
 === The ≥ relation
-* If stem:[R] is a complete preorder and stem:[ℱ(R)] is finite, it is homomorphic to stem:[≥].
-* Necessary and sufficient conditions.
-* Can we relax finiteness?
+Given stem:[R] with finite field stem:[ℱ(R)], stem:[R] is a complete preorder iff it is homomorphic to stem:[≥].
 
-Scale type: ordinal
+* Proof via: stem:[a R b ⇒ R(b) ⊆ R(a) ⇒ #R(a) ≥ #R(b)], and stem:[¬aRb ⇒ R(a) ≠ R(b)] (thus stem:[¬aRb ⇒ #R(a) < #R(b)])
+* Can we relax finiteness?
+* Scale type: ordinal
 
 === Exercices
 See xref:Ex3.adoc[Exercices S3].
