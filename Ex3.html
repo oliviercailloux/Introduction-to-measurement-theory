@@ -3,7 +3,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Exercices S3</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-      <meta name="dc.modified" content="2025-10-13T19:32:40Z"/>
+      <meta name="dc.modified" content="2025-10-18T13:45:00Z"/>
       <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
       <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script></head>
    <body class="home">
@@ -23,10 +23,12 @@
                      <li><a href="#_pr%C3%A9f%C3%A9rence_et_repr%C3%A9sentation"><span class="label">4</span><span class="sep">. </span>Préférence et représentation</a></li>
                      <li><a href="#_homomorphismes"><span class="label">5</span><span class="sep">. </span>Homomorphismes</a></li>
                      <li><a href="#_non_transitivit%C3%A9_et_impossibilit%C3%A9_de_repr%C3%A9sentation"><span class="label">6</span><span class="sep">. </span>Non-transitivité et impossibilité de représentation</a></li>
-                     <li><a href="#_transformation_admissible"><span class="label">7</span><span class="sep">. </span>Transformation admissible</a></li>
-                     <li><a href="#_repr%C3%A9sentation_et_%C3%A9quivalence"><span class="label">8</span><span class="sep">. </span>Représentation et équivalence</a></li>
-                     <li><a href="#_interpr%C3%A9tation_%C3%A9conomique_plus_difficile"><span class="label">9</span><span class="sep">. </span>Interprétation économique (plus difficile)</a></li>
-                     <li><a href="#_difficult%C3%A9_suppl%C3%A9mentaire_ordre_strict"><span class="label">10</span><span class="sep">. </span>Difficulté supplémentaire : ordre strict</a></li>
+                     <li><a href="#_plus_deux_fun"><span class="label">7</span><span class="sep">. </span>Plus deux fun</a></li>
+                     <li><a href="#_transformation_admissible"><span class="label">8</span><span class="sep">. </span>Transformation admissible</a></li>
+                     <li><a href="#_repr%C3%A9sentation_et_%C3%A9quivalence"><span class="label">9</span><span class="sep">. </span>Représentation et équivalence</a></li>
+                     <li><a href="#_interpr%C3%A9tation_%C3%A9conomique"><span class="label">10</span><span class="sep">. </span>Interprétation économique</a></li>
+                     <li><a href="#_amas_de_biens"><span class="label">11</span><span class="sep">. </span>Amas de biens</a></li>
+                     <li><a href="#_ordre_strict"><span class="label">12</span><span class="sep">. </span>Ordre strict</a></li>
                   </ul>
                </div>
             </div>
@@ -34,75 +36,193 @@
                <header>
                   <h2><span class="label">1</span><span class="sep">. </span>En fonction ?</h2>
                </header>
-               <p class="simpara">Pour chacune des relations suivantes, indiquez si elle est une fonction. Si oui, précisez
-                  son domaine et son image.</p>
+               <p class="simpara">Pour chacune des relations suivantes, précisez son domaine et son image et indiquez
+                  si elle est une fonction.</p>
                <ol class="orderedlist" type="1">
                   <li>
                      <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>R</mi>
-                              <mo>=</mo>
                               <mrow>
                                  <mo>{</mo>
-                                 <mtable>
-                                    <mtr>
-                                       <mtd>
-                                          <mn>1</mn>
-                                       </mtd>
-                                       <mtd>
-                                          <mn>2</mn>
-                                       </mtd>
-                                    </mtr>
-                                    <mtr>
-                                       <mtd>
-                                          <mn>2</mn>
-                                       </mtd>
-                                       <mtd>
-                                          <mn>3</mn>
-                                       </mtd>
-                                    </mtr>
-                                    <mtr>
-                                       <mtd>
-                                          <mn>3</mn>
-                                       </mtd>
-                                       <mtd>
-                                          <mn>4</mn>
-                                       </mtd>
-                                    </mtr>
-                                 </mtable>
-                                 <mo>}</mo>
-                              </mrow></math></span></p>
+                                 <mrow>
+                                    <mtext>(</mtext>
+                                    <mn>1</mn>
+                                    <mo>,</mo>
+                                    <mn>2</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>2</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>3</mn>
+                                    <mo>,</mo>
+                                    <mn>4</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>}</mo></math></span></p>
                   </li>
                   <li>
                      <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>S</mi>
-                              <mo>=</mo>
                               <mrow>
                                  <mo>{</mo>
-                                 <mtable>
-                                    <mtr>
-                                       <mtd>
-                                          <mn>1</mn>
-                                       </mtd>
-                                       <mtd>
-                                          <mn>2</mn>
-                                       </mtd>
-                                    </mtr>
-                                    <mtr>
-                                       <mtd>
-                                          <mn>1</mn>
-                                       </mtd>
-                                       <mtd>
-                                          <mn>3</mn>
-                                       </mtd>
-                                    </mtr>
-                                 </mtable>
-                                 <mo>}</mo>
-                              </mrow></math></span></p>
+                                 <mrow>
+                                    <mtext>(</mtext>
+                                    <mn>1</mn>
+                                    <mo>,</mo>
+                                    <mn>2</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>2</mn>
+                                    <mo>,</mo>
+                                    <mn>4</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>3</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>}</mo></math></span></p>
                   </li>
                   <li>
                      <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>T</mi>
-                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mtext>(</mtext>
+                                    <mn>1</mn>
+                                    <mo>,</mo>
+                                    <mn>2</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>1</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>2</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>3</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>4</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>5</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>6</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>7</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>8</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>9</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mn>10</mn>
+                                    <mo>,</mo>
+                                    <mn>3</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>}</mo></math></span></p>
+                  </li>
+                  <li>
+                     <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mrow>
                                  <mo>{</mo>
                                  <mrow>
@@ -129,8 +249,6 @@
                   </li>
                   <li>
                      <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>U</mi>
-                              <mo>=</mo>
                               <mrow>
                                  <mo>{</mo>
                                  <mrow>
@@ -143,12 +261,14 @@
                                        </mrow>
                                        <mo>)</mo>
                                     </mrow>
+                                    <mo>∈</mo>
+                                    <mi>ℕ</mi>
+                                    <mo>²</mo>
                                     <mo>|</mo>
                                     <mi>a</mi>
-                                    <mo>÷</mo>
-                                    <mi>i</mi>
-                                    <mi>s</mi>
-                                    <mi>e</mi>
+                                    <mo> </mo>
+                                    <mtext>divise</mtext>
+                                    <mo> </mo>
                                     <mi>b</mi>
                                  </mrow>
                                  <mo>}</mo>
@@ -261,7 +381,10 @@
                </header>
                <p class="simpara">Une personne préfère <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>x</mi></math></span> à <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mi>y</mi></math></span> si elle choisit <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>y</mi></math></span>, noté <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>x</mi>
+                        <mo>≻</mo>
+                        <mi>y</mi></math></span>, si elle choisit <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>x</mi></math></span> lorsque les deux options sont disponibles.
                   On observe les choix suivants :
                   <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -275,13 +398,6 @@
                         <mo>≻</mo>
                         <mi>c</mi></math></span>.</p>
                <ol class="orderedlist" type="1">
-                  <li>
-                     <p class="simpara">Représentez la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mo>≽</mo></math></span> associée à ces préférences.</p>
-                  </li>
-                  <li>
-                     <p class="simpara">Montrez qu’elle est complète et transitive.</p>
-                  </li>
                   <li>
                      <p class="simpara">Trouvez une fonction <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mi>f</mi>
@@ -317,6 +433,53 @@
                                  <mo>)</mo>
                               </mrow></math></span>.</p>
                   </li>
+                  <li>
+                     <p class="simpara">Représentez la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>≽</mo></math></span> associée à ces préférences, représentant <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>x</mi></math></span> préfére à <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>y</mi></math></span> ou <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>x</mi>
+                              <mo>=</mo>
+                              <mi>y</mi></math></span>.</p>
+                  </li>
+                  <li>
+                     <p class="simpara">Montrez qu’elle est complète et transitive.</p>
+                  </li>
+                  <li>
+                     <p class="simpara">Trouvez une fonction <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>f</mi>
+                              <mo>:</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>b</mi>
+                                    <mo>,</mo>
+                                    <mi>c</mi>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow>
+                              <mo>→</mo>
+                              <mi>ℝ</mi></math></span> telle que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>x</mi>
+                              <mo>≽</mo>
+                              <mi>y</mi>
+                              <mo>⇔</mo>
+                              <mi>f</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>x</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>≥</mo>
+                              <mi>f</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>y</mi>
+                                 <mo>)</mo>
+                              </mrow></math></span>.</p>
+                  </li>
                </ol>
             </section>
             <section id="_homomorphismes" class="section">
@@ -333,7 +496,7 @@
                         <mi>c</mi></math></span>, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>c</mi>
                         <mi>R</mi>
-                        <mi>d</mi></math></span>, et reflexivité.</p>
+                        <mi>d</mi></math></span>, et les paires issues de la réflexivité et de la transitivité.</p>
                <ol class="orderedlist" type="1">
                   <li>
                      <p class="simpara">Trouvez une fonction <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -362,8 +525,9 @@
                   </li>
                   <li>
                      <p class="simpara">Proposez une autre fonction <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>g</mi></math></span> qui soit également homomorphe à <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>R</mi></math></span> et décrivez la transformation entre <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>g</mi></math></span> qui décrive également un homomorphisme entre <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>≥</mo></math></span> et décrivez la transformation entre <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mi>f</mi></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mi>g</mi></math></span>.</p>
                   </li>
@@ -428,9 +592,86 @@
                            <mo>)</mo>
                         </mrow></math></span>.</p>
             </section>
+            <section id="_plus_deux_fun" class="section">
+               <header>
+                  <h2><span class="label">7</span><span class="sep">. </span>Plus deux fun</h2>
+               </header>
+               <ol class="orderedlist" type="1">
+                  <li>
+                     <p class="simpara">Soit <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>a</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <mi>b</mi>
+                                    <mo>∈</mo>
+                                    <mi>F</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mi>a</mi>
+                                    <mi>R</mi>
+                                    <mi>b</mi>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow></math></span>. Soit <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>f</mi>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>a</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>=</mo>
+                              <mo>−</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>#</mo>
+                                    <mi>R</mi>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>+</mo>
+                                    <mn>2</mn>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow></math></span>.</p>
+                  </li>
+                  <li>
+                     <p class="simpara">Soit <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span> définie par <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>a</mi>
+                              <mi>R</mi>
+                              <mi>b</mi></math></span>, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>b</mi>
+                              <mi>R</mi>
+                              <mi>c</mi></math></span>, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>c</mi>
+                              <mi>R</mi>
+                              <mi>d</mi></math></span>, et les paires issues de la réflexivité et de la transitivité.</p>
+                  </li>
+                  <li>
+                     <p class="simpara">La relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>R</mi></math></span> est-elle homomorphe à <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>≥</mo></math></span> via <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>f</mi></math></span> ? Prouvez-le.</p>
+                  </li>
+               </ol>
+            </section>
             <section id="_transformation_admissible" class="section">
                <header>
-                  <h2><span class="label">7</span><span class="sep">. </span>Transformation admissible</h2>
+                  <h2><span class="label">8</span><span class="sep">. </span>Transformation admissible</h2>
                </header>
                <ol class="orderedlist" type="1">
                   <li>
@@ -447,34 +688,17 @@
                               <mi>φ</mi></math></span> telle que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mi>φ</mi>
                               <mo>∘</mo>
-                              <mi>f</mi></math></span> définisse un autre homomorphisme à <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mi>f</mi></math></span> décrive un autre homomorphisme à <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mo>≥</mo></math></span>.</p>
-                  </li>
-                  <li>
-                     <p class="simpara">Quelle est la nature de la transformation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>φ</mi></math></span> (ordinale, intervalle, etc.) ?</p>
                   </li>
                </ol>
             </section>
             <section id="_représentation_et_équivalence" class="section">
                <header>
-                  <h2><span class="label">8</span><span class="sep">. </span>Représentation et équivalence</h2>
+                  <h2><span class="label">9</span><span class="sep">. </span>Représentation et équivalence</h2>
                </header>
                <p class="simpara">Soit <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mi>R</mi></math></span> une relation complète sur <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mi>A</mi>
-                        <mo>=</mo>
-                        <mrow>
-                           <mo>{</mo>
-                           <mrow>
-                              <mi>x</mi>
-                              <mo>,</mo>
-                              <mi>y</mi>
-                              <mo>,</mo>
-                              <mi>z</mi>
-                           </mrow>
-                           <mo>}</mo>
-                        </mrow></math></span> avec <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>R</mi></math></span> définie par <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>x</mi>
                         <mi>R</mi>
                         <mi>y</mi></math></span>, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -486,7 +710,7 @@
                         <mi>z</mi></math></span>, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>z</mi>
                         <mi>R</mi>
-                        <mi>x</mi></math></span>.</p>
+                        <mi>x</mi></math></span>, et les paires issues de la transitivité.</p>
                <ol class="orderedlist" type="1">
                   <li>
                      <p class="simpara">Quelle est la partie symétrique de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -510,22 +734,39 @@
                                  <mo>⋆</mo>
                               </msup></math></span> ?</p>
                   </li>
-                  <li>
-                     <p class="simpara">Représentez cette réduction par une fonction numérique.</p>
-                  </li>
                </ol>
             </section>
-            <section id="_interprétation_économique_plus_difficile" class="section">
+            <section id="_interprétation_économique" class="section">
                <header>
-                  <h2><span class="label">9</span><span class="sep">. </span>Interprétation économique (plus difficile)</h2>
+                  <h2><span class="label">10</span><span class="sep">. </span>Interprétation économique</h2>
                </header>
+               <p class="simpara">Un consommateur peut détenir une télévision ou pas de télévision et un téléphone ou
+                  pas de téléphone. On représente chaque possibilité par une paire de nombres binaires,
+                  d’abord la possession de la télévision puis la possession du téléphone. La paire <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mn>0</mn>
+                              <mo>,</mo>
+                              <mn>1</mn>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow></math></span> représente pas de télévision et un téléphone, par exemple.</p>
                <p class="simpara">On considère une relation de préférence <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mo>≽</mo></math></span> sur un ensemble de paniers de consommation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mo>≽</mo></math></span> sur l’ensemble des paniers de consommation possibles <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>A</mi>
                         <mo>=</mo>
                         <mrow>
                            <mo>{</mo>
                            <mtable>
+                              <mtr>
+                                 <mtd>
+                                    <mn>0</mn>
+                                 </mtd>
+                                 <mtd>
+                                    <mn>0</mn>
+                                 </mtd>
+                              </mtr>
                               <mtr>
                                  <mtd>
                                     <mn>1</mn>
@@ -552,42 +793,13 @@
                               </mtr>
                            </mtable>
                            <mo>}</mo>
-                        </mrow></math></span> définie par <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mrow>
-                           <mo>(</mo>
-                           <mrow>
-                              <mi>x</mi>
-                              <mo>₁</mo>
-                              <mo>,</mo>
-                              <mi>x</mi>
-                              <mo>₂</mo>
-                           </mrow>
-                           <mo>)</mo>
-                        </mrow>
-                        <mo>≽</mo>
-                        <mrow>
-                           <mo>(</mo>
-                           <mrow>
-                              <mi>y</mi>
-                              <mo>₁</mo>
-                              <mo>,</mo>
-                              <mi>y</mi>
-                              <mo>₂</mo>
-                           </mrow>
-                           <mo>)</mo>
-                        </mrow></math></span> ssi <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mi>x</mi>
-                        <mo>₁</mo>
-                        <mo>+</mo>
-                        <mi>x</mi>
-                        <mo>₂</mo>
-                        <mo>≥</mo>
-                        <mi>y</mi>
-                        <mo>₁</mo>
-                        <mo>+</mo>
-                        <mi>y</mi>
-                        <mo>₂</mo></math></span>.</p>
+                        </mrow></math></span> représentant sa préférence entre ces possibilités, sachant qu’il est indifférent
+                  entre une télévision et un téléphone.</p>
                <ol class="orderedlist" type="1">
+                  <li>
+                     <p class="simpara">Définissez la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>≽</mo></math></span> en extension (c-à-d en écrivant exhaustivement ses paires de paires).</p>
+                  </li>
                   <li>
                      <p class="simpara">Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                               <mo>≽</mo></math></span> est un préordre complet.</p>
@@ -605,17 +817,52 @@
                                     <mo>₂</mo>
                                  </mrow>
                                  <mo>)</mo>
-                              </mrow></math></span> qui la représente.</p>
-                  </li>
-                  <li>
-                     <p class="simpara">Donnez un exemple de transformation admissible <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                              <mi>φ</mi></math></span> pour ce type d’échelle.</p>
+                              </mrow></math></span> qui décrive l’homomorphisme de <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>≽</mo></math></span> avec <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>≥</mo></math></span>.</p>
                   </li>
                </ol>
             </section>
-            <section id="_difficulté_supplémentaire_ordre_strict" class="section">
+            <section id="_amas_de_biens" class="section">
                <header>
-                  <h2><span class="label">10</span><span class="sep">. </span>Difficulté supplémentaire : ordre strict</h2>
+                  <h2><span class="label">11</span><span class="sep">. </span>Amas de biens</h2>
+               </header>
+               <p class="simpara">Un consommateur peut détenir de 0 à 10 éléphants et de 0 à 10 girafes. On représente
+                  ses détentions par une paire d’entiers, le nombre d’éléphants d’abord. Quelles que
+                  soient ses possessions, le consommateur préfère plus d’animaux, et est indifférent
+                  entre un éléphant et deux girafes, donc par exemple il est indifférent entre <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mn>8</mn>
+                              <mo>,</mo>
+                              <mn>6</mn>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow></math></span> et <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mn>9</mn>
+                              <mo>,</mo>
+                              <mn>4</mn>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow></math></span>.</p>
+               <ol class="orderedlist" type="1">
+                  <li>
+                     <p class="simpara">Définissez la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>≽</mo></math></span> mathématiquement, avec des conditions sur les nombres.</p>
+                  </li>
+                  <li>
+                     <p class="simpara">Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                              <mo>≽</mo></math></span> est un préordre complet.</p>
+                  </li>
+               </ol>
+            </section>
+            <section id="_ordre_strict" class="section">
+               <header>
+                  <h2><span class="label">12</span><span class="sep">. </span>Ordre strict</h2>
                </header>
                <p class="simpara">Définissons la relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>P</mi></math></span> sur <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -667,7 +914,7 @@
                                     <mi>A</mi>
                                  </mrow>
                                  <mo>}</mo>
-                              </mrow></math></span>. Quelle est sa nature ?</p>
+                              </mrow></math></span>. Est-ce un type de relation vue au cours ? Pourquoi (pas) ?</p>
                   </li>
                   <li>
                      <p class="simpara">Montrez que <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">

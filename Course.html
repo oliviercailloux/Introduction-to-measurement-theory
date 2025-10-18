@@ -3,7 +3,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script><title>Introduction to measurement theory</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-      <meta name="dc.modified" content="2025-10-13T19:32:39Z"/>
+      <meta name="dc.modified" content="2025-10-18T13:45:00Z"/>
       <meta name="generator" content="DocBook xslTNG version 2.6.0 / SNAPSHOT / SAXON HE 12.5"/>
       <link href="./css/docbook.css" rel="stylesheet" media="screen"/><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" defer="defer"></script></head>
    <body class="home">
@@ -996,7 +996,7 @@
                      <li>
                         <p class="simpara">Relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mi>R</mi></math></span> on <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                 <mi>A</mi></math></span> corresponds to relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>A</mi></math></span> homomorphic to relation <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mi>T</mi></math></span> on <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mi>ℝ</mi></math></span> through function <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mi>f</mi></math></span> from <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1023,9 +1023,15 @@
                      <li>
                         <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mi>R</mi></math></span> is homomorphic to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                 <mi>T</mi></math></span> iff it corresponds to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>T</mi></math></span> iff it is homomorphic to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mi>T</mi></math></span> through some function <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
                                  <mi>f</mi></math></span>.</p>
+                     </li>
+                     <li>
+                        <p class="simpara"><span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>f</mi></math></span> describes the homomorphism from <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>R</mi></math></span> to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>T</mi></math></span>.</p>
                      </li>
                   </ul>
                </section>
@@ -1096,26 +1102,98 @@
                   <header>
                      <h3><span class="label">5<span class="sep">.</span>2</span><span class="sep">. </span>The ≥ relation</h3>
                   </header>
+                  <p class="simpara">Given <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>R</mi></math></span> with finite field <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>ℱ</mi>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>R</mi>
+                              <mo>)</mo>
+                           </mrow></math></span>, <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mi>R</mi></math></span> is a complete preorder iff it is homomorphic to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                           <mo>≥</mo></math></span>.</p>
                   <ul class="itemizedlist">
                      <li>
-                        <p class="simpara">If <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                 <mi>R</mi></math></span> is a complete preorder and <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                 <mi>ℱ</mi>
+                        <p class="simpara">Proof via: <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mi>a</mi>
+                                 <mi>R</mi>
+                                 <mi>b</mi>
+                                 <mo>⇒</mo>
+                                 <mi>R</mi>
                                  <mrow>
                                     <mo>(</mo>
-                                    <mi>R</mi>
+                                    <mi>b</mi>
                                     <mo>)</mo>
-                                 </mrow></math></span> is finite, it is homomorphic to <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                 <mo>≥</mo></math></span>.</p>
-                     </li>
-                     <li>
-                        <p class="simpara">Necessary and sufficient conditions.</p>
+                                 </mrow>
+                                 <mo>⊆</mo>
+                                 <mi>R</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>⇒</mo>
+                                 <mo>#</mo>
+                                 <mi>R</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>≥</mo>
+                                 <mo>#</mo>
+                                 <mi>R</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow></math></span>, and <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mo>¬</mo>
+                                 <mi>a</mi>
+                                 <mi>R</mi>
+                                 <mi>b</mi>
+                                 <mo>⇒</mo>
+                                 <mi>R</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>≠</mo>
+                                 <mi>R</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow></math></span> (thus <span class="inlineequation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                 <mo>¬</mo>
+                                 <mi>a</mi>
+                                 <mi>R</mi>
+                                 <mi>b</mi>
+                                 <mo>⇒</mo>
+                                 <mo>#</mo>
+                                 <mi>R</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>&lt;</mo>
+                                 <mo>#</mo>
+                                 <mi>R</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow></math></span>)</p>
                      </li>
                      <li>
                         <p class="simpara">Can we relax finiteness?</p>
                      </li>
+                     <li>
+                        <p class="simpara">Scale type: ordinal</p>
+                     </li>
                   </ul>
-                  <p class="simpara">Scale type: ordinal</p>
                </section>
                <section id="_exercices_3" class="section">
                   <header>
