@@ -188,13 +188,6 @@ See xref:Ex2.adoc[Exercices S2].
 Uniqueness: to determine properties of the numbers that transfer to our observations.
 
 == Representation of complete preorders
-=== Arithmetic and infinite sets
-* Successor of stem:[s]: stem:[s ⋃ {s}]
-* Axiom of infinity: stem:[∃] successor set stem:[A]
-* stem:[ℕ]: intersection of all successor sets in stem:[A]
-* Permits induction, which we use to define addition of zero, then addition of one, …
-* Finite set: bijection with an element of stem:[ℕ]
-
 === The ≥ relation
 Given stem:[R] with finite field stem:[ℱ(R)], stem:[R] is a complete preorder iff it is homomorphic to stem:[≥].
 
@@ -253,6 +246,13 @@ Scale type depends on the class of admissible transformations φ.
 * Examples: stem:[+], stem:[×] on stem:[ℕ].
 
 If stem:[T] is restricted to the image of stem:[f], it is determined uniquely by stem:[f] and stem:[R], in other words, stem:[R] never corresponds to two relations stem:[T1 ≠ T2] through a single function stem:[f] when stem:[ℱ(T1) = ℱ(T2) = cc "I"(f)]. Proof: if R corresponds to T1 and T2 through f with ℱ(T1) = ℱ(T2) = 𝓘(f), then x T1 y iff a R b, for any a ∈ f-1(x), b ∈ f-1(y), iff x * T2 y thus T1 = T2.
+
+=== Arithmetic and infinite sets
+* Successor of stem:[s]: stem:[s ⋃ {s}]
+* Axiom of infinity: stem:[∃] successor set stem:[A]
+* stem:[ℕ]: intersection of all successor sets in stem:[A]
+* Permits induction, which we use to define addition of zero, then addition of one, …
+* Finite set: bijection with an element of stem:[ℕ]
 
 == When indifference is not transitive
 === Requirement of transitivity
