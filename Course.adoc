@@ -187,8 +187,7 @@ See xref:Ex2.adoc[Exercices S2].
 
 Uniqueness: to determine properties of the numbers that transfer to our observations.
 
-== Representation of complete preorders
-=== The ≥ relation
+=== Representation of complete preorders
 Given stem:[R] with finite field stem:[ℱ(R)], stem:[R] is a complete preorder iff it is homomorphic to stem:[≥].
 
 * Proof via: stem:[a R b ⇒ R(b) ⊆ R(a) ⇒ #R(a) ≥ #R(b)], and stem:[¬aRb ⇒ R(a) ≠ R(b)] (thus stem:[¬aRb ⇒ #R(a) < #R(b)])
