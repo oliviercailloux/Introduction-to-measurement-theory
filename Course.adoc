@@ -197,13 +197,6 @@ Given stem:[R] with finite field stem:[ℱ(R)], stem:[R] is a complete preorder 
 === Exercices
 See xref:Ex3.adoc[Exercices S3].
 
-== Wrap-up
-When facing a falsifiable or normative claim, think about:
-
-* modelisation
-* extent of the proofs
-* assignment of numbers
-
 == Appendix
 === Homomorphisms with operations
 * We might also want to reflect operations such as “combining”: consider “is lighter”, with A including combined objects; can we then assign numbers stem:[f(.)] so that when stem:[a] and stem:[b] combined are lighter than stem:[c], stem:[f(a) + f(b) < f(c)]; or so that when stem:[c] denotes the combination of stem:[a] and stem:[b], stem:[f(a) + f(b) = f(c)]?
@@ -314,3 +307,10 @@ If ≽ is a completed semiorder, then there exists a function f from ℱ(≽) to
 * Liberal to conservative politics
 * Psychological stages of development
 * Chronology of archeological artifacts
+
+== Wrap-up
+When facing a falsifiable or normative claim, think about:
+
+* modelisation
+* extent of the proofs
+* assignment of numbers
