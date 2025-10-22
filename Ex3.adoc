@@ -77,9 +77,9 @@ Un consommateur peut détenir de 0 à 10 éléphants et de 0 à 10 girafes. On r
 . Montrez que stem:[≽] est un préordre complet.
 
 == Ordre strict
-Définissons la relation stem:[P] sur stem:[A = {a, b, c}] par stem:[a P b], stem:[b P c], et rien d’autre.
+Définissons la relation stem:[P] sur stem:[A = {a, b, c}] par stem:[a P b], stem:[b P c] et stem:[a P c].
 
 . Montrez que stem:[P] est transitive et irréflexive.
-. Définissez la relation stem:[R = P ∪ {(x, x) | x ∈ A}]. Est-ce un type de relation vue au cours ? Pourquoi (pas) ?
+. Définissons la relation stem:[R = P ∪ {(x, x) | x ∈ A}]. Est-ce un type de relation vue au cours ? Pourquoi (pas) ?
 . Montrez que stem:[R] est homomorphe à stem:[≥].
 
