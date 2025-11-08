@@ -48,7 +48,7 @@ https://github.com/oliviercailloux/Teaching/blob/main/README.adoc#take-notes[Tak
 * stem:[∉]
 * Produce other sets: stem:[{x ∈ A | …}], stem:[∪], stem:[∩], stem:[℘], stem:[×]
 * Also: primitive elements
-* Ordered pair, sets thereof, domain stem:[𝒟], image stem:[cc "I"], field stem:[ℱ]
+* Ordered pair, sets thereof, domain stem:[𝒟], image stem:[cc "I"], field stem:[ℱ = 𝒟 ∪ cc "I"]
 
 References
 
