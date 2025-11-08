@@ -2,7 +2,8 @@
 :stem:
 
 == Introduction to the course
-This course is based on Fred Roberts’ book, https://doi.org/10.1017/CBO9780511759871[Measurement Theory]. Most of the exercices come from his book.
+This course (https://github.com/oliviercailloux/Introduction-to-measurement-theory[source repository]) is based on Fred Roberts’ book, https://doi.org/10.1017/CBO9780511759871[Measurement Theory]. 
+Multiple exercices come from his book.
 
 === What
 * Measurement: represent aspects of a concrete system abstractly, using numbers, vectors…
